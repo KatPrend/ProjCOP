@@ -1,7 +1,7 @@
 # ProjCOP
 
 ## Vision Statement
-  
+
 This product is for people who enjoyed normal as well as auto chess.
 It is for those who have experience in normal tabletop chess but are interested in a dynamic chess experience similar to that of the currently popular auto chess, but want to utilize their tabletop chess experience.
 The working title of this game is Power Chess. In Power Chess, all chess rules apply but with each capture, the player gains points that can be used to buy advantages.
@@ -16,15 +16,23 @@ The primary advantage this game will have over the competition is the low learni
 * Kathleen Prendergast (@KatPrend)
 
 # Sprint 1
-
+* [Product Backlog](https://trello.com/b/isWG1e2o/power-chesss)
+* [Sprint Backlog](https://trello.com/b/isWG1e2o/power-chesss)
+* [Requirements](https://trello.com/b/isWG1e2o/power-chesss)
+* [Burndown Chart]
+* [Velocity Chart]
+* System Architecture
+* Source Code
+* Automated Tests
+* Product Demonstration
 
 ## Task Allocation
-Blert - 
+Blert - Unassigned
 
-Dylan - 
+Dylan - Unassigned
 
-Tyra - 
+Tyra - Unassigned
 
-Veronica - 
+Veronica - Unassigned
 
-Kathleen - 
+Kathleen - Unassigned
