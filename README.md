@@ -28,12 +28,12 @@ The primary advantage this game will have over the competition is the low learni
 * Product Demonstration
 
 ## Task Allocation
-Blert - Unassigned
+Blert - Add user stories & requirements to Trello Board
 
-Dylan - Unassigned
+Dylan - Add user stories & requirements to Trello Board as well as create Velocity Chart.
 
-Tyra - Unassigned
+Tyra - Add user stories & requirements to Trello Board
 
-Veronica - Unassigned
+Veronica - Add user stories & requirements to Trello Board
 
-Kathleen - Add user stories & requirements to Trello Board and make Burndown Chart.
+Kathleen - Add user stories & requirements to Trello Board  as well as create Burndown Chart.
