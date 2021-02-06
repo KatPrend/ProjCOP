@@ -21,6 +21,7 @@ The primary advantage this game will have over the competition is the low learni
 * [Requirements](https://trello.com/b/isWG1e2o/power-chesss)
 * [Burndown Chart]
 * [Velocity Chart]
+* [Scripts](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
 * System Architecture
 * Source Code
 * Automated Tests
