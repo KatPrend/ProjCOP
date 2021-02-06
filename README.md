@@ -35,4 +35,4 @@ Tyra - Unassigned
 
 Veronica - Unassigned
 
-Kathleen - Unassigned
+Kathleen - Add user stories & requirements to Trello Board and make Burndown Chart.
