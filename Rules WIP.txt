@@ -28,3 +28,13 @@ Buy slots few extra pieces, ex buy a spot for the second queen, then you are abl
 
 Shop:
 Maybe a stage on your side of the board with buttons to select
+
+Game Timline:
+Start game
+Each player assembles their beginning pieces onto their side of the board (1 King, 3 Pawns)
+During a players turn: Have option to buy powerup - bring up store to screen (consider number of coins that player has)
+                       Have option to use a powerup - bring up storage to screen (consider if they have a power up to use)
+                       Move 1 piece
+                       Gain 1 coin for turn and 1 coin if they make a capture
+Change turn to other player
+Game ends with checkmate or stalemate
