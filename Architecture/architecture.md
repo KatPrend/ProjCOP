@@ -6,6 +6,7 @@
 
 # Data Design
 
+![Class Diagram](ClassDiagram.png)
 
 # Business Rules
 
