@@ -3,9 +3,6 @@
 
 # Code Design
 
-
-# Data Design
-
 ![Class Diagram](ClassDiagram.png)
 
 | Class | User Story |
@@ -18,6 +15,9 @@
 | Storage | 006, 012 |
 | Powerup | 002, 004, 006 |
 | Dice | 004, 012 |
+
+# Data Design
+
 
 # Business Rules
 
