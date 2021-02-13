@@ -1,5 +1,9 @@
 # ProjCOP
 
+[Sprint 1](#sprint-1)
+
+[Sprint 2](#sprint-2)
+
 ## Vision Statement
 
 This product is for people who enjoyed normal as well as auto chess.
@@ -37,3 +41,24 @@ Tyra - Add user stories & requirements to Trello Board
 Veronica - Add user stories & requirements to Trello Board
 
 Kathleen - Add user stories & requirements to Trello Board  as well as create Burndown Chart.
+
+# Sprint 2
+
+- [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
+- [Burndown Chart]
+- [Velocity Chart]
+- [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
+- Source Code
+- Automated Tests
+- [Product Demonstration]
+
+## Task Allocation
+Blert - 
+
+Dylan - 
+
+Tyra - 
+
+Veronica - 
+
+Kathleen - 
