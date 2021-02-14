@@ -34,6 +34,7 @@ The top diagram shows what a player will mainly see. Given it is a chess game, t
 
 # Security
 
+Our system will not require a user account, profile, or password.
 
 # Performance
 
@@ -55,6 +56,7 @@ The top diagram shows what a player will mainly see. Given it is a chess game, t
 
 # Fault Tolerance
 
+If an error is detected, the system will revert back to how it was before the error occurred. For example, if a player puts a chess piece on a square that is not availabe or out of that piece's capability, it will go back to it's original location. Or, if a player tries to move something when it is not their turn, it will go back to its original location and an error message will give them a warning.
 
 # Architectural Feasibility
 
