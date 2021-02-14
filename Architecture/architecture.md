@@ -56,9 +56,11 @@ Our system will not require a user account, profile, or password.
 
 # Interoperability
 
+Our system will not require data or resources to be shared with any other software. The game will run entirely off of the Unity engine and will be self contained.
 
 # Internationalization/Localization
 
+Our software is not expect to be run internationaly. As such the software will be written with English as the primary language and no language interface will be needed.
 
 # Input/Output
 
