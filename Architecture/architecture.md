@@ -66,6 +66,7 @@ If an error is detected, the system will revert back to how it was before the er
 
 # Build-vs-Buy Decisions
 
+We are using the Unity game engine and therefore utilizing the added functionality that comes with UnityEditor. Also, we will be importing most of our graphics from the Unity Assets store. 
 
 # Reuse
 
