@@ -53,12 +53,12 @@ Kathleen - Add user stories & requirements to Trello Board  as well as create Bu
 - [Product Demonstration]
 
 ## Task Allocation
-Blert - 
+Blert - high-level architectural diagram; initial architectural description
 
-Dylan - 
+Dylan - description of the major classes; describing how your program is storing data both internally and externally
 
-Tyra - 
+Tyra - Demonstration
 
-Veronica - 
+Veronica - relating your user interface components to your user stories; relating your architecture to your user stories
 
-Kathleen - 
+Kathleen - description of your user interface, including how the user will interact with it; user interface diagram (graphical or otherwise); relating your classes to your user stories
