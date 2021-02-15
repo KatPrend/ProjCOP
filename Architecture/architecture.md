@@ -95,10 +95,11 @@ If an error is detected, the system will revert back to how it was before the er
 
 # Architectural Feasibility
 
+The focus of our game is mainly on the chess board, the store, and powerup storage, which is nothing new and can all be feasibly implemented. We would like to have an AI component but in the even that becomes infeasible, we can keep it a 2-player multiplayer game.
 
 # Overengineering
 
-
+We will avoid overengineering by sticking to the user stories and keeping things simple. We will try to implement only necessary classes and keep functionality singular. The user only needs to focus on three core elements, being the chess board, the store, and their storage, which allows us to keep things simple and work on core functionality.
 
 # Build-vs-Buy Decisions
 
@@ -106,6 +107,7 @@ We are using the Unity game engine and therefore utilizing the added functionali
 
 # Reuse
 
+We will not be reusing preexisting software.
 
 # Change Strategy
 
