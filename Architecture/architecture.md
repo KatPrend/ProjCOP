@@ -1,17 +1,19 @@
 # Program Organization
-System context diagram
+### System context diagram
 
 
 ![System Context Diagram](SystemContextDiagram.PNG)
 
+The game itself will require direct input from the user and access to the shop where the user can buy powerups. The user will play against an AI player.
 
-Container diagram
+### Container diagram
 
 
 ![Container Diagram](ContainerDiagram.PNG)
 
+Again, the game will require direct input from the user and will then store data in the various classes respectively. The user is responsible for their own pieces and purchased powerups, and the store will keep a list of the available powerups.
 
-Component diagram
+### Component diagram
 
 
 ![Component Diagram](ComponentDiagram.PNG)
@@ -55,6 +57,7 @@ Our game does not require a database for storing information. Any data that need
 
 # Business Rules
 
+The constraints on our system and the users pertain mostly to the rules of the game. For example, the player cannot move a piece, buy a powerup, or deploy a powerup when it is not their turn; the player cannot buy a powerup without a sufficient amount of coins; and the player cannot move a piece to an invalid square.
 
 # User Interface Design
 
@@ -75,6 +78,7 @@ The top diagram shows what a player will mainly see. Given it is a chess game, t
 
 # Resource Management
 
+The game should not run out of resources in terms of memory given it is mainly tracking the chess board, the store and user's coins, and the user's storage. Also, we are not using a database.
 
 # Security
 
@@ -82,9 +86,11 @@ Our system will not require a user account, profile, or password.
 
 # Performance
 
+Performance is not a concern in terms of resources or goals. Our most critical user stories can be implemented in time for a functional game with it's main features.
 
 # Scalability
 
+The game, once finished, will not grow anymore. Also, because we are not requiring user profiles or making use of a database, increased number of users should not be a concern.
 
 # Interoperability
 
@@ -96,9 +102,11 @@ Our software is not expect to be run internationally. As such the software will 
 
 # Input/Output
 
+Given we are creating a game, user input is one of the main components and will be processed just-in-time. Incorrect input from the user should not cause any issues and in the event they try to do something when it is not their turn, a warning message will pop up.
 
 # Error Processing
 
+We will process errors through detection and with the help of Unity. For the errors Unity does not handle, we will use exception handling and a message will pop up to the user as a warning. Errors that are detrimental to the program will shut it down and the user will have to reload the game.
 
 # Fault Tolerance
 
