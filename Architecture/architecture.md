@@ -99,6 +99,7 @@ If an error is detected, the system will revert back to how it was before the er
 # Overengineering
 
 
+
 # Build-vs-Buy Decisions
 
 We are using the Unity game engine and therefore utilizing the added functionality that comes with UnityEditor. Also, we will be importing most of our graphics from the Unity Assets store.
@@ -107,3 +108,5 @@ We are using the Unity game engine and therefore utilizing the added functionali
 
 
 # Change Strategy
+
+Our change strategy relies on communication, our user stories, and GitHub. We have classes concentrated on one thing so if change is needed in code in can be done without damage. Also, through clear communication with one another and Github's use of version control, adapting to any changes in the system should not be difficult. Changes made to our game will be clearly stated in our user stories.
