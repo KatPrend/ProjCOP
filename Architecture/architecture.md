@@ -18,6 +18,8 @@ Again, the game will require direct input from the user and will then store data
 
 ![Component Diagram](ComponentDiagram.PNG)
 
+The game will be played against an AI that will use the same moves as the player and has the same resources.
+
 | Architecture Component | User Story |
 | ----- | ---------- |
 | Power Chess Game | 000, 003, 009, 010, 012 |
