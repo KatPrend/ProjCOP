@@ -18,7 +18,7 @@ Again, the game will require direct input from the user and will then store data
 
 ![Component Diagram](ComponentDiagram.PNG)
 
-The game will be played against an AI that will use the same moves as the player and has the same resources.
+The game will be played against an AI that will use the same moves as the player and has the same resources. The user and AI will interact with the board by moving pieces and adding powerups. They will be able to buy powerups from the shop if they accrue enough coins. The board will update with each turn and will be checking for any moves that will end the game such as checkmate or stalemate.
 
 | Architecture Component | User Story |
 | ----- | ---------- |
