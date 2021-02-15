@@ -1,8 +1,8 @@
 # Program Organization
 
-![Container Diagram](Container Diagram.png)
+![Container Diagram](Container Diagram.PNG)
 
-![System Context Diagram](System Context Diagram.png)
+![System Context Diagram](System Context Diagram.PNG)
 
 
 | Architecture Component | User Story |
