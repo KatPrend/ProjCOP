@@ -24,7 +24,7 @@ The primary advantage this game will have over the competition is the low learni
 * [Sprint Backlog](https://trello.com/b/isWG1e2o/power-chesss)
 * [Requirements](https://trello.com/b/isWG1e2o/power-chesss)
 * [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown1.png)
-* [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Charts/Sprint%201%20Velocity%20Chart.png)
+* [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Charts/Velocity%20Chart.png)
 * [Scripts](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
 * System Architecture
 * Source Code
@@ -46,7 +46,7 @@ Kathleen - Add user stories & requirements to Trello Board  as well as create Bu
 
 - [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
 - [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown2.png)
-- [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Charts/Sprint%202%20Velocity%20Chart.png)
+- [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Charts/Velocity%20Chart.png)
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - Source Code
 - Automated Tests
