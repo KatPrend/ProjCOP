@@ -100,7 +100,7 @@ Our system will not require data or resources to be shared with any other softwa
 
 # Internationalization/Localization
 
-Our software is not expect to be run internationally. As such the software will be written with English as the primary language and no language interface will be needed.
+Our software is not expect to be run internationally. As such the software will be written with English as the primary language and no language interface will be needed. Unicode will be used.
 
 # Input/Output
 
