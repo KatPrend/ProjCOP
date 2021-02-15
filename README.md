@@ -45,7 +45,7 @@ Kathleen - Add user stories & requirements to Trello Board  as well as create Bu
 # Sprint 2
 
 - [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
-- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown1.png)
+- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown2.png)
 - [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Chart.png)
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - Source Code
