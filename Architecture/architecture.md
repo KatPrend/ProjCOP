@@ -1,13 +1,15 @@
 # Program Organization
+System context diagram
+
+
+![System Context Diagram](SystemContextDiagram.PNG)
+
+
 Container diagram
 
 
 ![Container Diagram](ContainerDiagram.PNG)
 
-System context diagram
-
-
-![System Context Diagram](SystemContextDiagram.PNG)
 
 Component diagram
 
