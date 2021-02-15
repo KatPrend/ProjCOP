@@ -50,7 +50,7 @@ Kathleen - Add user stories & requirements to Trello Board  as well as create Bu
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - Source Code
 - Automated Tests
-- [Product Demonstration]
+- [Product Demonstration](https://youtu.be/Hy6p47SEeDM)
 
 ## Task Allocation
 Blert - high-level architectural diagram; initial architectural description
