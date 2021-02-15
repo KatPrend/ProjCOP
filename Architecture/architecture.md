@@ -1,5 +1,15 @@
 # Program Organization
 
+![Container Diagram](Container Diagram.PNG)
+
+![System Context Diagram](System Context Diagram.PNG)
+
+
+| Architecture Component | User Story |
+| ----- | ---------- |
+| Power Chess Game | 000, 003, 009, 010, 012 |
+| Item and Piece Shop | 001, 002, 004, 005, 009 |
+| AI Opponent | 011 |
 
 # Code Design
 
@@ -41,6 +51,17 @@ Our game does not require a database for storing information. Any data that need
 
 The top diagram shows what a player will mainly see. Given it is a chess game, the chess board will be the main focus. The player will move the pieces on the board, as in a normal chess game, and they can click on the "Store" tab to the left or the "My Powerups" tab at the bottom to view available/purchased powerups. They can see how many coins they have gained in the top left corner. <br />The bottom left diagram gives an idea of what the store will look like. Here, the player can look at the various powerups they can buy. <br />The bottom right diagram shows a player's storage where the powerups they have purchased can be found.
 
+
+
+| UI Component | User Story |
+| ----- | ---------- |
+| Board | 000, 003, 009, 010, 012 |
+| Piece | 000, 003 |
+| Dice | 004, 009, 012 |
+| Store | 002, 004, 005 |
+| Coin Tab | 001, 004, 009 |
+| Storage | 004, 006, 012 |
+
 # Resource Management
 
 
@@ -60,7 +81,7 @@ Our system will not require data or resources to be shared with any other softwa
 
 # Internationalization/Localization
 
-Our software is not expect to be run internationaly. As such the software will be written with English as the primary language and no language interface will be needed.
+Our software is not expect to be run internationally. As such the software will be written with English as the primary language and no language interface will be needed.
 
 # Input/Output
 
