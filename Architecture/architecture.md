@@ -18,6 +18,8 @@ Again, the game will require direct input from the user and will then store data
 
 ![Component Diagram](ComponentDiagram.PNG)
 
+The game will be played against an AI that will use the same moves as the player and has the same resources. The user and AI will interact with the board by moving pieces and adding powerups. They will be able to buy powerups from the shop if they accrue enough coins. The board will update with each turn and will be checking for any moves that will end the game such as checkmate or stalemate.
+
 | Architecture Component | User Story |
 | ----- | ---------- |
 | Power Chess Game | 000, 003, 009, 010, 012 |
@@ -98,7 +100,7 @@ Our system will not require data or resources to be shared with any other softwa
 
 # Internationalization/Localization
 
-Our software is not expect to be run internationally. As such the software will be written with English as the primary language and no language interface will be needed.
+Our software is not expect to be run internationally. As such the software will be written with English as the primary language and no language interface will be needed. Unicode will be used.
 
 # Input/Output
 
