@@ -17,6 +17,8 @@ public class BoardManager : MonoBehaviour
 
     private List<GameObject> activeChessPieces;
 
+    public bool isWhiteTurn = true;
+
     private void Start()
     {
         //Spawn all pieces
@@ -27,6 +29,44 @@ public class BoardManager : MonoBehaviour
     {
         UpdateSelection();
         DrawChessBoard();
+
+        if(Input.GetMouseButtonDown(0)) //If left click
+        {
+            if(selectionX >= 0 && selectionZ >= 0) //If clicking on board
+            {
+                if (selectedPiece == null)
+                {
+                    //Select a piece
+                    SelectAPiece(selectionX, selectionZ);
+                }
+                else
+                {
+                    //Move a piece
+                    MoveAPiece(selectionX, selectionZ);
+                }
+            }
+        }
+    }
+
+    //Given cursor location pick piece at that location if it exists
+    private void SelectAPiece(int x, int z)
+    {
+        if (Pieces[x,z] == null)
+            return;
+        if (Pieces[x,z].isWhite != isWhiteTurn)
+            return;
+        selectedPiece = Pieces[x,z];
+    }
+
+    private void MoveAPiece(int x, int z)
+    {
+        if (selectedPiece.PossibleMove(x,z))
+        {
+            Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
+            selectedPiece.transform.position = GetSquareCenter(x,z);
+            Pieces[x, z] = selectedPiece;
+        }
+        selectedPiece = null;
     }
 
     private void UpdateSelection()
@@ -62,8 +102,7 @@ public class BoardManager : MonoBehaviour
         go.transform.SetParent(transform);
 
         Pieces[x,z] = go.GetComponent<Piece>();
-        // TODO: add setPosition method in Piece class and add line of code
-        // Pieces[x,z].setPosition(x,z);
+        Pieces[x,z].setPosition(x,z);
         activeChessPieces.Add(go);
     }
 
