@@ -65,6 +65,7 @@ public class BoardManager : MonoBehaviour
             Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
             selectedPiece.transform.position = GetSquareCenter(x,z);
             Pieces[x, z] = selectedPiece;
+            isWhiteTurn = !isWhiteTurn;
         }
         selectedPiece = null;
     }
