@@ -4,8 +4,8 @@ using UnityEngine;
 
 public abstract class Piece : MonoBehaviour
 {
-    public int positionX;
-    public int positionY;
+    public int PositionX { get; set; }
+    public int PositionY { get; set; }
 
     public bool isWhite;
 }

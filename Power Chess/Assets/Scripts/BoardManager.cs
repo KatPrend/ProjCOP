@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BoardManager : MonoBehaviour
 {
+    public Piece[,] Pieces { get; set; }
+    private Piece selectedPiece;
+
     private const float SQUARE_SIZE  = 1.0F; //Square is 1 meter by 1 meter
     private const float SQUARE_OFFSET  = 0.5F; //Offset to center a piece
 
@@ -12,7 +15,7 @@ public class BoardManager : MonoBehaviour
 
     public List<GameObject> chessPiecesPrefabs;
 
-    private List<GameObject> activechessPieces;
+    private List<GameObject> activeChessPieces;
 
     private void Start()
     {
@@ -53,72 +56,63 @@ public class BoardManager : MonoBehaviour
     }
 
     //Given an index in the ChessPiecesPrefab list spawn that pieces at position
-    private void SpawnChessPieces(int index, Vector3 position)
+    private void SpawnChessPieces(int index, int x, int z)
     {
-        if(index == 4) //White Knights need a roation in both x and z
-        {
-            GameObject go = Instantiate(chessPiecesPrefabs[index], position, Quaternion.identity) as GameObject; //Create it as a game object
+        GameObject go = Instantiate(chessPiecesPrefabs[index], GetSquareCenter(x,z), Quaternion.identity) as GameObject; //Create it as a game object
+        go.transform.SetParent(transform);
 
-            go.transform.SetParent(transform);
-            go.transform.Rotate(-90.0f, 0.0f, -90.0f, Space.Self); //For rotated piece since prefab is for x,y not x,z
-            activechessPieces.Add(go);
-        }
+        //White Knights need a rotaion in both x and z
+        if(index == 4)
+          go.transform.Rotate(-90.0f, 0.0f, -90.0f, Space.Self); //For rotated piece since prefab is for x,y not x,z
+        //Black Knights need a rotaion in both x and z
+        else if(index == 10)
+          go.transform.Rotate(-90.0f, 0.0f, 90.0f, Space.Self); //For rotated piece since prefab is for x,y not x,z
+        //All pieces need to be rotates in the x directions
+        else
+          go.transform.Rotate(-90.0f, 0.0f, 0.0f, Space.Self); //For rotated piece since prefab is for x,y not x,z
 
-        else if(index == 10) //Black Knights need a roation in both x and z
-        {
-            GameObject go = Instantiate(chessPiecesPrefabs[index], position, Quaternion.identity) as GameObject; //Create it as a game object
-
-            go.transform.SetParent(transform);
-            go.transform.Rotate(-90.0f, 0.0f, 90.0f, Space.Self); //For rotated piece since prefab is for x,y not x,z
-            activechessPieces.Add(go);
-        }
-        
-        else //All pieces need to be rotates in the x directions
-        {
-            GameObject go = Instantiate(chessPiecesPrefabs[index], position, Quaternion.identity) as GameObject; //Create it as a game object
-
-            go.transform.SetParent(transform);
-            go.transform.Rotate(-90.0f, 0.0f, 0.0f, Space.Self); //For rotated piece since prefab is for x,y not x,z
-            activechessPieces.Add(go);
-        }
-        
+        Pieces[x,z] = go.GetComponent<Piece>();
+        // TODO: add setPosition method in Piece class and add line of code
+        // Pieces[x,z].setPosition(x,z);
+        activeChessPieces.Add(go);
     }
 
     private void SpawnAllChessPieces()
     {
-        activechessPieces = new List<GameObject>();
+        activeChessPieces = new List<GameObject>();
+        Pieces = new Piece[8,8];
 
         //Spawn Kings
-        SpawnChessPieces(0, GetSquareCenter(3, 0));
-        SpawnChessPieces(6, GetSquareCenter(4, 7));
+        SpawnChessPieces(0, 3, 0);
+        SpawnChessPieces(6, 4, 7);
 
         //Spawns Queen
-        SpawnChessPieces(1, GetSquareCenter(4, 0));
-        SpawnChessPieces(7, GetSquareCenter(3, 7));
+        SpawnChessPieces(1, 4, 0);
+        SpawnChessPieces(7, 3, 7);
 
         //Spawn Rooks
-        SpawnChessPieces(2, GetSquareCenter(0, 0));
-        SpawnChessPieces(2, GetSquareCenter(7, 0));
-        SpawnChessPieces(8, GetSquareCenter(0, 7));
-        SpawnChessPieces(8, GetSquareCenter(7, 7));
+        SpawnChessPieces(2, 0, 0);
+        SpawnChessPieces(2, 7, 0);
+        SpawnChessPieces(8, 0, 7);
+        SpawnChessPieces(8, 7, 7);
 
         //Spawn Bishops
-        SpawnChessPieces(3, GetSquareCenter(2, 0));
-        SpawnChessPieces(3, GetSquareCenter(5, 0));
-        SpawnChessPieces(9, GetSquareCenter(2, 7));
-        SpawnChessPieces(9, GetSquareCenter(5, 7));
+        SpawnChessPieces(3, 2, 0);
+        SpawnChessPieces(3, 5, 0);
+        SpawnChessPieces(9, 2, 7);
+        SpawnChessPieces(9, 5, 7);
 
         //Spawn Knights
-        SpawnChessPieces(4, GetSquareCenter(1, 0));
-        SpawnChessPieces(4, GetSquareCenter(6, 0));
-        SpawnChessPieces(10, GetSquareCenter(1, 7));
-        SpawnChessPieces(10, GetSquareCenter(6, 7));
+        SpawnChessPieces(4, 1, 0);
+        SpawnChessPieces(4, 6, 0);
+        SpawnChessPieces(10, 1, 7);
+        SpawnChessPieces(10, 6, 7);
 
         //Spawn Pawns
         for(int i = 0; i < 8; i++)
         {
-            SpawnChessPieces(5, GetSquareCenter(i, 1));
-            SpawnChessPieces(11, GetSquareCenter(i, 6));
+            SpawnChessPieces(5, i, 1);
+            SpawnChessPieces(11, i, 6);
         }
     }
 
