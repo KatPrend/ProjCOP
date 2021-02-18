@@ -58,23 +58,24 @@ public class BoardManager : MonoBehaviour
     //Given an index in the ChessPiecesPrefab list spawn that pieces at position
     private void SpawnChessPieces(int index, int x, int z)
     {
-        GameObject go = Instantiate(chessPiecesPrefabs[index], GetSquareCenter(x,z), Quaternion.identity) as GameObject; //Create it as a game object
+        GameObject go = Instantiate(chessPiecesPrefabs[index], GetSquareCenter(x,z), FixRotation(index)) as GameObject; //Create it as a game object
         go.transform.SetParent(transform);
-
-        //White Knights need a rotaion in both x and z
-        if(index == 4)
-          go.transform.Rotate(-90.0f, 0.0f, -90.0f, Space.Self); //For rotated piece since prefab is for x,y not x,z
-        //Black Knights need a rotaion in both x and z
-        else if(index == 10)
-          go.transform.Rotate(-90.0f, 0.0f, 90.0f, Space.Self); //For rotated piece since prefab is for x,y not x,z
-        //All pieces need to be rotates in the x directions
-        else
-          go.transform.Rotate(-90.0f, 0.0f, 0.0f, Space.Self); //For rotated piece since prefab is for x,y not x,z
 
         Pieces[x,z] = go.GetComponent<Piece>();
         // TODO: add setPosition method in Piece class and add line of code
         // Pieces[x,z].setPosition(x,z);
         activeChessPieces.Add(go);
+    }
+
+    //Given an index in the chessPiecesPrefab return an orientation for that piece
+    private Quaternion FixRotation(int index)
+    {
+        Quaternion orientation;
+        if (index < 6)
+            orientation = Quaternion.Euler(-90, -90, 0);
+        else
+            orientation = Quaternion.Euler(-90, 90, 0);
+        return orientation;
     }
 
     private void SpawnAllChessPieces()
