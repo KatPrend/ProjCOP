@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000010991507056}
   - component: {fileID: 33000011359460492}
   - component: {fileID: 23000012377736356}
+  - component: {fileID: 7361605506797540289}
   m_Layer: 0
   m_Name: Chess Queen White
   m_TagString: Untagged
@@ -79,3 +80,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7361605506797540289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011613667446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c03f7b6ca90b0e443aeb011af9c7aac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionX: 0
+  positionY: 0
+  isWhite: 1
