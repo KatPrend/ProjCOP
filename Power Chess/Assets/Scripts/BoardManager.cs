@@ -37,7 +37,7 @@ public class BoardManager : MonoBehaviour
                 if (selectedPiece == null)
                 {
                     //Select a piece
-                    SelectAPiece(selectionX, selectionZ);
+                    SelectPiece(selectionX, selectionZ);
                 }
                 else
                 {
@@ -49,7 +49,7 @@ public class BoardManager : MonoBehaviour
     }
 
     //Given cursor location pick piece at that location if it exists
-    private void SelectAPiece(int x, int z)
+    private void SelectPiece(int x, int z)
     {
         if (Pieces[x,z] == null)
             return;
