@@ -4,6 +4,8 @@
 
 [Sprint 2](#sprint-2)
 
+[Sprint 3](#sprint-3)
+
 ## Vision Statement
 
 This product is for people who enjoyed normal as well as auto chess.
@@ -62,3 +64,24 @@ Tyra - Demonstration
 Veronica - relating your user interface components to your user stories; relating your architecture to your user stories
 
 Kathleen - description of your user interface, including how the user will interact with it; user interface diagram (graphical or otherwise); relating your classes to your user stories
+
+# Sprint 3
+
+- [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
+- [Burndown Chart]
+- [Velocity Chart]
+- [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
+- [Source Code]
+- [Automated Tests]
+- [Product Demonstration]
+
+## Task Allocation
+Blert - 
+
+Dylan - 
+
+Tyra - 
+
+Veronica - 
+
+Kathleen - 
