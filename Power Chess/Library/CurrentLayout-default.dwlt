@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 11}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -71,10 +71,10 @@ MonoBehaviour:
     y: 0
     width: 371
     height: 588
-  m_MinSize: {x: 275, y: 171}
-  m_MaxSize: {x: 4001, y: 8021}
+  m_MinSize: {x: 276, y: 192}
+  m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 372
+  controlID: 42
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 130
+  controlID: 131
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,8 +145,8 @@ MonoBehaviour:
     y: 0
     width: 231
     height: 310
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 51
+  controlID: 15
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,10 +225,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 588
-  m_MinSize: {x: 708, y: 492}
+  m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 50
+  controlID: 14
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,8 +248,8 @@ MonoBehaviour:
     y: 0
     width: 371
     height: 338
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -377,7 +377,7 @@ MonoBehaviour:
     height: 229
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 388
+    ID: 177
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: 7700000028000000
@@ -515,7 +515,7 @@ MonoBehaviour:
       name: Power Chess
       fullName: Power Chess
       resultStatus: 1
-      duration: 0.1719381
+      duration: 0.2456484
       messages: 
       output: 
       stacktrace: 
@@ -531,7 +531,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/Kathleen/OneDrive/Desktop/COP4331/ProjCOP/Power Chess/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.0868196
+      duration: 0.1314261
       messages: 
       output: 
       stacktrace: 
@@ -547,7 +547,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.0836805
+      duration: 0.123762
       messages: 
       output: 
       stacktrace: 
@@ -563,7 +563,7 @@ MonoBehaviour:
       name: PositionTests
       fullName: Tests.PositionTests
       resultStatus: 1
-      duration: 0.0796958
+      duration: 0.1082202
       messages: 
       output: 
       stacktrace: 
@@ -574,14 +574,19 @@ MonoBehaviour:
       categories: []
       parentId: 1010
       parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1002
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.PositionTestsSimplePasses]
-      name: PositionTestsSimplePasses
-      fullName: Tests.PositionTests.PositionTestsSimplePasses
-      resultStatus: 0
-      duration: 0
+    - id: 1003
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKnightWithInvalidMove]
+      name: TestKnightWithInvalidMove
+      fullName: Tests.PositionTests.TestKnightWithInvalidMove
+      resultStatus: 1
+      duration: 0.0471776
       messages: 
-      output: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
       stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
@@ -591,7 +596,51 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    m_ResultText: 'SetOriginToCenterOfSquare (0.039s)
+    - id: 1004
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKnightWithMoveOffTheBoard]
+      name: TestKnightWithMoveOffTheBoard
+      fullName: Tests.PositionTests.TestKnightWithMoveOffTheBoard
+      resultStatus: 1
+      duration: 0.0030005
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1002
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKnightWithValidMove]
+      name: TestKnightWithValidMove
+      fullName: Tests.PositionTests.TestKnightWithValidMove
+      resultStatus: 1
+      duration: 0.0028095
+      messages: 
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    m_ResultText: 'TestKnightWithInvalidMove (0.047s)
 
       ---
 
@@ -602,8 +651,8 @@ MonoBehaviour:
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2b5afbf1
-      m_LastClickedID: -235185621
+      m_SelectedIDs: 64090712
+      m_LastClickedID: 302451044
       m_ExpandedIDs: 1ef87793e557abf78359db41d7e52e44ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -733,7 +782,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c2340000
     m_LastClickedID: 13506
-    m_ExpandedIDs: 00000000dc340000de340000e0340000e2340000e4340000e6340000
+    m_ExpandedIDs: 00000000e8340000ea340000ec340000ee340000f0340000f2340000f4340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -761,7 +810,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 120}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000dc340000de340000e0340000e234000048350000503500009a350000
+    m_ExpandedIDs: ffffffff00000000e8340000ea340000ec340000ee340000f0340000f2340000f4340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -884,9 +933,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5c350000
+      m_SelectedIDs: 7e310000
       m_LastClickedID: 0
-      m_ExpandedIDs: 54ecffff66fbffff68fbffffd6330000
+      m_ExpandedIDs: b8f5ffff68fbffffda330000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

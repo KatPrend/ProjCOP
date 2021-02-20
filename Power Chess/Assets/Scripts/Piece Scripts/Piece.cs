@@ -9,14 +9,14 @@ public abstract class Piece : MonoBehaviour
 
     public bool isWhite;
 
-    public void setPosition(int x, int z)
+    public void SetPosition(int x, int z)
     {
         PositionX = x;
         PositionZ = z;
     }
 
-    public virtual bool PossibleMove(int x, int z)
+    public virtual bool ValidMove(int x, int z)
     {
-        return true; //Just for implementation right now
+      return false;
     }
 }

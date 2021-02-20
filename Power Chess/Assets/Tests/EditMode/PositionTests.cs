@@ -8,11 +8,31 @@ namespace Tests
 {
     public class PositionTests
     {
-        // A Test behaves as an ordinary method
         [Test]
-        public void PositionTestsSimplePasses()
+        public void TestKnightWithValidMove()
         {
-            // Use the Assert class to test conditions
+            Piece knight = new Knight();
+            knight.SetPosition(1, 0);
+
+            Assert.AreEqual(knight.ValidMove(2,2), true);
+        }
+
+        [Test]
+        public void TestKnightWithInvalidMove()
+        {
+            Piece knight = new Knight();
+            knight.SetPosition(1, 0);
+
+            Assert.AreEqual(knight.ValidMove(2,4), false);
+        }
+
+        [Test]
+        public void TestKnightWithMoveOffTheBoard()
+        {
+            Piece knight = new Knight();
+            knight.SetPosition(1, 0);
+
+            Assert.AreEqual(knight.ValidMove(-1,0), false);
         }
     }
 }

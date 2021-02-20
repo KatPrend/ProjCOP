@@ -60,7 +60,7 @@ public class BoardManager : MonoBehaviour
 
     private void MoveAPiece(int x, int z)
     {
-        if (selectedPiece.PossibleMove(x,z))
+        if (selectedPiece.ValidMove(x,z))
         {
             Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
             selectedPiece.transform.position = GetSquareCenter(x,z);
@@ -97,13 +97,13 @@ public class BoardManager : MonoBehaviour
     }
 
     //Given an index in the ChessPiecesPrefab list spawn that pieces at position
-    private void SpawnChessPieces(int index, int x, int z)
+    private void SpawnChessPiece(int index, int x, int z)
     {
         GameObject go = Instantiate(chessPiecesPrefabs[index], GetSquareCenter(x,z), FixRotation(index)) as GameObject; //Create it as a game object
         go.transform.SetParent(transform);
 
         Pieces[x,z] = go.GetComponent<Piece>();
-        Pieces[x,z].setPosition(x,z);
+        Pieces[x,z].SetPosition(x,z);
         activeChessPieces.Add(go);
     }
 
@@ -124,36 +124,36 @@ public class BoardManager : MonoBehaviour
         Pieces = new Piece[8,8];
 
         //Spawn Kings
-        SpawnChessPieces(0, 3, 0);
-        SpawnChessPieces(6, 4, 7);
+        SpawnChessPiece(0, 3, 0);
+        SpawnChessPiece(6, 4, 7);
 
         //Spawns Queen
-        SpawnChessPieces(1, 4, 0);
-        SpawnChessPieces(7, 3, 7);
+        SpawnChessPiece(1, 4, 0);
+        SpawnChessPiece(7, 3, 7);
 
         //Spawn Rooks
-        SpawnChessPieces(2, 0, 0);
-        SpawnChessPieces(2, 7, 0);
-        SpawnChessPieces(8, 0, 7);
-        SpawnChessPieces(8, 7, 7);
+        SpawnChessPiece(2, 0, 0);
+        SpawnChessPiece(2, 7, 0);
+        SpawnChessPiece(8, 0, 7);
+        SpawnChessPiece(8, 7, 7);
 
         //Spawn Bishops
-        SpawnChessPieces(3, 2, 0);
-        SpawnChessPieces(3, 5, 0);
-        SpawnChessPieces(9, 2, 7);
-        SpawnChessPieces(9, 5, 7);
+        SpawnChessPiece(3, 2, 0);
+        SpawnChessPiece(3, 5, 0);
+        SpawnChessPiece(9, 2, 7);
+        SpawnChessPiece(9, 5, 7);
 
         //Spawn Knights
-        SpawnChessPieces(4, 1, 0);
-        SpawnChessPieces(4, 6, 0);
-        SpawnChessPieces(10, 1, 7);
-        SpawnChessPieces(10, 6, 7);
+        SpawnChessPiece(4, 1, 0);
+        SpawnChessPiece(4, 6, 0);
+        SpawnChessPiece(10, 1, 7);
+        SpawnChessPiece(10, 6, 7);
 
         //Spawn Pawns
         for(int i = 0; i < 8; i++)
         {
-            SpawnChessPieces(5, i, 1);
-            SpawnChessPieces(11, i, 6);
+            SpawnChessPiece(5, i, 1);
+            SpawnChessPiece(11, i, 6);
         }
     }
 
