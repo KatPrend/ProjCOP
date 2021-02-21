@@ -4,48 +4,44 @@ using UnityEngine;
 
 public class Knight : Piece
 {
-    // Should I account for a position that is occupied, or leave that to
-    // BoardManager?
-
-    // Knight is as (PositionX, PositionZ) and would like to move to (x,z)
-    public override bool ValidMove(int x, int z)
+    public override bool ValidMove(int newX, int newZ)
     {
-      // If x and z are off the board
-      if (x < 0 || x > 7)
+      // If  newX and newZ are off the board
+      if (newX < 0 || newX > 7)
         return false;
-      if (z < 0 || z > 7)
+      if (newZ < 0 || newZ > 7)
         return false;
 
       // left 1, up 2
-      if (PositionX - 1 == x && PositionZ + 2 == z)
+      if (PositionX - 1 == newX && PositionZ + 2 == newZ)
         return true;
 
       // right 1, up 2
-      if (PositionX + 1 == x && PositionZ + 2 == z)
+      if (PositionX + 1 == newX && PositionZ + 2 == newZ)
         return true;
 
       // right 2, up 1
-      if (PositionX + 2 == x && PositionZ + 1 == z)
+      if (PositionX + 2 == newX && PositionZ + 1 == newZ)
         return true;
 
       // right 2, down 1
-      if (PositionX + 2 == x && PositionZ - 1 == z)
+      if (PositionX + 2 == newX && PositionZ - 1 == newZ)
         return true;
 
       // right 1, down 2
-      if (PositionX + 1 == x && PositionZ - 2 == z)
+      if (PositionX + 1 == newX && PositionZ - 2 == newZ)
         return true;
 
       // left 1, down 2
-      if (PositionX - 1 == x && PositionZ - 2 == z)
+      if (PositionX - 1 == newX && PositionZ - 2 == newZ)
         return true;
 
       // left 2, down 1
-      if (PositionX - 2 == x && PositionZ - 1 == z)
+      if (PositionX - 2 == newX && PositionZ - 1 == newZ)
         return true;
 
       // left 2, up 1
-      if (PositionX - 2 == x && PositionZ + 1 == z)
+      if (PositionX - 2 == newX && PositionZ + 1 == newZ)
         return true;
 
       return false;

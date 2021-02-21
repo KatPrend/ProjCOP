@@ -8,31 +8,50 @@ namespace Tests
 {
     public class PositionTests
     {
+        // Pawn Tests:
+
+
+        //Rook Tests:
+
+
+        // Knight Tests:
         [Test]
         public void TestKnightWithValidMove()
         {
-            Piece knight = new Knight();
-            knight.SetPosition(1, 0);
+            var gameObject = new GameObject();
+            var knight = gameObject.AddComponent<Knight>();
 
-            Assert.AreEqual(knight.ValidMove(2,2), true);
+            knight.SetPosition(2, 2);
+            Assert.AreEqual(knight.ValidMove(3, 4), true);
         }
 
         [Test]
         public void TestKnightWithInvalidMove()
         {
-            Piece knight = new Knight();
-            knight.SetPosition(1, 0);
+            var gameObject = new GameObject();
+            var knight = gameObject.AddComponent<Knight>();
 
-            Assert.AreEqual(knight.ValidMove(2,4), false);
+            knight.SetPosition(1, 0);
+            Assert.AreEqual(knight.ValidMove(2, 4), false);
         }
 
         [Test]
         public void TestKnightWithMoveOffTheBoard()
         {
-            Piece knight = new Knight();
-            knight.SetPosition(1, 0);
+            var gameObject = new GameObject();
+            var knight = gameObject.AddComponent<Knight>();
 
-            Assert.AreEqual(knight.ValidMove(-1,0), false);
+            knight.SetPosition(1, 0);
+            Assert.AreEqual(knight.ValidMove(-1, 0), false);
         }
+
+        // Bishop Tests
+
+
+        // Queen Tests
+
+
+        // King Tests
+
     }
 }

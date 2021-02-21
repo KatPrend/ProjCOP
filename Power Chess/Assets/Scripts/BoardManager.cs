@@ -60,11 +60,16 @@ public class BoardManager : MonoBehaviour
 
     private void MoveAPiece(int x, int z)
     {
+        Vector3 newSquare = GetSquareCenter(x, z);
+
         if (selectedPiece.ValidMove(x,z))
         {
             Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
-            selectedPiece.transform.position = GetSquareCenter(x,z);
+
+            selectedPiece.transform.position = newSquare;
+            selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
             Pieces[x, z] = selectedPiece;
+
             isWhiteTurn = !isWhiteTurn;
         }
         selectedPiece = null;

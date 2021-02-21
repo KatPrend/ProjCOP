@@ -15,8 +15,5 @@ public abstract class Piece : MonoBehaviour
         PositionZ = z;
     }
 
-    public virtual bool ValidMove(int x, int z)
-    {
-      return false;
-    }
+    public abstract bool ValidMove(int newX, int newZ);
 }
