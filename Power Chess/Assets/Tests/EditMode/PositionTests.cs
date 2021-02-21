@@ -52,6 +52,34 @@ namespace Tests
 
 
         // King Tests
+        [Test]
+        public void TestKingWithValidMove()
+        {
+            var gameObject = new GameObject();
+            var king = gameObject.AddComponent<King>();
 
+            king.SetPosition(1, 1);
+            Assert.AreEqual(king.ValidMove(1, 2), true);
+        }
+
+        [Test]
+        public void TestKingWithInvalidMove()
+        {
+            var gameObject = new GameObject();
+            var king = gameObject.AddComponent<King>();
+
+            king.SetPosition(1, 1);
+            Assert.AreEqual(king.ValidMove(4, 1), false);
+        }
+
+        [Test]
+        public void TestKingWithMoveOffTheBoard()
+        {
+            var gameObject = new GameObject();
+            var king = gameObject.AddComponent<King>();
+
+            king.SetPosition(1, 0);
+            Assert.AreEqual(king.ValidMove(1, -0), false);
+        }
     }
 }
