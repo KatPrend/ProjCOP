@@ -12,7 +12,36 @@ namespace Tests
 
 
         //Rook Tests:
+        [Test]
+        public void TestRookWithValidMove()
+        {
+            var gameObject = new GameObject();
+            var rook = gameObject.AddComponent<Rook>();
 
+            rook.SetPosition(2, 2);
+            Assert.AreEqual(rook.ValidMove(2, 4), true);
+            Assert.AreEqual(rook.ValidMove(5, 2), true);
+        }
+
+        [Test]
+        public void TestRookWithInvalidMove()
+        {
+            var gameObject = new GameObject();
+            var rook = gameObject.AddComponent<Rook>();
+
+            rook.SetPosition(2, 2);
+            Assert.AreEqual(rook.ValidMove(3, 3), false);
+        }
+
+        [Test]
+        public void TestRookWithMoveOffTheBoard()
+        {
+            var gameObject = new GameObject();
+            var rook = gameObject.AddComponent<Rook>();
+
+            rook.SetPosition(2, 2);
+            Assert.AreEqual(rook.ValidMove(9, 0), false);
+        }
 
         // Knight Tests:
         [Test]
