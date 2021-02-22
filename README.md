@@ -73,7 +73,7 @@ Kathleen - description of your user interface, including how the user will inter
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
 - [Automated Tests](https://github.com/aryt431/ProjCOP/blob/main/Power%20Chess/Assets/Tests/EditMode/PositionTests.cs)
-- [Product Demonstration] (https://youtu.be/KprRLf0HmTk)
+- [Product Demonstration](https://youtu.be/KprRLf0HmTk)
 
 ## Task Allocation
 Blert - Code the King
