@@ -31,9 +31,7 @@ The game will be played against an AI that will use the same moves as the player
 ![Class Diagram](ClassDiagram.png)
 Description of the major classes:
 
-Board: The board class is used to create an instance of a board and monitors the state of the game (whose turn it is and if the game is over). Since our current idea of the game does not have multiple instances of games running concurrently there is no need to have a higher level class track these attributes. The board class maintains a double dimension array of Square instances and at least one instance of a store object.
-
-Square: The square class includes attributes such as the color and position of a square on a board. Important methods from the square class are addPiece and removePiece.
+BoardManager: The board class is used to create an instance of a board and monitors the state of the game (whose turn it is and if the game is over). Since our current idea of the game does not have multiple instances of games running concurrently there is no need to have a higher level class track these attributes. The board class maintains a double dimension array of Piece instances and at least one instance of a store object.
 
 Store: The store class generates a list of power-ups that can be purchased with coins and applied to the squares in a board. Each store creates a storage object to track purchased power-ups before they are applied.
 
@@ -41,11 +39,12 @@ Coins: The coins class exists to track the in-game economy. The class includes s
 
 PowerUp: The powerup class is used to generate advantages from a pre-generated range that will be used to populate the Store. Powerups can be stored in a storage object and applied to a square.
 
+Piece: The Piece class is an abstract class from which the individual chess pieces will extend from. It tracks a piece's color and position. Since each piece moves differently, each chess piece will implement its own validMove() method.
+
 
 | Class | User Story |
 | ----- | ---------- |
-| Board | 000, 003, 009, 010, 012 |
-| Square | 000, 010 |
+| Board | 000, 003, 009, 010, 012, 016 |
 | Piece | 000, 003 |
 | Store | 002, 004, 005 |
 | Coins | 001, 004, 009 |
