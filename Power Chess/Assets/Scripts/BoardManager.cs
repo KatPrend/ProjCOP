@@ -129,11 +129,11 @@ public class BoardManager : MonoBehaviour
         Pieces = new Piece[8,8];
 
         //Spawn Kings
-        SpawnChessPiece(0, 3, 0);
+        SpawnChessPiece(0, 4, 0);
         SpawnChessPiece(6, 4, 7);
 
         //Spawns Queen
-        SpawnChessPiece(1, 4, 0);
+        SpawnChessPiece(1, 3, 0);
         SpawnChessPiece(7, 3, 7);
 
         //Spawn Rooks
