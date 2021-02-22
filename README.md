@@ -73,15 +73,15 @@ Kathleen - description of your user interface, including how the user will inter
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
 - [Automated Tests](https://github.com/aryt431/ProjCOP/blob/main/Power%20Chess/Assets/Tests/EditMode/PositionTests.cs)
-- [Product Demonstration]
+- [Product Demonstration] (https://youtu.be/KprRLf0HmTk)
 
 ## Task Allocation
-Blert -
+Blert - Code the King
 
-Dylan -
+Dylan - Code the Rook and board class
 
-Tyra -
+Tyra - Code the Queen
 
-Veronica -
+Veronica - Code the Bishop
 
-Kathleen -
+Kathleen - Code the Knight and piece class
