@@ -42,6 +42,7 @@ public class Pawn : Piece
     {
         bool[,] array = new bool[8,8];
         array[3,3] = true;
+
         return array;
     }
 }

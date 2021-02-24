@@ -79,8 +79,25 @@ public class BoardManager : MonoBehaviour
     {
         Vector3 newSquare = GetSquareCenter(x, z);
 
+        //If a move is valid move the piece
         if (selectedPiece.ValidMove(x,z))
         {
+            Piece otherPiece = Pieces[x,z];
+
+            if(otherPiece != null && otherPiece.isWhite != isWhiteTurn)
+            {
+                //Capture a piece
+
+                if(otherPiece.GetType() == typeof(King))
+                {
+                    //End the game
+                    return;
+                }
+
+                activeChessPieces.Remove(otherPiece.gameObject);
+                Destroy (otherPiece.gameObject);
+            }
+
             Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
 
             selectedPiece.transform.position = newSquare;
@@ -88,6 +105,7 @@ public class BoardManager : MonoBehaviour
             Pieces[x, z] = selectedPiece;
         }
 
+        //And remove the board highlight
         BoardHighlights.Instance.HideHighlights();
         selectedPiece = null;
     }
