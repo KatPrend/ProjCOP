@@ -93,7 +93,7 @@ public class BoardManager : MonoBehaviour
                 if(otherPiece.GetType() == typeof(King))
                 {
                     //End the game
-                    return;
+                    Application.Quit();
                 }
 
                 Coin.AddCoin(isWhiteTurn);
