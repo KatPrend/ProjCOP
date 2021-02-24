@@ -27,6 +27,68 @@ public class Rook : Piece
 
     public override bool[,] ArrayOfValidMove()
     {
-        return new bool[8,8];
+        bool[,] array = new bool[8,8];
+
+        Piece otherPiece;
+
+        int i = 0;
+
+        //Right
+        for(i = PositionX + 1; i < 8; i++)
+        {
+            otherPiece = BoardManager.Instance.Pieces[i, PositionZ];
+            if (otherPiece == null)
+                array[i, PositionZ] = true;
+            else   
+            {
+                if(otherPiece.isWhite != isWhite)
+                    array[i, PositionZ] = true;
+                break;
+            }
+        }
+
+        //Left
+        for(i = PositionX - 1; i >= 0; i--)
+        {
+            otherPiece = BoardManager.Instance.Pieces[i, PositionZ];
+            if (otherPiece == null)
+                array[i, PositionZ] = true;
+            else   
+            {
+                if(otherPiece.isWhite != isWhite)
+                    array[i, PositionZ] = true;
+                break;
+            }
+        }
+
+        //Up
+        for(i = PositionZ + 1; i < 8; i++)
+        {
+            otherPiece = BoardManager.Instance.Pieces[PositionX, i];
+            if (otherPiece == null)
+                array[PositionX, i] = true;
+            else   
+            {
+                if(otherPiece.isWhite != isWhite)
+                    array[PositionX, i] = true;
+                break;
+            }
+        }
+
+         //Up
+        for(i = PositionZ - 1; i >= 0; i--)
+        {
+            otherPiece = BoardManager.Instance.Pieces[PositionX, i];
+            if (otherPiece == null)
+                array[PositionX, i] = true;
+            else   
+            {
+                if(otherPiece.isWhite != isWhite)
+                    array[PositionX, i] = true;
+                break;
+            }
+        }
+
+        return array;
     }
 }
