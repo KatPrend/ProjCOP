@@ -96,6 +96,7 @@ public class BoardManager : MonoBehaviour
 
                 activeChessPieces.Remove(otherPiece.gameObject);
                 Destroy (otherPiece.gameObject);
+                Coin.AddCoin(isWhiteTurn);
             }
 
             Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
