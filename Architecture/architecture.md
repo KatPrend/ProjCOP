@@ -22,9 +22,9 @@ The game will be played against an AI that will use the same moves as the player
 
 | Architecture Component | User Story |
 | ----- | ---------- |
-| Power Chess Game | 000, 003, 009, 010, 012 |
-| Item and Piece Shop | 001, 002, 004, 005, 009 |
-| AI Opponent | 011 |
+| Power Chess Game | 000, 003, 009, 010, 012, 013, 015, 016, 017, 018 |
+| Item and Piece Shop | 001, 002, 004, 005, 006, 009 |
+| AI Opponent | 011, 014 |
 
 # Code Design
 
@@ -44,13 +44,12 @@ Piece: The Piece class is an abstract class from which the individual chess piec
 
 | Class | User Story |
 | ----- | ---------- |
-| Board | 000, 003, 009, 010, 012, 016 |
-| Piece | 000, 003 |
+| Board | 000, 003, 009, 010, 012, 013, 015, 016, 017, 018 |
+| Piece | 000, 003, 015 |
 | Store | 002, 004, 005 |
 | Coins | 001, 004, 009 |
 | Storage | 006, 012 |
-| Powerup | 002, 004, 006 |
-| Dice | 004, 012 |
+| Powerup | 002, 004, 006, 012 |
 
 # Data Design
 
@@ -70,9 +69,9 @@ The top diagram shows what a player will mainly see. Given it is a chess game, t
 
 | UI Component | User Story |
 | ----- | ---------- |
-| Board | 000, 003, 009, 010, 012 |
+| Board | 000, 003, 009, 010, 012, 015 |
 | Piece | 000, 003 |
-| Dice | 004, 009, 012 |
+| Powerups | 004, 009, 012 |
 | Store | 002, 004, 005 |
 | Coin Tab | 001, 004, 009 |
 | Storage | 004, 006, 012 |
