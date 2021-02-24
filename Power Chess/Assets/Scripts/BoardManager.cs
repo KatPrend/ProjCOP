@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BoardManager : MonoBehaviour
 {
+    public static BoardManager Instance { get; set; }
+
     public Piece[,] Pieces { get; set; }
     private Piece selectedPiece;
 
@@ -21,6 +23,8 @@ public class BoardManager : MonoBehaviour
 
     private void Start()
     {
+        Instance = this;
+
         //Spawn all pieces
         SpawnAllChessPieces();
     }
@@ -34,15 +38,13 @@ public class BoardManager : MonoBehaviour
         {
             if(selectionX >= 0 && selectionZ >= 0) //If clicking on board
             {
-                if (selectedPiece == null)
+                if (selectedPiece == null) //If clicking on a piece
                 {
-                    //Select a piece
                     SelectPiece(selectionX, selectionZ);
                 }
                 else
                 {
-                    //Move a piece
-                    MoveAPiece(selectionX, selectionZ);
+                    TakeTurn(selectionX, selectionZ);
                 }
             }
         }
@@ -58,6 +60,16 @@ public class BoardManager : MonoBehaviour
         selectedPiece = Pieces[x,z];
     }
 
+    private void TakeTurn(int x, int z)
+    {
+        MoveAPiece(x, z);
+
+        // Update player's coins
+        Coin.AddCoin(isWhiteTurn);
+
+        isWhiteTurn = !isWhiteTurn;
+    }
+
     private void MoveAPiece(int x, int z)
     {
         Vector3 newSquare = GetSquareCenter(x, z);
@@ -69,8 +81,6 @@ public class BoardManager : MonoBehaviour
             selectedPiece.transform.position = newSquare;
             selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
             Pieces[x, z] = selectedPiece;
-
-            isWhiteTurn = !isWhiteTurn;
         }
         selectedPiece = null;
     }
