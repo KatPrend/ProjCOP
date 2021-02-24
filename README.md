@@ -6,6 +6,8 @@
 
 [Sprint 3](#sprint-3)
 
+[Sprint 4](#sprint-4)
+
 ## Vision Statement
 
 This product is for people who enjoyed normal as well as auto chess.
@@ -85,3 +87,24 @@ Tyra - Code the Queen
 Veronica - Code the Bishop
 
 Kathleen - Code the Knight and piece class
+
+# Sprint 4
+
+- [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
+- [Burndown Chart]
+- [Velocity Chart]
+- [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
+- [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
+- [Automated Tests]
+- [Product Demonstration]
+
+## Task Allocation
+Blert - 
+
+Dylan - 
+
+Tyra - 
+
+Veronica - 
+
+Kathleen - 
