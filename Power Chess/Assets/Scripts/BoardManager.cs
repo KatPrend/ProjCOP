@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class BoardManager : MonoBehaviour
 {
-    public static BoardManager Instance { get; set; }
+    public static BoardManager Instance { set; get; }
 
-    public Piece[,] Pieces { get; set; }
+    private bool[,] allowedRelativeMoves{ set; get; }
+
+    public Piece[,] Pieces { set; get; }
     private Piece selectedPiece;
 
     private const float SQUARE_SIZE  = 1.0F; //Square is 1 meter by 1 meter
@@ -57,7 +59,10 @@ public class BoardManager : MonoBehaviour
             return;
         if (Pieces[x,z].isWhite != isWhiteTurn)
             return;
+
+        allowedRelativeMoves = Pieces[x, z].ArrayOfValidMove(); 
         selectedPiece = Pieces[x,z];
+        BoardHighlights.Instance.HighlightAllowedMoves(allowedRelativeMoves);
     }
 
     private void TakeTurn(int x, int z)
@@ -82,6 +87,8 @@ public class BoardManager : MonoBehaviour
             selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
             Pieces[x, z] = selectedPiece;
         }
+
+        BoardHighlights.Instance.HideHighlights();
         selectedPiece = null;
     }
 

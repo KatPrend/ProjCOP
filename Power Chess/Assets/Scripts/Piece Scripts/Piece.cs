@@ -16,4 +16,6 @@ public abstract class Piece : MonoBehaviour
     }
 
     public abstract bool ValidMove(int newX, int newZ);
+
+    public abstract bool[,] ArrayOfValidMove();
 }

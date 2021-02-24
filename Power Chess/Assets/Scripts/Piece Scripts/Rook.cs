@@ -24,4 +24,9 @@ public class Rook : Piece
         else
             return false;
     }
+
+    public override bool[,] ArrayOfValidMove()
+    {
+        return new bool[8,8];
+    }
 }

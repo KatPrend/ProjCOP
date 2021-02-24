@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -313,6 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 262922926}
   - component: {fileID: 262922925}
+  - component: {fileID: 262922927}
   m_Layer: 0
   m_Name: ChessBoard
   m_TagString: Untagged
@@ -362,6 +363,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &262922927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262922924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c183b8071dadb61489e86287bf90dcaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightPrefab: {fileID: 7299896669359590701, guid: 065790364df005144b0163344f7b783d,
+    type: 3}
 --- !u!4 &571410854 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012986792146, guid: 857381d11efac0a4d91a3b3b8b94a827,

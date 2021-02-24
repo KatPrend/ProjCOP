@@ -37,4 +37,11 @@ public class Pawn : Piece
 
         return false;
     }
+
+    public override bool[,] ArrayOfValidMove()
+    {
+        bool[,] array = new bool[8,8];
+        array[3,3] = true;
+        return array;
+    }
 }

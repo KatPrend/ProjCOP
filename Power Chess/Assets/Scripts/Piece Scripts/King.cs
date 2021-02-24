@@ -40,4 +40,9 @@ public class King : Piece
       else
         return false;
     }
+
+    public override bool[,] ArrayOfValidMove()
+    {
+        return new bool[8,8];
+    }
 }
