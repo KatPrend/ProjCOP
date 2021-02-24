@@ -30,6 +30,104 @@ public class Bishop : Piece
 
     public override bool[,] ArrayOfValidMove()
     {
-        return new bool[8,8];
+        bool[,] array = new bool[8,8];
+
+        Piece otherPiece;
+        int i;
+        int j;
+
+        //Top Left
+        i = PositionX;
+        j = PositionZ;
+        while(true)
+        {
+            i--;
+            j++;
+            if(!ValidMove(i,j))
+                break;
+
+
+            otherPiece = BoardManager.Instance.Pieces[i, j];
+
+            if (otherPiece == null)
+                array[i, j] = true;
+            else   
+            {
+                if(otherPiece.isWhite != isWhite)
+                    array[i, j] = true;
+                break;
+            }
+        }
+
+        //Top Right
+        i = PositionX;
+        j = PositionZ;
+        while(true)
+        {
+            i++;
+            j++;
+            if(!ValidMove(i,j))
+                break;
+
+
+            otherPiece = BoardManager.Instance.Pieces[i, j];
+
+            if (otherPiece == null)
+                array[i, j] = true;
+            else   
+            {
+                if(otherPiece.isWhite != isWhite)
+                    array[i, j] = true;
+                break;
+            }
+        }
+
+        //Bottom Left
+        i = PositionX;
+        j = PositionZ;
+        while(true)
+        {
+            i--;
+            j--;
+            if(!ValidMove(i,j))
+                break;
+
+
+            otherPiece = BoardManager.Instance.Pieces[i, j];
+
+            if (otherPiece == null)
+                array[i, j] = true;
+            else   
+            {
+                if(otherPiece.isWhite != isWhite)
+                    array[i, j] = true;
+                break;
+            }
+        }
+
+        //Bottom Right
+        i = PositionX;
+        j = PositionZ;
+        while(true)
+        {
+            i++;
+            j--;
+            if(!ValidMove(i,j))
+                break;
+
+
+            otherPiece = BoardManager.Instance.Pieces[i, j];
+
+            if (otherPiece == null)
+                array[i, j] = true;
+            else   
+            {
+                if(otherPiece.isWhite != isWhite)
+                    array[i, j] = true;
+                break;
+            }
+        }
+
+        return array;
     }
 }

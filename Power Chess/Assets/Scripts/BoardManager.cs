@@ -87,6 +87,8 @@ public class BoardManager : MonoBehaviour
             if(otherPiece != null && otherPiece.isWhite != isWhiteTurn)
             {
                 //Capture a piece
+                activeChessPieces.Remove(otherPiece.gameObject);
+                Destroy (otherPiece.gameObject);
 
                 if(otherPiece.GetType() == typeof(King))
                 {
@@ -94,8 +96,6 @@ public class BoardManager : MonoBehaviour
                     return;
                 }
 
-                activeChessPieces.Remove(otherPiece.gameObject);
-                Destroy (otherPiece.gameObject);
                 Coin.AddCoin(isWhiteTurn);
             }
 

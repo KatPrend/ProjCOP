@@ -25,6 +25,7 @@ public class Rook : Piece
             return false;
     }
 
+    //Fills a double dim array of booleans indicating all possible moves
     public override bool[,] ArrayOfValidMove()
     {
         bool[,] array = new bool[8,8];
