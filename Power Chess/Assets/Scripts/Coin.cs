@@ -7,27 +7,27 @@ public class Coin : MonoBehaviour
 {
     public Text playersCoins;
 
-    public static int whiteCoins { get; set; }
-    public static int blackCoins { get; set; }
+    public static int WhiteCoins { get; set; }
+    public static int BlackCoins { get; set; }
 
     void Update()
     {
-        playersCoins.text = "White Player's Coins: " + whiteCoins + "\nBlack Player's Coins: " + blackCoins;
+        playersCoins.text = "White Player's Coins: " + WhiteCoins + "\nBlack Player's Coins: " + BlackCoins;
     }
 
     public static void AddCoin(bool isWhiteTurn)
     {
         if (isWhiteTurn)
-            whiteCoins++;
+            WhiteCoins++;
         else
-            blackCoins++;
+            BlackCoins++;
     }
 
     public static void RemoveCoins(bool isWhiteTurn, int numCoins)
     {
         if (isWhiteTurn)
-            whiteCoins -= numCoins;
+            WhiteCoins -= numCoins;
         else
-            blackCoins -= numCoins;
+            BlackCoins -= numCoins;
     }
 }
