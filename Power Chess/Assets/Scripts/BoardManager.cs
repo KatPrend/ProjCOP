@@ -84,20 +84,8 @@ public class BoardManager : MonoBehaviour
         {
             Piece otherPiece = Pieces[x,z];
 
-            if(otherPiece != null && otherPiece.isWhite != isWhiteTurn)
-            {
-                //Capture a piece
-                activeChessPieces.Remove(otherPiece.gameObject);
-                Destroy (otherPiece.gameObject);
-
-                if(otherPiece.GetType() == typeof(King))
-                {
-                    //End the game
-                    Application.Quit();
-                }
-
-                Coin.AddCoin(isWhiteTurn);
-            }
+            if (otherPiece != null && otherPiece.isWhite != isWhiteTurn)
+                CapturePiece(otherPiece);
 
             Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
 
@@ -109,6 +97,21 @@ public class BoardManager : MonoBehaviour
         //And remove the board highlight
         BoardHighlights.Instance.HideHighlights();
         selectedPiece = null;
+    }
+
+    private void CapturePiece(Piece capturedPiece)
+    {
+        activeChessPieces.Remove(capturedPiece.gameObject);
+        Destroy(capturedPiece.gameObject);
+
+        if (capturedPiece.GetType() == typeof(King))
+        {
+            //End the game
+            Application.Quit();
+        }
+
+        // Add additional coin for capture
+        Coin.AddCoin(isWhiteTurn);
     }
 
     private void UpdateSelection()
