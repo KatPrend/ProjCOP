@@ -11,6 +11,10 @@ public class BoardManager : MonoBehaviour
     public Piece[,] Pieces { set; get; }
     private Piece selectedPiece;
 
+    //Public Camera Objects
+    public Camera WhiteCamera;
+    public Camera BlackCamera;
+
     private const float SQUARE_SIZE  = 1.0F; //Square is 1 meter by 1 meter
     private const float SQUARE_OFFSET  = 0.5F; //Offset to center a piece
 
@@ -29,6 +33,8 @@ public class BoardManager : MonoBehaviour
 
         //Spawn all pieces
         SpawnAllChessPieces();
+        WhiteCamera.enabled = true;
+        BlackCamera.enabled = false;
     }
 
     private void Update()
@@ -72,7 +78,10 @@ public class BoardManager : MonoBehaviour
         // Update player's coins
         Coin.AddCoin(isWhiteTurn);
 
+        // Pass turn and swap cameras
         isWhiteTurn = !isWhiteTurn;
+        WhiteCamera.enabled = !WhiteCamera.enabled;
+        BlackCamera.enabled = !BlackCamera.enabled;
     }
 
     private void MoveAPiece(int x, int z)
@@ -102,6 +111,7 @@ public class BoardManager : MonoBehaviour
     private void CapturePiece(Piece capturedPiece)
     {
         activeChessPieces.Remove(capturedPiece.gameObject);
+
         Destroy(capturedPiece.gameObject);
 
         if (capturedPiece.GetType() == typeof(King))

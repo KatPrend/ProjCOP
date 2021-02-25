@@ -31,7 +31,6 @@ public class Rook : Piece
         bool[,] array = new bool[8,8];
 
         Piece otherPiece;
-        bool valid;
 
         int i, j;
 
