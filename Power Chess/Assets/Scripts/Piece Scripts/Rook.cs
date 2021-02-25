@@ -31,60 +31,74 @@ public class Rook : Piece
         bool[,] array = new bool[8,8];
 
         Piece otherPiece;
+        bool valid;
 
-        int i = 0;
+        int i, j;
 
-        //Right
+        for(i = 0; i < 8; i++)
+        {
+            for(j = 0; j < 8; j++)
+            {
+                array[i,j] = false; //Fill the array with false
+            }
+        }
+
+
+        //Scan right from current square
         for(i = PositionX + 1; i < 8; i++)
         {
-            otherPiece = BoardManager.Instance.Pieces[i, PositionZ];
-            if (otherPiece == null)
+            otherPiece = BoardManager.Instance.Pieces[i, PositionZ]; //Get piece at possible square
+            
+            if (otherPiece == null  && ValidMove(i, PositionZ)) //If there is no piece and its a valid move
                 array[i, PositionZ] = true;
             else   
             {
-                if(otherPiece.isWhite != isWhite)
+                if(otherPiece.isWhite != isWhite && ValidMove(i, PositionZ)) //If the piece belongs to the other player and its a valid move
                     array[i, PositionZ] = true;
                 break;
             }
         }
 
-        //Left
+        //Scan left from current square
         for(i = PositionX - 1; i >= 0; i--)
         {
-            otherPiece = BoardManager.Instance.Pieces[i, PositionZ];
-            if (otherPiece == null)
+            otherPiece = BoardManager.Instance.Pieces[i, PositionZ]; //Get piece at possible square
+
+            if (otherPiece == null && ValidMove(i, PositionZ)) //If there is no piece and its a valid move
                 array[i, PositionZ] = true;
             else   
             {
-                if(otherPiece.isWhite != isWhite)
+                if(otherPiece.isWhite != isWhite && ValidMove(i, PositionZ)) //If the piece belongs to the other player and its a valid move
                     array[i, PositionZ] = true;
                 break;
             }
         }
 
-        //Up
+        //Scan left from current square
         for(i = PositionZ + 1; i < 8; i++)
         {
-            otherPiece = BoardManager.Instance.Pieces[PositionX, i];
-            if (otherPiece == null)
+            otherPiece = BoardManager.Instance.Pieces[PositionX, i]; //Get piece at possible square
+
+            if (otherPiece == null && ValidMove(PositionX, i)) //If there is no piece and its a valid move
                 array[PositionX, i] = true;
             else   
             {
-                if(otherPiece.isWhite != isWhite)
+                if(otherPiece.isWhite != isWhite && ValidMove(PositionX, i)) //If the piece belongs to the other player and its a valid move
                     array[PositionX, i] = true;
                 break;
             }
         }
 
-         //Up
+        //Scan left from current square
         for(i = PositionZ - 1; i >= 0; i--)
         {
-            otherPiece = BoardManager.Instance.Pieces[PositionX, i];
-            if (otherPiece == null)
+            otherPiece = BoardManager.Instance.Pieces[PositionX, i]; //Get piece at possible square
+
+            if (otherPiece == null && ValidMove(PositionX, i)) //If there is no piece and its a valid move
                 array[PositionX, i] = true;
             else   
             {
-                if(otherPiece.isWhite != isWhite)
+                if(otherPiece.isWhite != isWhite && ValidMove(PositionX, i)) //If the piece belongs to the other player and its a valid move
                     array[PositionX, i] = true;
                 break;
             }
@@ -93,3 +107,4 @@ public class Rook : Piece
         return array;
     }
 }
+
