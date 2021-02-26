@@ -33,6 +33,8 @@ Description of the major classes:
 
 BoardManager: The board class is used to create an instance of a board and monitors the state of the game (whose turn it is and if the game is over). Since our current idea of the game does not have multiple instances of games running concurrently there is no need to have a higher level class track these attributes. The board class maintains a double dimension array of Piece instances and at least one instance of a store object.
 
+BoardHighlights: This class manages highlighting the squares on the board where a certain piece can move legally.
+
 Store: The store class generates a list of power-ups that can be purchased with coins and applied to the squares in a board. Each store creates a storage object to track purchased power-ups before they are applied.
 
 Coins: The coins class exists to track the in-game economy. The class includes simple set and get methods.
@@ -44,7 +46,8 @@ Piece: The Piece class is an abstract class from which the individual chess piec
 
 | Class | User Story |
 | ----- | ---------- |
-| Board | 000, 003, 009, 010, 012, 013, 015, 016, 017, 018 |
+| BoardManager | 000, 003, 009, 010, 012, 013, 015, 016, 017, 018 |
+| BoardHighlights | 015 |
 | Piece | 000, 003, 015 |
 | Store | 002, 004, 005 |
 | Coins | 001, 004, 009 |
