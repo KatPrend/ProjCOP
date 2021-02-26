@@ -95,7 +95,7 @@ Kathleen - Code the Knight and piece class
 - [Velocity Chart]
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
-- [Automated Tests]
+- [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
 - [Product Demonstration]
 
 ## Task Allocation
