@@ -43,6 +43,31 @@ public class King : Piece
 
     public override bool[,] ArrayOfValidMove()
     {
-        return new bool[8,8];
+      bool [,] array = new bool[8,8];
+      for(int i = 0; i < 8; i++)
+      {
+          for(int j = 0; j < 8; j++)
+          {
+              KingMove(i, j, ref array);
+          }
+      }
+      return array;
+    }
+
+    public void KingMove(int x, int z, ref bool[,] array)
+    {
+      Piece otherPiece;
+      if(ValidMove(x, z))
+      {
+        otherPiece = BoardManager.Instance.Pieces[x,z];
+        if(otherPiece == null)
+        {
+          array[x,z] = true;
+        }
+        else if(isWhite != otherPiece.isWhite)
+        {
+          array[x, z] = true;
+        }
+      }
     }
 }

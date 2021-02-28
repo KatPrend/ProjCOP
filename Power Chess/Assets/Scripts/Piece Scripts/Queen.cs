@@ -32,6 +32,32 @@ public class Queen : Piece
 
     public override bool[,] ArrayOfValidMove()
     {
-        return new bool[8,8];
+      bool [,] array = new bool[8,8];
+      for(int i = 0; i < 8; i++)
+      {
+          for(int j = 0; j < 8; j++)
+          {
+              QueenMove(i, j, ref array);
+          }
+      }
+      return array;
+    }
+
+    //Given an x, z, and array of booleans check to if that move is possible
+    public void QueenMove(int x, int z, ref bool[,] array)
+    {
+        Piece otherPiece;
+        if (ValidMove(x, z))
+        {
+            otherPiece = BoardManager.Instance.Pieces[x,z];
+            if(otherPiece == null)
+            {
+                array[x, z] = true;
+            }
+            else if(isWhite != otherPiece.isWhite)
+            {
+                array[x, z] = true;
+            }
+        }
     }
 }
