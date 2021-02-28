@@ -15,6 +15,12 @@ public abstract class Piece : MonoBehaviour
         PositionZ = z;
     }
 
+    public void DeletePiece(Piece piece)
+    {
+      piece.SetPosition(null,null);
+      piece = null;
+    }
+
     public abstract bool ValidMove(int newX, int newZ);
 
     public abstract bool[,] ArrayOfValidMove();
