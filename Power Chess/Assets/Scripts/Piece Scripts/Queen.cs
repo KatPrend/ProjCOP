@@ -32,32 +32,165 @@ public class Queen : Piece
 
     public override bool[,] ArrayOfValidMove()
     {
-      bool [,] array = new bool[8,8];
-      for(int i = 0; i < 8; i++)
+      bool[,] array = new bool[8,8];
+
+      Piece otherPiece;
+      int i;
+      int j;
+
+      //Scan right from current square
+      for(i = PositionX + 1; i < 8; i++)
       {
-          for(int j = 0; j < 8; j++)
+          otherPiece = BoardManager.Instance.Pieces[i, PositionZ]; //Get piece at possible square
+
+          if (otherPiece == null  && ValidMove(i, PositionZ)) //If there is no piece and its a valid move
+              array[i, PositionZ] = true;
+          else
           {
-              QueenMove(i, j, ref array);
+              if(otherPiece.isWhite != isWhite && ValidMove(i, PositionZ)) //If the piece belongs to the other player and its a valid move
+                  array[i, PositionZ] = true;
+              break;
           }
       }
+
+      //Scan left from current square
+      for(i = PositionX - 1; i >= 0; i--)
+      {
+          otherPiece = BoardManager.Instance.Pieces[i, PositionZ]; //Get piece at possible square
+
+          if (otherPiece == null && ValidMove(i, PositionZ)) //If there is no piece and its a valid move
+              array[i, PositionZ] = true;
+          else
+          {
+              if(otherPiece.isWhite != isWhite && ValidMove(i, PositionZ)) //If the piece belongs to the other player and its a valid move
+                  array[i, PositionZ] = true;
+              break;
+          }
+      }
+
+      //Scan up from current square
+      for(i = PositionZ + 1; i < 8; i++)
+      {
+          otherPiece = BoardManager.Instance.Pieces[PositionX, i]; //Get piece at possible square
+
+          if (otherPiece == null && ValidMove(PositionX, i)) //If there is no piece and its a valid move
+              array[PositionX, i] = true;
+          else
+          {
+              if(otherPiece.isWhite != isWhite && ValidMove(PositionX, i)) //If the piece belongs to the other player and its a valid move
+                  array[PositionX, i] = true;
+              break;
+          }
+      }
+
+      //Scan Down from current square
+      for(i = PositionZ - 1; i >= 0; i--)
+      {
+          otherPiece = BoardManager.Instance.Pieces[PositionX, i]; //Get piece at possible square
+
+          if (otherPiece == null && ValidMove(PositionX, i)) //If there is no piece and its a valid move
+              array[PositionX, i] = true;
+          else
+          {
+              if(otherPiece.isWhite != isWhite && ValidMove(PositionX, i)) //If the piece belongs to the other player and its a valid move
+                  array[PositionX, i] = true;
+              break;
+          }
+      }
+
+      //Top Left
+      i = PositionX;
+      j = PositionZ;
+      while(true)
+      {
+          i--;
+          j++;
+          if(!ValidMove(i,j))
+              break;
+
+
+          otherPiece = BoardManager.Instance.Pieces[i, j];
+
+          if (otherPiece == null)
+              array[i, j] = true;
+          else
+          {
+              if(otherPiece.isWhite != isWhite)
+                  array[i, j] = true;
+              break;
+          }
+      }
+
+      //Top Right
+      i = PositionX;
+      j = PositionZ;
+      while(true)
+      {
+          i++;
+          j++;
+          if(!ValidMove(i,j))
+              break;
+
+
+          otherPiece = BoardManager.Instance.Pieces[i, j];
+
+          if (otherPiece == null)
+              array[i, j] = true;
+          else
+          {
+              if(otherPiece.isWhite != isWhite)
+                  array[i, j] = true;
+              break;
+          }
+      }
+
+      //Bottom Left
+      i = PositionX;
+      j = PositionZ;
+      while(true)
+      {
+          i--;
+          j--;
+          if(!ValidMove(i,j))
+              break;
+
+
+          otherPiece = BoardManager.Instance.Pieces[i, j];
+
+          if (otherPiece == null)
+              array[i, j] = true;
+          else
+          {
+              if(otherPiece.isWhite != isWhite)
+                  array[i, j] = true;
+              break;
+          }
+      }
+
+      //Bottom Right
+      i = PositionX;
+      j = PositionZ;
+      while(true)
+      {
+          i++;
+          j--;
+          if(!ValidMove(i,j))
+              break;
+
+
+          otherPiece = BoardManager.Instance.Pieces[i, j];
+
+          if (otherPiece == null)
+              array[i, j] = true;
+          else
+          {
+              if(otherPiece.isWhite != isWhite)
+                  array[i, j] = true;
+              break;
+          }
+      }
+
       return array;
     }
 
-    //Given an x, z, and array of booleans check to if that move is possible
-    public void QueenMove(int x, int z, ref bool[,] array)
-    {
-        Piece otherPiece;
-        if (ValidMove(x, z))
-        {
-            otherPiece = BoardManager.Instance.Pieces[x,z];
-            if(otherPiece == null)
-            {
-                array[x, z] = true;
-            }
-            else if(isWhite != otherPiece.isWhite)
-            {
-                array[x, z] = true;
-            }
-        }
-    }
 }
