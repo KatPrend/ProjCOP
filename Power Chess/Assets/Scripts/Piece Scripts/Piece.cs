@@ -15,10 +15,10 @@ public abstract class Piece : MonoBehaviour
         PositionZ = z;
     }
 
-    public void DeletePiece(int x, int z)
+    public void DeletePiece(Piece piece)
     {
-      PositionX = -20;
-      PositionZ = -20;
+      piece.SetPosition(null,null);
+      piece = null;
     }
 
     public abstract bool ValidMove(int newX, int newZ);
