@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 87
+  controlID: 107
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 930
     height: 630
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 22}
@@ -119,11 +119,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 532
+    y: 71
     width: 489
-    height: 415
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 876
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 150
+  controlID: 145
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 16
+  controlID: 56
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 86
+  controlID: 144
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,9 +275,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 489
-    height: 532
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 71
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -398,24 +398,24 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1431
-    y: 605
+    y: 144
     width: 488
-    height: 394
+    height: 855
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 177
-    splitterInitialOffset: 0
+    ID: 239
+    splitterInitialOffset: 602
     currentActiveSplitter: -1
-    realSizes: f300000051000000
+    realSizes: 13020000fe000000
     relativeSizes:
-    - 0.75
-    - 0.25
+    - 0.67643315
+    - 0.32356685
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 324
+    lastTotalSize: 785
     splitSize: 6
     xOffset: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 16}
     newResultList:
@@ -424,7 +424,7 @@ MonoBehaviour:
       name: Power Chess
       fullName: Power Chess
       resultStatus: 1
-      duration: 0.4184751
+      duration: 0.4246678
       messages: 
       output: 
       stacktrace: 
@@ -440,7 +440,7 @@ MonoBehaviour:
       name: PlayMode.dll
       fullName: C:/Users/Kathleen/OneDrive/Desktop/COP4331/ProjCOP/Power Chess/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 1
-      duration: 0.3539112
+      duration: 0.3554136
       messages: 
       output: 
       stacktrace: 
@@ -456,7 +456,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.3422655
+      duration: 0.3415344
       messages: 
       output: 
       stacktrace: 
@@ -472,7 +472,7 @@ MonoBehaviour:
       name: TestGameFlow
       fullName: Tests.TestGameFlow
       resultStatus: 1
-      duration: 0.3314664
+      duration: 0.3305691
       messages: 
       output: 
       stacktrace: 
@@ -488,7 +488,7 @@ MonoBehaviour:
       name: TestGetSquareCenter
       fullName: Tests.TestGameFlow.TestGetSquareCenter
       resultStatus: 1
-      duration: 0.2432532
+      duration: 0.2476336
       messages: 
       output: 'There are 2 audio listeners in the scene. Please ensure there is always
         exactly one audio listener in the scene.
@@ -500,16 +500,23 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
+        (5.5,
+        0.0, 4.4)
 
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        (5.5,
+        0.0, 4.4)
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
 
         There
         are 2 audio listeners in the scene. Please ensure there is always exactly
         one audio listener in the scene.
+
+        (5.5, 0.0, 4.4)
 
 '
       stacktrace: 
@@ -526,7 +533,7 @@ MonoBehaviour:
       name: TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
       fullName: Tests.TestGameFlow.TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
       resultStatus: 1
-      duration: 0.0346185
+      duration: 0.0357418
       messages: 
       output: 'There are 2 audio listeners in the scene. Please ensure there is always
         exactly one audio listener in the scene.
@@ -538,12 +545,17 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
 
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
+        (5.5, 0.0, 4.4)
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        (5.5, 0.0, 4.4)
 
         There
         are 2 audio listeners in the scene. Please ensure there is always exactly
@@ -552,6 +564,8 @@ MonoBehaviour:
         There are 2 audio listeners in
         the scene. Please ensure there is always exactly one audio listener in the
         scene.
+
+        (5.5, 0.0, 4.4)
 
 '
       stacktrace: 
@@ -563,39 +577,32 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
-    m_ResultText: 'TestSpawnAllChessPiecesPutsPiecesInCorrectSquares (0.035s)
-
-      ---
-
-      There
+    m_ResultText: "TestRookWithArrayOfValidMoves (0.259s)\n---\nExpected: False\r\n 
+      But was:  True\n---\nat Tests.TestGameFlow+<TestRookWithArrayOfValidMoves>d__3.MoveNext
+      () [0x000d6] in C:\\Users\\Dylan\\Documents\\GitHub\\ProjCOP\\Power Chess\\Assets\\Tests\\PlayMode\\TestGameFlow.cs:93\r\nat
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in
+      C:\\Users\\Dylan\\Documents\\GitHub\\ProjCOP\\Power Chess\\Library\\PackageCache\\com.unity.test-framework@1.1.22\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:36\n---\nThere
       are 2 audio listeners in the scene. Please ensure there is always exactly one
-      audio listener in the scene.
+      audio listener in the scene.\r\nThere are 2 audio listeners in the scene. Please
+      ensure there is always exactly one audio listener in the scene.\r\nThere are
+      2 audio listeners in the scene. Please ensure there is always exactly one audio
+      listener in the scene.\r\nThere are 2 audio listeners in the scene. Please
+      ensure there is always exactly one audio listener in the scene.\r\nThere are
+      2 audio listeners in the scene. Please ensure there is always exactly one audio
+      listener in the scene.\r\nThere are 2 audio listeners in the scene. Please
+      ensure there is always exactly one audio listener in the scene."
+    m_ResultStacktrace: 'at Tests.TestGameFlow+<TestRookWithArrayOfValidMoves>d__3.MoveNext
+      () [0x000d6] in C:\Users\Dylan\Documents\GitHub\ProjCOP\Power Chess\Assets\Tests\PlayMode\TestGameFlow.cs:93
 
-      There are 2 audio listeners in the scene.
-      Please ensure there is always exactly one audio listener in the scene.
+      at
+      UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in
+      C:\Users\Dylan\Documents\GitHub\ProjCOP\Power Chess\Library\PackageCache\com.unity.test-framework@1.1.22\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
 
-      There
-      are 2 audio listeners in the scene. Please ensure there is always exactly one
-      audio listener in the scene.
-
-      There are 2 audio listeners in the scene.
-      Please ensure there is always exactly one audio listener in the scene.
-
-      There
-      are 2 audio listeners in the scene. Please ensure there is always exactly one
-      audio listener in the scene.
-
-      There are 2 audio listeners in the scene.
-      Please ensure there is always exactly one audio listener in the scene.
-
-      There
-      are 2 audio listeners in the scene. Please ensure there is always exactly one
-      audio listener in the scene.'
-    m_ResultStacktrace: 
+'
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7c4e1f8a
-      m_LastClickedID: -1977659780
+      m_SelectedIDs: ae69e0ab
+      m_LastClickedID: -1411356242
       m_ExpandedIDs: 849fc3859f5c62b6d7e52e44bc805a6dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -631,7 +638,7 @@ MonoBehaviour:
       name: Power Chess
       fullName: Power Chess
       resultStatus: 1
-      duration: 0.2654696
+      duration: 0.2462632
       messages: 
       output: 
       stacktrace: 
@@ -647,7 +654,7 @@ MonoBehaviour:
       name: Tests.dll
       fullName: C:/Users/Dylan/Documents/GitHub/ProjCOP/Power Chess/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 0.1945378
+      duration: 0.1632304
       messages: 
       output: 
       stacktrace: 
@@ -663,7 +670,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.182001
+      duration: 0.1508636
       messages: 
       output: 
       stacktrace: 
@@ -679,7 +686,7 @@ MonoBehaviour:
       name: CoinTests
       fullName: Tests.CoinTests
       resultStatus: 1
-      duration: 0.0789238
+      duration: 0.0629745
       messages: 
       output: 
       stacktrace: 
@@ -695,7 +702,7 @@ MonoBehaviour:
       name: TestAddCoinMethod
       fullName: Tests.CoinTests.TestAddCoinMethod
       resultStatus: 1
-      duration: 0.026531
+      duration: 0.025426
       messages: 
       output: 
       stacktrace: 
@@ -712,7 +719,7 @@ MonoBehaviour:
       name: TestRemoveCoinMethod
       fullName: Tests.CoinTests.TestRemoveCoinMethod
       resultStatus: 1
-      duration: 0.0010114
+      duration: 0.0006785
       messages: 
       output: 
       stacktrace: 
@@ -729,7 +736,7 @@ MonoBehaviour:
       name: PositionTests
       fullName: Tests.PositionTests
       resultStatus: 1
-      duration: 0.0876236
+      duration: 0.0701012
       messages: 
       output: 
       stacktrace: 
@@ -745,7 +752,7 @@ MonoBehaviour:
       name: TestBishopWithInvalidMove
       fullName: Tests.PositionTests.TestBishopWithInvalidMove
       resultStatus: 1
-      duration: 0.0134937
+      duration: 0.0040118
       messages: 
       output: 
       stacktrace: 
@@ -762,7 +769,7 @@ MonoBehaviour:
       name: TestBishopWithMoveOffTheBoard
       fullName: Tests.PositionTests.TestBishopWithMoveOffTheBoard
       resultStatus: 1
-      duration: 0.0005683
+      duration: 0.0005884
       messages: 
       output: 
       stacktrace: 
@@ -779,7 +786,7 @@ MonoBehaviour:
       name: TestBishopWithValidMove
       fullName: Tests.PositionTests.TestBishopWithValidMove
       resultStatus: 1
-      duration: 0.0005365
+      duration: 0.0004713
       messages: 
       output: 
       stacktrace: 
@@ -796,7 +803,7 @@ MonoBehaviour:
       name: TestKingWithInvalidMove
       fullName: Tests.PositionTests.TestKingWithInvalidMove
       resultStatus: 1
-      duration: 0.001014
+      duration: 0.0009218
       messages: 
       output: 
       stacktrace: 
@@ -813,7 +820,7 @@ MonoBehaviour:
       name: TestKingWithMoveOffTheBoard
       fullName: Tests.PositionTests.TestKingWithMoveOffTheBoard
       resultStatus: 1
-      duration: 0.0005746
+      duration: 0.0007498
       messages: 
       output: 
       stacktrace: 
@@ -830,7 +837,7 @@ MonoBehaviour:
       name: TestKingWithValidMove
       fullName: Tests.PositionTests.TestKingWithValidMove
       resultStatus: 1
-      duration: 0.0005464
+      duration: 0.0008034
       messages: 
       output: 
       stacktrace: 
@@ -847,7 +854,7 @@ MonoBehaviour:
       name: TestKnightWithInvalidMove
       fullName: Tests.PositionTests.TestKnightWithInvalidMove
       resultStatus: 1
-      duration: 0.0009106
+      duration: 0.0012156
       messages: 
       output: 
       stacktrace: 
@@ -864,7 +871,7 @@ MonoBehaviour:
       name: TestKnightWithMoveOffTheBoard
       fullName: Tests.PositionTests.TestKnightWithMoveOffTheBoard
       resultStatus: 1
-      duration: 0.000537
+      duration: 0.0005434
       messages: 
       output: 
       stacktrace: 
@@ -881,7 +888,7 @@ MonoBehaviour:
       name: TestKnightWithValidMove
       fullName: Tests.PositionTests.TestKnightWithValidMove
       resultStatus: 1
-      duration: 0.0005472
+      duration: 0.0004584
       messages: 
       output: 
       stacktrace: 
@@ -898,7 +905,7 @@ MonoBehaviour:
       name: TestPawnWithInvalidMove
       fullName: Tests.PositionTests.TestPawnWithInvalidMove
       resultStatus: 1
-      duration: 0.0009844
+      duration: 0.0008537
       messages: 
       output: 
       stacktrace: 
@@ -915,7 +922,7 @@ MonoBehaviour:
       name: TestPawnWithMoveOffTheBoard
       fullName: Tests.PositionTests.TestPawnWithMoveOffTheBoard
       resultStatus: 1
-      duration: 0.0005371
+      duration: 0.0005705
       messages: 
       output: 
       stacktrace: 
@@ -932,7 +939,7 @@ MonoBehaviour:
       name: TestPawnWithValidMove
       fullName: Tests.PositionTests.TestPawnWithValidMove
       resultStatus: 1
-      duration: 0.0004655
+      duration: 0.0004753
       messages: 
       output: 
       stacktrace: 
@@ -949,7 +956,7 @@ MonoBehaviour:
       name: TestPawnWithValidOpeningMove
       fullName: Tests.PositionTests.TestPawnWithValidOpeningMove
       resultStatus: 1
-      duration: 0.0004429
+      duration: 0.0005159
       messages: 
       output: 
       stacktrace: 
@@ -966,7 +973,7 @@ MonoBehaviour:
       name: TestQueenWithInvalidMove
       fullName: Tests.PositionTests.TestQueenWithInvalidMove
       resultStatus: 1
-      duration: 0.0007885
+      duration: 0.0008447
       messages: 
       output: 
       stacktrace: 
@@ -983,7 +990,7 @@ MonoBehaviour:
       name: TestQueenWithMoveOffTheBoard
       fullName: Tests.PositionTests.TestQueenWithMoveOffTheBoard
       resultStatus: 1
-      duration: 0.0005374
+      duration: 0.000508
       messages: 
       output: 
       stacktrace: 
@@ -1000,7 +1007,7 @@ MonoBehaviour:
       name: TestQueenWithValidStraightMove
       fullName: Tests.PositionTests.TestQueenWithValidStraightMove
       resultStatus: 1
-      duration: 0.000582
+      duration: 0.0005594
       messages: 
       output: 
       stacktrace: 
@@ -1017,7 +1024,7 @@ MonoBehaviour:
       name: TestRookWithInvalidMove
       fullName: Tests.PositionTests.TestRookWithInvalidMove
       resultStatus: 1
-      duration: 0.0008423
+      duration: 0.000895
       messages: 
       output: 
       stacktrace: 
@@ -1034,7 +1041,7 @@ MonoBehaviour:
       name: TestRookWithMoveOffTheBoard
       fullName: Tests.PositionTests.TestRookWithMoveOffTheBoard
       resultStatus: 1
-      duration: 0.0005104
+      duration: 0.0004748
       messages: 
       output: 
       stacktrace: 
@@ -1051,7 +1058,7 @@ MonoBehaviour:
       name: TestRookWithValidMove
       fullName: Tests.PositionTests.TestRookWithValidMove
       resultStatus: 1
-      duration: 0.0005017
+      duration: 0.0005126
       messages: 
       output: 
       stacktrace: 
@@ -1063,12 +1070,26 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    m_ResultText: CoinTests (0.079s)
-    m_ResultStacktrace: 
+    m_ResultText: "TestRookWithArrayOfValidMoves (0.002s)\n---\nSystem.NullReferenceException
+      : Object reference not set to an instance of an object\n---\nat Rook.ArrayOfValidMove
+      () [0x00049] in C:\\Users\\Dylan\\Documents\\GitHub\\ProjCOP\\Power Chess\\Assets\\Scripts\\Piece
+      Scripts\\Rook.cs:49 \r\n  at Tests.PositionTests.TestRookWithArrayOfValidMoves
+      () [0x00017] in C:\\Users\\Dylan\\Documents\\GitHub\\ProjCOP\\Power Chess\\Assets\\Tests\\EditMode\\PositionTests.cs:76
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0"
+    m_ResultStacktrace: "  at Rook.ArrayOfValidMove () [0x00049] in C:\\Users\\Dylan\\Documents\\GitHub\\ProjCOP\\Power
+      Chess\\Assets\\Scripts\\Piece Scripts\\Rook.cs:49 \r\n  at Tests.PositionTests.TestRookWithArrayOfValidMoves
+      () [0x00017] in C:\\Users\\Dylan\\Documents\\GitHub\\ProjCOP\\Power Chess\\Assets\\Tests\\EditMode\\PositionTests.cs:76
+      \r\n  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)\r\n 
+      at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 30f38d84
-      m_LastClickedID: -2071071952
+      m_SelectedIDs: 0e8ffbfb
+      m_LastClickedID: -67399922
       m_ExpandedIDs: 30f38d841ef87793e557abf78359db41d7e52e44ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1185,8 +1206,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Tests/EditMode
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 55
   m_LastFolders: []
@@ -1198,7 +1218,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c2340000
     m_LastClickedID: 13506
-    m_ExpandedIDs: 00000000283500002a3500002c3500002e35000030350000323500003435000036350000383500003a3500003c3500003e350000
+    m_ExpandedIDs: 0000000026350000283500002a3500002c3500002e35000030350000323500003435000036350000383500003a3500003c350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1226,7 +1246,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 606}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000283500002a3500002c3500002e35000030350000323500003435000036350000383500003a3500003c3500003e350000
+    m_ExpandedIDs: ffffffff0000000026350000283500002a3500002c3500002e35000030350000323500003435000036350000383500003a3500003c350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1306,7 +1326,7 @@ MonoBehaviour:
     x: 1431
     y: 73
     width: 488
-    height: 511
+    height: 50
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -1351,7 +1371,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 42fbffff
+      m_ExpandedIDs: 60e2ffff7ce2ffff5ce4ffffeee4ffff0ae5fffff0e6ffff88e7ffffa4e7ffff8ae9ffff1aeaffff36eaffff1cecffffacecffffc8ecffffaeeeffff46efffff62efffff48f1ffff04f2ffff20f2ffff1ef4ffff26f6ffff36f7ffff92f8ffff1afaffff56fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
