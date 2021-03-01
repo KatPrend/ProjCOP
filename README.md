@@ -91,20 +91,20 @@ Kathleen - Code the Knight and piece class
 # Sprint 4
 
 - [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
-- [Burndown Chart]
+- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown4.png)
 - [Velocity Chart]
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
 - [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
-- [Product Demonstration](https://youtu.be/5KKvdFcj33c)
+- [Product Demonstration]
 
 ## Task Allocation
-Blert - Code in piece destruction and behavior for King and Queen
+Blert -
 
-Dylan - Implement Highlights and code behavior for Rook and Bishop
+Dylan -
 
-Tyra - 
+Tyra -
 
-Veronica - Code behavior for Pawn and Knight
+Veronica -
 
-Kathleen - Create and implement Coin class
+Kathleen -
