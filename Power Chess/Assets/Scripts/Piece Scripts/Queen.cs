@@ -105,17 +105,17 @@ public class Queen : Piece
       {
           i--;
           j++;
-          if(!ValidMove(i,j))
+          if(!ValidMove(i,j)) //checks to make sure it doesnt go off the board
               break;
 
 
           otherPiece = BoardManager.Instance.Pieces[i, j];
 
-          if (otherPiece == null)
+          if (otherPiece == null) //If there is no piece and its a valid move
               array[i, j] = true;
           else
           {
-              if(otherPiece.isWhite != isWhite)
+              if(otherPiece.isWhite != isWhite) //If the piece belongs to the other player and its a valid move
                   array[i, j] = true;
               break;
           }
@@ -128,17 +128,17 @@ public class Queen : Piece
       {
           i++;
           j++;
-          if(!ValidMove(i,j))
+          if(!ValidMove(i,j)) //checks to make sure it doesnt go off the board
               break;
 
 
           otherPiece = BoardManager.Instance.Pieces[i, j];
 
-          if (otherPiece == null)
+          if (otherPiece == null) //If there is no piece and its a valid move
               array[i, j] = true;
           else
           {
-              if(otherPiece.isWhite != isWhite)
+              if(otherPiece.isWhite != isWhite) //If the piece belongs to the other player and its a valid move
                   array[i, j] = true;
               break;
           }
@@ -151,17 +151,17 @@ public class Queen : Piece
       {
           i--;
           j--;
-          if(!ValidMove(i,j))
+          if(!ValidMove(i,j)) //checks to make sure it doesnt go off the board
               break;
 
 
           otherPiece = BoardManager.Instance.Pieces[i, j];
 
-          if (otherPiece == null)
+          if (otherPiece == null) //If there is no piece and its a valid move
               array[i, j] = true;
           else
           {
-              if(otherPiece.isWhite != isWhite)
+              if(otherPiece.isWhite != isWhite) //If the piece belongs to the other player and its a valid move
                   array[i, j] = true;
               break;
           }
@@ -174,17 +174,17 @@ public class Queen : Piece
       {
           i++;
           j--;
-          if(!ValidMove(i,j))
+          if(!ValidMove(i,j)) //checks to make sure it doesnt go off the board
               break;
 
 
           otherPiece = BoardManager.Instance.Pieces[i, j];
 
-          if (otherPiece == null)
+          if (otherPiece == null) //If there is no piece and its a valid move
               array[i, j] = true;
           else
           {
-              if(otherPiece.isWhite != isWhite)
+              if(otherPiece.isWhite != isWhite) //If the piece belongs to the other player and its a valid move
                   array[i, j] = true;
               break;
           }
