@@ -54,8 +54,8 @@ public class Pawn : Piece
             }
         }
 
-        // Scan in rows spaces above
-        for(j = PositionZ + 1; i < 8; i++)
+        // Scan in rows above
+        for(j = PositionZ + 1; j < 8; j++)
         {
             otherPiece = BoardManager.Instance.Pieces[PositionX, j];
 
@@ -68,23 +68,23 @@ public class Pawn : Piece
         i = PositionX + 1;
         j = PositionZ + 1;
         // Check bounds
-        while (i >= 0 && i < 8 && j >= 0 && j < 8)
+        if (i >= 0 && i < 8 && j >= 0 && j < 8)
         {
             otherPiece = BoardManager.Instance.Pieces[i, j];
 
             // Check if the other piece belongs to opposing player
-            if (otherPiece.isWhite != isWhite)
+            if (otherPiece != null && otherPiece.isWhite != isWhite)
                 array[i, j] = true;
         }
 
         // Top left
         i = PositionX - 1;
         j = PositionZ + 1;
-        while (i >= 0 && i < 8 && j >= 0 && j < 8)
+        if (i >= 0 && i < 8 && j >= 0 && j < 8)
         {
             otherPiece = BoardManager.Instance.Pieces[i, j];
 
-            if (otherPiece.isWhite != isWhite)
+            if (otherPiece != null && otherPiece.isWhite != isWhite)
                 array[i, j] = true;
         }
 
