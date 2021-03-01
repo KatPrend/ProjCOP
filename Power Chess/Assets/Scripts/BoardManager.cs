@@ -89,7 +89,7 @@ public class BoardManager : MonoBehaviour
         Vector3 newSquare = GetSquareCenter(x, z);
 
         //If a move is valid move the piece
-        if (selectedPiece.ValidMove(x,z))
+        if (allowedRelativeMoves[x,z])
         {
             Piece otherPiece = Pieces[x,z];
 
