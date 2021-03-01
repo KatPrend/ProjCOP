@@ -15,9 +15,9 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 42.666668
-    width: 1280
-    height: 637.3334
+    y: 43
+    width: 2560
+    height: 1357
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 12}
@@ -40,9 +40,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 391
-    width: 620
-    height: 197
+    y: 868
+    width: 1240
+    height: 439
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -67,14 +67,14 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 333
+    x: 667
     y: 0
-    width: 620
-    height: 588
+    width: 1240
+    height: 1307
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 65
+  controlID: 43
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,10 +92,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 620
-    height: 391
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 1240
+    height: 868
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 22}
@@ -119,11 +119,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 71
-    width: 327
-    height: 517
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    y: 1017
+    width: 653
+    height: 290
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -146,14 +146,14 @@ MonoBehaviour:
   - {fileID: 5}
   m_Position:
     serializedVersion: 2
-    x: 953
+    x: 1907
     y: 0
-    width: 327
-    height: 588
+    width: 653
+    height: 1307
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 128
+  controlID: 101
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,9 +170,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 310
-    width: 333
-    height: 278
+    y: 689
+    width: 667
+    height: 618
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
@@ -199,12 +199,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 333
-    height: 588
+    width: 667
+    height: 1307
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 16
+  controlID: 135
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,10 +222,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 333
-    height: 310
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 667
+    height: 689
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -251,12 +251,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1280
-    height: 588
+    width: 2560
+    height: 1307
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 64
+  controlID: 100
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,10 +274,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 327
-    height: 71
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 653
+    height: 1017
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -304,8 +304,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1280
-    height: 638
+    width: 2560
+    height: 1357
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &13
@@ -325,7 +325,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1280
+    width: 2560
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -346,8 +346,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 618
-    width: 1280
+    y: 1337
+    width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -367,15 +367,15 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 333.33334
-    y: 464
-    width: 618
-    height: 176
+    x: 667
+    y: 941
+    width: 1238
+    height: 418
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &16
 MonoBehaviour:
@@ -397,22 +397,22 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 953.3334
-    y: 144
-    width: 326
-    height: 496
+    x: 1907
+    y: 1090
+    width: 652
+    height: 269
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 176
+    ID: 175
     splitterInitialOffset: 602
     currentActiveSplitter: -1
-    realSizes: 200100008a000000
+    realSizes: 8700000040000000
     relativeSizes:
     - 0.67643315
     - 0.32356685
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 426
+    lastTotalSize: 199
     splitSize: 6
     xOffset: 0
   m_TestTypeToolbarIndex: 0
@@ -500,16 +500,16 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
+        There are
+        2 audio listeners in the scene. Please ensure there is always exactly one
+        audio listener in the scene.
+
+        There are 2 audio listeners in the
+        scene. Please ensure there is always exactly one audio listener in the scene.
+
         There
         are 2 audio listeners in the scene. Please ensure there is always exactly
         one audio listener in the scene.
-
-        There are 2 audio listeners in
-        the scene. Please ensure there is always exactly one audio listener in the
-        scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
 
 '
       stacktrace: 
@@ -538,16 +538,12 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
-        There
-        are 2 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
+        There are
+        2 audio listeners in the scene. Please ensure there is always exactly one
+        audio listener in the scene.
 
-        There are 2 audio listeners in
-        the scene. Please ensure there is always exactly one audio listener in the
-        scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
+        There are 2 audio listeners in the
+        scene. Please ensure there is always exactly one audio listener in the scene.
 
         There
         are 2 audio listeners in the scene. Please ensure there is always exactly
@@ -557,8 +553,12 @@ MonoBehaviour:
         the scene. Please ensure there is always exactly one audio listener in the
         scene.
 
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
+        There are 2 audio listeners in the scene. Please ensure there
+        is always exactly one audio listener in the scene.
+
+        There are 2 audio
+        listeners in the scene. Please ensure there is always exactly one audio listener
+        in the scene.
 
 '
       stacktrace: 
@@ -613,13 +613,12 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
-        There
-        are 2 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
+        There are
+        2 audio listeners in the scene. Please ensure there is always exactly one
+        audio listener in the scene.
 
-        There are 2 audio listeners in
-        the scene. Please ensure there is always exactly one audio listener in the
-        scene.
+        There are 2 audio listeners in the
+        scene. Please ensure there is always exactly one audio listener in the scene.
 
 '
       stacktrace: 
@@ -648,16 +647,16 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
+        There are
+        2 audio listeners in the scene. Please ensure there is always exactly one
+        audio listener in the scene.
+
+        There are 2 audio listeners in the
+        scene. Please ensure there is always exactly one audio listener in the scene.
+
         There
         are 2 audio listeners in the scene. Please ensure there is always exactly
         one audio listener in the scene.
-
-        There are 2 audio listeners in
-        the scene. Please ensure there is always exactly one audio listener in the
-        scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
 
 '
       stacktrace: 
@@ -1250,7 +1249,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1276,15 +1275,15 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 382.6667
-    width: 332
-    height: 257
+    y: 762
+    width: 666
+    height: 597
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1298,19 +1297,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Scripts/Piece Scripts
   m_ViewMode: 0
   m_StartGridSize: 55
   m_LastFolders: []
   m_LastFoldersGridSize: 55
-  m_LastProjectPath: C:\Users\Kathleen\OneDrive\Desktop\COP4331\ProjCOP\Power Chess
+  m_LastProjectPath: C:\Users\veron\ProjCOP\Power Chess
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c2340000
     m_LastClickedID: 13506
-    m_ExpandedIDs: 00000000f2350000f4350000f6350000f8350000fa350000fc350000fe3500000036000002360000043600000636000008360000
+    m_ExpandedIDs: 00000000b8360000ba360000bc360000be360000c0360000c2360000c4360000c6360000c8360000ca360000cc360000ce360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1335,10 +1335,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 788}
+    scrollPos: {x: 0, y: 452}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000f2350000f4350000f6350000f8350000fa350000fc350000fe3500000036000002360000043600000636000008360000
+    m_ExpandedIDs: ffffffff00000000b8360000ba360000bc360000be360000c0360000c2360000c4360000c6360000c8360000ca360000cc360000ce360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1410,15 +1410,15 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 953.3334
-    y: 72.66667
-    width: 326
-    height: 50
+    x: 1907
+    y: 73
+    width: 652
+    height: 996
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -1431,7 +1431,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 540
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1448,22 +1448,22 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 72.66667
-    width: 332
-    height: 289
+    y: 73
+    width: 666
+    height: 668
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: c6310000
       m_LastClickedID: 0
-      m_ExpandedIDs: 28f2ffff44f2ffff98f5ffff0cf8ffff
+      m_ExpandedIDs: fcf2ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1503,7 +1503,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1618,15 +1618,15 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 333.33334
-    y: 72.66667
-    width: 618
-    height: 370
+    x: 667
+    y: 73
+    width: 1238
+    height: 847
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1636,7 +1636,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 927, y: 523.5}
+  m_TargetSize: {x: 1238, y: 826}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1651,10 +1651,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -309
-    m_HBaseRangeMax: 309
-    m_VBaseRangeMin: -174.5
-    m_VBaseRangeMax: 174.5
+    m_HBaseRangeMin: -619
+    m_HBaseRangeMax: 619
+    m_VBaseRangeMin: -413
+    m_VBaseRangeMax: 413
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1672,23 +1672,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 618
-      height: 349
+      width: 1238
+      height: 826
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 309, y: 174.5}
+    m_Translation: {x: 619, y: 413}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -309
-      y: -174.5
-      width: 618
-      height: 349
+      x: -619
+      y: -413
+      width: 1238
+      height: 826
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 927, y: 555}
+  m_LastWindowPixelSize: {x: 1238, y: 847}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000100000100
