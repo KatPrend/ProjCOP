@@ -15,9 +15,9 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 43
-    width: 1920
-    height: 997
+    y: 42.666668
+    width: 1280
+    height: 637.3334
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 12}
@@ -40,9 +40,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 630
-    width: 930
-    height: 317
+    y: 391
+    width: 620
+    height: 197
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -67,14 +67,14 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 501
+    x: 333
     y: 0
-    width: 930
-    height: 947
+    width: 620
+    height: 588
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 107
+  controlID: 65
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,8 +92,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 930
-    height: 630
+    width: 620
+    height: 391
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 23}
@@ -120,10 +120,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 71
-    width: 489
-    height: 876
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 327
+    height: 517
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -146,14 +146,14 @@ MonoBehaviour:
   - {fileID: 5}
   m_Position:
     serializedVersion: 2
-    x: 1431
+    x: 953
     y: 0
-    width: 489
-    height: 947
+    width: 327
+    height: 588
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 145
+  controlID: 128
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,9 +170,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 499
-    width: 501
-    height: 448
+    y: 310
+    width: 333
+    height: 278
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
@@ -199,12 +199,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 501
-    height: 947
+    width: 333
+    height: 588
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 56
+  controlID: 16
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,8 +222,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 501
-    height: 499
+    width: 333
+    height: 310
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
@@ -251,12 +251,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 947
+    width: 1280
+    height: 588
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 144
+  controlID: 64
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,10 +274,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 489
+    width: 327
     height: 71
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -304,8 +304,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 997
+    width: 1280
+    height: 638
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &13
@@ -325,7 +325,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1280
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -346,8 +346,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
-    width: 1920
+    y: 618
+    width: 1280
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -367,15 +367,15 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 501
-    y: 703
-    width: 928
-    height: 296
+    x: 333.33334
+    y: 464
+    width: 618
+    height: 176
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &16
 MonoBehaviour:
@@ -397,22 +397,22 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1431
+    x: 953.3334
     y: 144
-    width: 488
-    height: 855
+    width: 326
+    height: 496
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 239
+    ID: 176
     splitterInitialOffset: 602
     currentActiveSplitter: -1
-    realSizes: 13020000fe000000
+    realSizes: 200100008a000000
     relativeSizes:
     - 0.67643315
     - 0.32356685
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 785
+    lastTotalSize: 426
     splitSize: 6
     xOffset: 0
   m_TestTypeToolbarIndex: 0
@@ -424,7 +424,7 @@ MonoBehaviour:
       name: Power Chess
       fullName: Power Chess
       resultStatus: 1
-      duration: 0.4246678
+      duration: 0.8462301
       messages: 
       output: 
       stacktrace: 
@@ -440,7 +440,7 @@ MonoBehaviour:
       name: PlayMode.dll
       fullName: C:/Users/Kathleen/OneDrive/Desktop/COP4331/ProjCOP/Power Chess/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 1
-      duration: 0.3554136
+      duration: 0.7341446
       messages: 
       output: 
       stacktrace: 
@@ -456,7 +456,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.3415344
+      duration: 0.7055192
       messages: 
       output: 
       stacktrace: 
@@ -472,7 +472,7 @@ MonoBehaviour:
       name: TestGameFlow
       fullName: Tests.TestGameFlow
       resultStatus: 1
-      duration: 0.3305691
+      duration: 0.4605479
       messages: 
       output: 
       stacktrace: 
@@ -488,7 +488,7 @@ MonoBehaviour:
       name: TestGetSquareCenter
       fullName: Tests.TestGameFlow.TestGetSquareCenter
       resultStatus: 1
-      duration: 0.2476336
+      duration: 0.3361463
       messages: 
       output: 'There are 2 audio listeners in the scene. Please ensure there is always
         exactly one audio listener in the scene.
@@ -500,23 +500,16 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
-        (5.5,
-        0.0, 4.4)
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        (5.5,
-        0.0, 4.4)
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
         There
         are 2 audio listeners in the scene. Please ensure there is always exactly
         one audio listener in the scene.
 
-        (5.5, 0.0, 4.4)
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
 
 '
       stacktrace: 
@@ -533,7 +526,7 @@ MonoBehaviour:
       name: TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
       fullName: Tests.TestGameFlow.TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
       resultStatus: 1
-      duration: 0.0357418
+      duration: 0.0660688
       messages: 
       output: 'There are 2 audio listeners in the scene. Please ensure there is always
         exactly one audio listener in the scene.
@@ -549,13 +542,12 @@ MonoBehaviour:
         are 2 audio listeners in the scene. Please ensure there is always exactly
         one audio listener in the scene.
 
-        (5.5, 0.0, 4.4)
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
 
-        There
-        are 2 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
-
-        (5.5, 0.0, 4.4)
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
 
         There
         are 2 audio listeners in the scene. Please ensure there is always exactly
@@ -565,7 +557,8 @@ MonoBehaviour:
         the scene. Please ensure there is always exactly one audio listener in the
         scene.
 
-        (5.5, 0.0, 4.4)
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
 
 '
       stacktrace: 
@@ -577,6 +570,105 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
+    - id: 1004
+      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+      name: TestPieceMoves
+      fullName: Tests.TestPieceMoves
+      resultStatus: 1
+      duration: 0.2208495
+      messages: 
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
+      parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
+    - id: 1005
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition]
+      name: TestKingArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1658906
+      messages: 
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1006
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKingArrayOfValidMovesCanMove]
+      name: TestKingArrayOfValidMovesCanMove
+      fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesCanMove
+      resultStatus: 1
+      duration: 0.0378801
+      messages: 
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
     m_ResultText: "TestRookWithArrayOfValidMoves (0.259s)\n---\nExpected: False\r\n 
       But was:  True\n---\nat Tests.TestGameFlow+<TestRookWithArrayOfValidMoves>d__3.MoveNext
       () [0x000d6] in C:\\Users\\Dylan\\Documents\\GitHub\\ProjCOP\\Power Chess\\Assets\\Tests\\PlayMode\\TestGameFlow.cs:93\r\nat
@@ -603,7 +695,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: ae69e0ab
       m_LastClickedID: -1411356242
-      m_ExpandedIDs: 849fc3859f5c62b6d7e52e44bc805a6dffffff7f
+      m_ExpandedIDs: 849fc3859f5c62b6dae6f3cdd7e52e44bc805a6dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1158,7 +1250,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1184,15 +1276,15 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 572
-    width: 500
-    height: 427
+    y: 382.6667
+    width: 332
+    height: 257
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1211,14 +1303,14 @@ MonoBehaviour:
   m_StartGridSize: 55
   m_LastFolders: []
   m_LastFoldersGridSize: 55
-  m_LastProjectPath: C:\Users\Dylan\Documents\GitHub\ProjCOP\Power Chess
+  m_LastProjectPath: C:\Users\Kathleen\OneDrive\Desktop\COP4331\ProjCOP\Power Chess
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c2340000
     m_LastClickedID: 13506
-    m_ExpandedIDs: 0000000026350000283500002a3500002c3500002e35000030350000323500003435000036350000383500003a3500003c350000
+    m_ExpandedIDs: 00000000f2350000f4350000f6350000f8350000fa350000fc350000fe3500000036000002360000043600000636000008360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1243,10 +1335,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 606}
+    scrollPos: {x: 0, y: 788}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000026350000283500002a3500002c3500002e35000030350000323500003435000036350000383500003a3500003c350000
+    m_ExpandedIDs: ffffffff00000000f2350000f4350000f6350000f8350000fa350000fc350000fe3500000036000002360000043600000636000008360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1318,14 +1410,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1431
-    y: 73
-    width: 488
+    x: 953.3334
+    y: 72.66667
+    width: 326
     height: 50
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -1356,22 +1448,22 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 73
-    width: 500
-    height: 478
+    y: 72.66667
+    width: 332
+    height: 289
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 60e2ffff7ce2ffff5ce4ffffeee4ffff0ae5fffff0e6ffff88e7ffffa4e7ffff8ae9ffff1aeaffff36eaffff1cecffffacecffffc8ecffffaeeeffff46efffff62efffff48f1ffff04f2ffff20f2ffff1ef4ffff26f6ffff36f7ffff92f8ffff1afaffff56fbffff
+      m_ExpandedIDs: 28f2ffff44f2ffff98f5ffff0cf8ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1411,7 +1503,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -1526,15 +1618,15 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 501
-    y: 73
-    width: 928
-    height: 609
+    x: 333.33334
+    y: 72.66667
+    width: 618
+    height: 370
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1544,7 +1636,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 928, y: 588}
+  m_TargetSize: {x: 927, y: 523.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1559,10 +1651,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -464
-    m_HBaseRangeMax: 464
-    m_VBaseRangeMin: -294
-    m_VBaseRangeMax: 294
+    m_HBaseRangeMin: -309
+    m_HBaseRangeMax: 309
+    m_VBaseRangeMin: -174.5
+    m_VBaseRangeMax: 174.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1580,23 +1672,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 928
-      height: 588
+      width: 618
+      height: 349
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 464, y: 294}
+    m_Translation: {x: 309, y: 174.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -464
-      y: -294
-      width: 928
-      height: 588
+      x: -309
+      y: -174.5
+      width: 618
+      height: 349
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 928, y: 609}
+  m_LastWindowPixelSize: {x: 927, y: 555}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000100000100
