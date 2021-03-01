@@ -96,15 +96,15 @@ Kathleen - Code the Knight and piece class
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
 - [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
-- [Product Demonstration]
+- [Product Demonstration](https://youtu.be/5KKvdFcj33c)
 
 ## Task Allocation
-Blert - 
+Blert - Code in piece destruction and behavior for King and Queen
 
-Dylan - 
+Dylan - Implement Highlights and code behavior for Rook and Bishop
 
 Tyra - 
 
-Veronica - 
+Veronica - Code behavior for Pawn and Knight
 
-Kathleen - 
+Kathleen - Create and implement Coin class
