@@ -89,9 +89,7 @@ namespace Tests
         [UnityTest]
         public IEnumerator TestUpdateSelection()
         {
-            GameObject gameobject = new GameObject();
-            BoardManager board = gameobject.AddComponent<BoardManager>();
-
+            BoardManager board = BoardManager.Instance;
             board.InputAction = Substitute.For<IHandleInput>();
 
             yield return null;
