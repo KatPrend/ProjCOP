@@ -3,6 +3,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
+using NSubstitute;
 
 namespace Tests
 {
@@ -69,6 +70,37 @@ namespace Tests
             Assert.IsInstanceOf(typeof(King), actual: board.Pieces[4, 0]);
             // Black King
             Assert.IsInstanceOf(typeof(King), actual: board.Pieces[4, 7]);
+        }
+
+        [UnityTest]
+        public IEnumerator TestStartingSelectionPosition()
+        {
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            // (SelectionX, SelectionZ) starts at (-1,-1)
+            Assert.AreEqual(-1, board.selectionX);
+            Assert.AreEqual(-1, board.selectionZ);
+            
+        }
+
+        // Failing
+        [UnityTest]
+        public IEnumerator TestUpdateSelection()
+        {
+            GameObject gameobject = new GameObject();
+            BoardManager board = gameobject.AddComponent<BoardManager>();
+
+            board.InputAction = Substitute.For<IHandleInput>();
+
+            yield return null;
+
+            // mouse is over bottom left square (a1)
+            board.InputAction.MousePosition().Returns(new Vector3(0.5f, 0, 0.5f));
+
+            Assert.AreEqual(0, board.selectionX);
+            Assert.AreEqual(0, board.selectionZ);
         }
     }
 }

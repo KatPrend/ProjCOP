@@ -6,6 +6,8 @@ public class BoardManager : MonoBehaviour
 {
     public static BoardManager Instance { set; get; }
 
+    public IHandleInput InputAction;
+
     private bool[,] allowedRelativeMoves{ set; get; }
 
     public Piece[,] Pieces { set; get; }
@@ -18,8 +20,8 @@ public class BoardManager : MonoBehaviour
     private const float SQUARE_SIZE  = 1.0F; //Square is 1 meter by 1 meter
     private const float SQUARE_OFFSET  = 0.5F; //Offset to center a piece
 
-    private int selectionX = -1;
-    private int selectionZ = -1;
+    public int selectionX = -1;
+    public int selectionZ = -1;
 
     public List<GameObject> chessPiecesPrefabs;
 
@@ -30,6 +32,9 @@ public class BoardManager : MonoBehaviour
     private void Start()
     {
         Instance = this;
+
+        if (InputAction == null)
+            InputAction = new HandleInput();
 
         //Spawn all pieces
         SpawnAllChessPieces();
@@ -42,7 +47,7 @@ public class BoardManager : MonoBehaviour
         UpdateSelection();
         DrawChessBoard();
 
-        if(Input.GetMouseButtonDown(0)) //If left click
+        if(InputAction.GetMouseButtonDown(0)) //If left click
         {
             if(selectionX >= 0 && selectionZ >= 0) //If clicking on board
             {
@@ -133,7 +138,7 @@ public class BoardManager : MonoBehaviour
         RaycastHit hit;
 
         //If mouse is over the board update selection variables to current position
-        if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 25.0f, LayerMask.GetMask("Chess Plane")))
+        if(Physics.Raycast(Camera.main.ScreenPointToRay(InputAction.MousePosition()), out hit, 25.0f, LayerMask.GetMask("Chess Plane")))
         {
             Debug.Log(hit.point); //Prints position to console for testing
 

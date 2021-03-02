@@ -41,10 +41,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 391
-    width: 620
+    width: 762
     height: 197
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -67,14 +67,14 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 333
+    x: 231
     y: 0
-    width: 620
+    width: 762
     height: 588
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 83
+  controlID: 108
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,10 +92,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 620
+    width: 762
     height: 391
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 22}
@@ -119,11 +119,11 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 458
-    width: 327
-    height: 130
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+    y: 94
+    width: 287
+    height: 494
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -146,12 +146,12 @@ MonoBehaviour:
   - {fileID: 5}
   m_Position:
     serializedVersion: 2
-    x: 953
+    x: 993
     y: 0
-    width: 327
+    width: 287
     height: 588
-  m_MinSize: {x: 276, y: 192}
-  m_MaxSize: {x: 4001, y: 8042}
+  m_MinSize: {x: 276, y: 171}
+  m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
   controlID: 146
 --- !u!114 &7
@@ -170,9 +170,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 310
-    width: 333
-    height: 278
+    y: 221
+    width: 231
+    height: 367
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
@@ -199,12 +199,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 333
+    width: 231
     height: 588
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 16
+  controlID: 56
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,8 +222,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 333
-    height: 310
+    width: 231
+    height: 221
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 82
+  controlID: 145
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,8 +274,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 327
-    height: 458
+    width: 287
+    height: 94
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
@@ -372,9 +372,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 333.33334
+    x: 231.33334
     y: 464
-    width: 618
+    width: 760
     height: 176
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &16
@@ -397,25 +397,25 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 953.3334
-    y: 530.6667
-    width: 326
-    height: 109
+    x: 993.3334
+    y: 166.66667
+    width: 286
+    height: 473
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 173
-    splitterInitialOffset: 602
+    ID: 501
+    splitterInitialOffset: 348
     currentActiveSplitter: -1
-    realSizes: 2000000020000000
+    realSizes: 050100008e000000
     relativeSizes:
-    - 0.67643315
-    - 0.32356685
+    - 0.64788735
+    - 0.35211265
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 54
+    lastTotalSize: 403
     splitSize: 6
     xOffset: 0
-  m_TestTypeToolbarIndex: 1
+  m_TestTypeToolbarIndex: 0
   m_PlayModeTestListGUI:
     m_Window: {fileID: 16}
     newResultList:
@@ -423,9 +423,9 @@ MonoBehaviour:
       uniqueId: '[Power Chess][suite]'
       name: Power Chess
       fullName: Power Chess
-      resultStatus: 1
-      duration: 0.8462301
-      messages: 
+      resultStatus: 2
+      duration: 2.2091763
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -439,9 +439,9 @@ MonoBehaviour:
       uniqueId: '[PlayMode.dll][suite]'
       name: PlayMode.dll
       fullName: C:/Users/Kathleen/OneDrive/Desktop/COP4331/ProjCOP/Power Chess/Library/ScriptAssemblies/PlayMode.dll
-      resultStatus: 1
-      duration: 0.7341446
-      messages: 
+      resultStatus: 2
+      duration: 2.1250067
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -455,9 +455,9 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/[PlayMode][Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 0.7055192
-      messages: 
+      resultStatus: 2
+      duration: 2.0834603
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -471,9 +471,9 @@ MonoBehaviour:
       uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
       name: TestGameFlow
       fullName: Tests.TestGameFlow
-      resultStatus: 1
-      duration: 0.4605479
-      messages: 
+      resultStatus: 2
+      duration: 0.8549801
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -488,7 +488,7 @@ MonoBehaviour:
       name: TestGetSquareCenter
       fullName: Tests.TestGameFlow.TestGetSquareCenter
       resultStatus: 1
-      duration: 0.3361463
+      duration: 0.2720537
       messages: 
       output: 'There are 2 audio listeners in the scene. Please ensure there is always
         exactly one audio listener in the scene.
@@ -500,16 +500,13 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
         There
         are 2 audio listeners in the scene. Please ensure there is always exactly
         one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
 
 '
       stacktrace: 
@@ -526,7 +523,7 @@ MonoBehaviour:
       name: TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
       fullName: Tests.TestGameFlow.TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
       resultStatus: 1
-      duration: 0.0660688
+      duration: 0.074792
       messages: 
       output: 'There are 2 audio listeners in the scene. Please ensure there is always
         exactly one audio listener in the scene.
@@ -538,13 +535,6 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
         There
         are 2 audio listeners in the scene. Please ensure there is always exactly
         one audio listener in the scene.
@@ -553,12 +543,16 @@ MonoBehaviour:
         the scene. Please ensure there is always exactly one audio listener in the
         scene.
 
-        There are 2 audio listeners in the scene. Please ensure there
-        is always exactly one audio listener in the scene.
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
 
-        There are 2 audio
-        listeners in the scene. Please ensure there is always exactly one audio listener
-        in the scene.
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
 
 '
       stacktrace: 
@@ -570,12 +564,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
-    - id: 1004
-      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-      name: TestPieceMoves
-      fullName: Tests.TestPieceMoves
+    - id: 1032
+      uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestStartingSelectionPosition]
+      name: TestStartingSelectionPosition
+      fullName: Tests.TestGameFlow.TestStartingSelectionPosition
       resultStatus: 1
-      duration: 0.2208495
+      duration: 0.0844976
       messages: 
       output: 'There are 2 audio listeners in the scene. Please ensure there is always
         exactly one audio listener in the scene.
@@ -586,6 +580,165 @@ MonoBehaviour:
 
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
+    - id: 1033
+      uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestUpdateSelection]
+      name: TestUpdateSelection
+      fullName: Tests.TestGameFlow.TestUpdateSelection
+      resultStatus: 2
+      duration: 0.3624046
+      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
+        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        NullReferenceException: Object reference not set to an instance
+        of an object
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+'
+      stacktrace: 'BoardManager.SpawnChessPiece (System.Int32 index, System.Int32
+        x, System.Int32 z) (at Assets/Scripts/BoardManager.cs:161)
+
+        BoardManager.SpawnAllChessPieces
+        () (at Assets/Scripts/BoardManager.cs:186)
+
+        BoardManager.Start ()
+        (at Assets/Scripts/BoardManager.cs:40)
+
+        
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
+    - id: 1004
+      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+      name: TestPieceMoves
+      fullName: Tests.TestPieceMoves
+      resultStatus: 1
+      duration: 1.1891296
+      messages: 
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
 
 '
       stacktrace: 
@@ -596,12 +749,12 @@ MonoBehaviour:
       categories: []
       parentId: 1008
       parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
-    - id: 1005
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition]
-      name: TestKingArrayOfValidMovesAtStartingPosition
-      fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition
+    - id: 1012
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestBishopArrayOfValidMovesAtStartingPosition]
+      name: TestBishopArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestBishopArrayOfValidMovesAtStartingPosition
       resultStatus: 1
-      duration: 0.1658906
+      duration: 0.1623126
       messages: 
       output: 'There are 2 audio listeners in the scene. Please ensure there is always
         exactly one audio listener in the scene.
@@ -613,12 +766,89 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
 
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestBlackPawnArrayOfValidMovesAtStartingPosition]
+      name: TestBlackPawnArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestBlackPawnArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1473736
+      messages: 
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1005
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition]
+      name: TestKingArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1387439
+      messages: 
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
 
 '
       stacktrace: 
@@ -635,7 +865,7 @@ MonoBehaviour:
       name: TestKingArrayOfValidMovesCanMove
       fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesCanMove
       resultStatus: 1
-      duration: 0.0378801
+      duration: 0.1327375
       messages: 
       output: 'There are 2 audio listeners in the scene. Please ensure there is always
         exactly one audio listener in the scene.
@@ -647,16 +877,16 @@ MonoBehaviour:
         There are 2 audio listeners in the scene. Please ensure
         there is always exactly one audio listener in the scene.
 
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
         There
         are 2 audio listeners in the scene. Please ensure there is always exactly
         one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
 
 '
       stacktrace: 
@@ -668,11 +898,153 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1004
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    m_ResultText: "TestRookWithArrayOfValidMoves (0.259s)\n---\nExpected: False\r\n 
-      But was:  True\n---\nat Tests.TestGameFlow+<TestRookWithArrayOfValidMoves>d__3.MoveNext
-      () [0x000d6] in C:\\Users\\Dylan\\Documents\\GitHub\\ProjCOP\\Power Chess\\Assets\\Tests\\PlayMode\\TestGameFlow.cs:93\r\nat
-      UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in
-      C:\\Users\\Dylan\\Documents\\GitHub\\ProjCOP\\Power Chess\\Library\\PackageCache\\com.unity.test-framework@1.1.22\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:36\n---\nThere
+    - id: 1011
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKnightArrayOfValidMovesAtStartingPosition]
+      name: TestKnightArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestKnightArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1492593
+      messages: 
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1013
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestQueenArrayOfValidMovesAtStartingPosition]
+      name: TestQueenArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestQueenArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1394048
+      messages: 
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1010
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestRookArrayOfValidMovesAtStartingPosition]
+      name: TestRookArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestRookArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1221903
+      messages: 
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestWhitePawnArrayOfValidMovesAtStartingPosition]
+      name: TestWhitePawnArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestWhitePawnArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1400611
+      messages: 
+      output: 'There are 2 audio listeners in the scene. Please ensure there is always
+        exactly one audio listener in the scene.
+
+        There are 2 audio listeners
+        in the scene. Please ensure there is always exactly one audio listener in
+        the scene.
+
+        There are 2 audio listeners in the scene. Please ensure
+        there is always exactly one audio listener in the scene.
+
+        There
+        are 2 audio listeners in the scene. Please ensure there is always exactly
+        one audio listener in the scene.
+
+        There are 2 audio listeners in
+        the scene. Please ensure there is always exactly one audio listener in the
+        scene.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    m_ResultText: "TestRookArrayOfValidMovesCanMove (0.134s)\n---\nExpected and actual
+      are both <System.Boolean[8,8]>\r\n  Values differ at index [0,3]\r\n  Expected:
+      False\r\n  But was:  True\n---\nat Tests.TestPieceMoves+<TestRookArrayOfValidMovesCanMove>d__5.MoveNext
+      () [0x000e4] in C:\\Users\\Kathleen\\OneDrive\\Desktop\\COP4331\\ProjCOP\\Power
+      Chess\\Assets\\Tests\\PlayMode\\TestPieceMoves.cs:124\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext
+      () [0x0004c] in C:\\Users\\Kathleen\\OneDrive\\Desktop\\COP4331\\ProjCOP\\Power
+      Chess\\Library\\PackageCache\\com.unity.test-framework@1.1.22\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:36\n---\nThere
       are 2 audio listeners in the scene. Please ensure there is always exactly one
       audio listener in the scene.\r\nThere are 2 audio listeners in the scene. Please
       ensure there is always exactly one audio listener in the scene.\r\nThere are
@@ -682,18 +1054,18 @@ MonoBehaviour:
       2 audio listeners in the scene. Please ensure there is always exactly one audio
       listener in the scene.\r\nThere are 2 audio listeners in the scene. Please
       ensure there is always exactly one audio listener in the scene."
-    m_ResultStacktrace: 'at Tests.TestGameFlow+<TestRookWithArrayOfValidMoves>d__3.MoveNext
-      () [0x000d6] in C:\Users\Dylan\Documents\GitHub\ProjCOP\Power Chess\Assets\Tests\PlayMode\TestGameFlow.cs:93
+    m_ResultStacktrace: 'at Tests.TestPieceMoves+<TestRookArrayOfValidMovesCanMove>d__5.MoveNext
+      () [0x000e4] in C:\Users\Kathleen\OneDrive\Desktop\COP4331\ProjCOP\Power Chess\Assets\Tests\PlayMode\TestPieceMoves.cs:124
 
       at
       UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in
-      C:\Users\Dylan\Documents\GitHub\ProjCOP\Power Chess\Library\PackageCache\com.unity.test-framework@1.1.22\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+      C:\Users\Kathleen\OneDrive\Desktop\COP4331\ProjCOP\Power Chess\Library\PackageCache\com.unity.test-framework@1.1.22\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
 
 '
     m_TestListState:
-      scrollPos: {x: 0, y: 68}
-      m_SelectedIDs: ae69e0ab
-      m_LastClickedID: -1411356242
+      scrollPos: {x: 0, y: 15}
+      m_SelectedIDs: 9bf04150
+      m_LastClickedID: 1346498715
       m_ExpandedIDs: 849fc3859f5c62b6dae6f3cdd7e52e44bc805a6dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1178,7 +1550,7 @@ MonoBehaviour:
       invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
       culture) [0x00032] in <eae584ce26bc40229c1b1aa476bfa589>:0 "
     m_TestListState:
-      scrollPos: {x: 0, y: 120}
+      scrollPos: {x: 0, y: 132}
       m_SelectedIDs: 0e8ffbfb
       m_LastClickedID: -67399922
       m_ExpandedIDs: 30f38d841ef87793e557abf78359db41d7e52e44ffffff7f
@@ -1281,9 +1653,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 382.6667
-    width: 332
-    height: 257
+    y: 294
+    width: 230
+    height: 346
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1309,7 +1681,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c2340000
     m_LastClickedID: 13506
-    m_ExpandedIDs: 00000000f6350000f8350000fa350000fc350000fe35000000360000023600000436000006360000083600000a3600000c360000
+    m_ExpandedIDs: 000000002c3500002e35000030350000323500003435000036350000383500003a3500003c3500003e3500004035000042350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1334,10 +1706,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 452}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000f6350000f8350000fa350000fc350000fe35000000360000023600000436000006360000083600000a3600000c360000
+    m_ExpandedIDs: ffffffff000000002c3500002e35000030350000323500003435000036350000383500003a3500003c3500003e35000040350000423500004635000060350000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1414,10 +1786,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 953.3334
+    x: 993.3334
     y: 72.66667
-    width: 326
-    height: 437
+    width: 286
+    height: 73
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -1454,15 +1826,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 72.66667
-    width: 332
-    height: 289
+    width: 230
+    height: 200
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0af8ffff
+      m_ExpandedIDs: 54aafeff70aafeff98b7feff36bbfeff52bbfeff7ac8feff08c9feff24c9feff24d9feffa4d9feffc0d9feffb8e9feff46eafeff62eafeff5afafefff0fafeff0cfbfeff000bffffc60bffffe20bffff701affff0e1bffff2a1bffffb829ffff462affff622afffff038ffff7639ffff9239ffff1e48ffffb448ffffd048ffff5e57ffff0258ffff1e58ffff1261ffffa861ffffc461ffffba6affff486bffff646bffff5a74ffff0075ffff1c75ffffaa7cffff407dffff5c7dffffb486ffff4a87ffff6687ffff5a90ffffe890ffff0491ffff2e97ffffbc97ffffd897ffffb099ffffe699ffff029affff709dffff3e9effff5a9effffd8a1ffff76a2ffff92a2ffff0ea6ffff9ca6ffffb8a6ffff92a8ffffc6a8ffffe2a8ffffbaaafffff6aaffff12abffffecacffff7aadffff96adffff28b1ffffaeb1ffffcab1ffff46b5ffff28b6ffff44b6ffff1cb8ffffd2b8ffffeeb8ffffe0baffff14bbffff30bbffff08bdffff36bdffff52bdffffc6c0ffffe4c1ffff00c2ffffd8c3ffff54c4ffff70c4ffffe6c7ffff14c9ffff30c9ffffa6ccffffa6cdffffc2cdffff9ccfffffc0d0ffffdcd0ffff40d4ffffc6d4ffffe2d4ffff4ed8ffffe6d8ffff02d9ffffe2daffff9edbffffbadbffff94ddffff32deffff4edefffface1ffff3ae2ffff56e2ffffb4e5ffff5ce6ffff78e6ffffd8e9ffff3cecffff58ecffffb6efffff44f0ffff60f0ffffc0f3ffff5cf4ffff78f4ffffdcf7ffff48fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1622,9 +1994,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 333.33334
+    x: 231.33334
     y: 72.66667
-    width: 618
+    width: 760
     height: 370
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -1635,7 +2007,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 927, y: 523.5}
+  m_TargetSize: {x: 1140, y: 523.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1650,8 +2022,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -309
-    m_HBaseRangeMax: 309
+    m_HBaseRangeMin: -380
+    m_HBaseRangeMax: 380
     m_VBaseRangeMin: -174.5
     m_VBaseRangeMax: 174.5
     m_HAllowExceedBaseRangeMin: 1
@@ -1662,7 +2034,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1671,23 +2043,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 618
+      width: 760
       height: 349
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 309, y: 174.5}
+    m_Translation: {x: 380, y: 174.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -309
+      x: -380
       y: -174.5
-      width: 618
+      width: 760
       height: 349
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 927, y: 555}
+  m_LastWindowPixelSize: {x: 1140, y: 555}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000100000100
