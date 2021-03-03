@@ -11,16 +11,15 @@ namespace Tests
         [Test]
         public void TestAddCoinMethod()
         {
-
-            // each player starts with 0 coins
-            Assert.AreEqual(Coin.WhiteCoins, 0); 
-            Assert.AreEqual(Coin.BlackCoins, 0);
+            // Set up
+            Coin.WhiteCoins = 0;
+            Coin.BlackCoins = 0;
 
             Coin.AddCoin(true);
             
             // Only white gaines a coin
-            Assert.AreEqual(Coin.WhiteCoins, 1);
-            Assert.AreEqual(Coin.BlackCoins, 0);
+            Assert.AreEqual(1, Coin.WhiteCoins);
+            Assert.AreEqual(0, Coin.BlackCoins);
         }
 
         [Test]
@@ -33,8 +32,8 @@ namespace Tests
             Coin.RemoveCoins(false, 6);
 
             // Only black has 6 coins removed
-            Assert.AreEqual(Coin.WhiteCoins, 12);
-            Assert.AreEqual(Coin.BlackCoins, 6);
+            Assert.AreEqual(12, Coin.WhiteCoins);
+            Assert.AreEqual(6, Coin.BlackCoins);
         }
     }
 }

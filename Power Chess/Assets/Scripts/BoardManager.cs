@@ -78,7 +78,15 @@ public class BoardManager : MonoBehaviour
 
     private void TakeTurn(int x, int z)
     {
-        MoveAPiece(x, z);
+        if (allowedRelativeMoves[x, z])
+            MoveAPiece(x, z);
+        // If move is not allowed, unselect piece
+        else
+        {
+            selectedPiece = null;
+            BoardHighlights.Instance.HideHighlights();
+            return;
+        }
 
         // Update player's coins
         Coin.AddCoin(isWhiteTurn);
@@ -92,21 +100,16 @@ public class BoardManager : MonoBehaviour
     private void MoveAPiece(int x, int z)
     {
         Vector3 newSquare = GetSquareCenter(x, z);
+        Piece otherPiece = Pieces[x,z];
 
-        //If a move is valid move the piece
-        if (allowedRelativeMoves[x,z])
-        {
-            Piece otherPiece = Pieces[x,z];
+        if (otherPiece != null && otherPiece.isWhite != isWhiteTurn)
+            CapturePiece(otherPiece);
 
-            if (otherPiece != null && otherPiece.isWhite != isWhiteTurn)
-                CapturePiece(otherPiece);
+        Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
 
-            Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
-
-            selectedPiece.transform.position = newSquare;
-            selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
-            Pieces[x, z] = selectedPiece;
-        }
+        selectedPiece.transform.position = newSquare;
+        selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
+        Pieces[x, z] = selectedPiece;
 
         //And remove the board highlight
         BoardHighlights.Instance.HideHighlights();

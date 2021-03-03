@@ -12,7 +12,7 @@ public class Coin : MonoBehaviour
 
     void Update()
     {
-        playersCoins.text = "White Player's Coins: " + WhiteCoins + "\nBlack Player's Coins: " + BlackCoins;
+        playersCoins.text = "Coins \n\t\t" + WhiteCoins + "\n\t\t" + BlackCoins;
     }
 
     public static void AddCoin(bool isWhiteTurn)
