@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,6 +22,9 @@ public class BoardManager : MonoBehaviour
 
     public int selectionX = -1;
     public int selectionZ = -1;
+
+    public int emptySelectionX = -1;
+    public int emptySelectionZ = -1;
 
     public List<GameObject> chessPiecesPrefabs;
 
@@ -53,6 +56,7 @@ public class BoardManager : MonoBehaviour
             {
                 if (selectedPiece == null) //If clicking on a piece
                 {
+                    BoardHighlights.Instance.HideHighlights();
                     SelectPiece(selectionX, selectionZ);
                 }
                 else
@@ -67,11 +71,18 @@ public class BoardManager : MonoBehaviour
     private void SelectPiece(int x, int z)
     {
         if (Pieces[x,z] == null)
+        {
+            emptySelectionX = x;
+            emptySelectionZ = z;
+            bool[,] array = new bool[8,8];
+            array[x,z] = true;
+            BoardHighlights.Instance.HighlightAllowedMoves(array);
             return;
+        }
         if (Pieces[x,z].isWhite != isWhiteTurn)
             return;
 
-        allowedRelativeMoves = Pieces[x, z].ArrayOfValidMove(); 
+        allowedRelativeMoves = Pieces[x, z].ArrayOfValidMove();
         selectedPiece = Pieces[x,z];
         BoardHighlights.Instance.HighlightAllowedMoves(allowedRelativeMoves);
     }

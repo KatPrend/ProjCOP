@@ -22,10 +22,14 @@ public class ButtonScript : MonoBehaviour
     int i;
     public void SpawnAPiece()
     {
-        if(BoardManager.Instance.Pieces[i, 4] == null && i < 8)
+        int x = BoardManager.Instance.emptySelectionX;
+        int z = BoardManager.Instance.emptySelectionZ;
+        if(BoardManager.Instance.Pieces[x,z] == null && i < 8 && x > -1 && z > -1)
         {
-            BoardManager.Instance.SpawnChessPiece(i, i, 4);
+            BoardManager.Instance.SpawnChessPiece(i, x, z);
             i++;
+            x = -1;
+            z = -1;
         }
         else
             OnButtonPress();
