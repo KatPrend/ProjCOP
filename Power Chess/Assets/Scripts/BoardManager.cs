@@ -159,7 +159,7 @@ public class BoardManager : MonoBehaviour
     }
 
     //Given an index in the ChessPiecesPrefab list spawn that pieces at position
-    private void SpawnChessPiece(int index, int x, int z)
+    public void SpawnChessPiece(int index, int x, int z)
     {
         GameObject go = Instantiate(chessPiecesPrefabs[index], GetSquareCenter(x,z), FixRotation(index)) as GameObject; //Create it as a game object
         go.transform.SetParent(transform);
