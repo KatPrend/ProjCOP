@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,17 +19,15 @@ public class ButtonScript : MonoBehaviour
         Debug.Log("Button clicked " + n + " times.");
     }
 
-    int i;
+    int i = 0;
     public void SpawnAPiece()
     {
         int x = BoardManager.Instance.emptySelectionX;
         int z = BoardManager.Instance.emptySelectionZ;
-        if(BoardManager.Instance.Pieces[x,z] == null && i < 8 && x > -1 && z > -1)
+        if(x > -1 && z > -1 && BoardManager.Instance.Pieces[x,z] == null)
         {
-            BoardManager.Instance.SpawnChessPiece(i, x, z);
+            BoardManager.Instance.SpawnChessPiece(i%12, x, z);
             i++;
-            x = -1;
-            z = -1;
         }
         else
             OnButtonPress();

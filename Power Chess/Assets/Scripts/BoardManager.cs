@@ -80,11 +80,17 @@ public class BoardManager : MonoBehaviour
             return;
         }
         if (Pieces[x,z].isWhite != isWhiteTurn)
+        {
+            emptySelectionX = -1;
+            emptySelectionZ = -1;
             return;
+        }            
 
         allowedRelativeMoves = Pieces[x, z].ArrayOfValidMove();
         selectedPiece = Pieces[x,z];
         BoardHighlights.Instance.HighlightAllowedMoves(allowedRelativeMoves);
+        emptySelectionX = -1;
+        emptySelectionZ = -1;
     }
 
     private void TakeTurn(int x, int z)
