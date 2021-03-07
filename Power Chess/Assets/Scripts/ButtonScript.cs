@@ -22,14 +22,26 @@ public class ButtonScript : MonoBehaviour
     int i = 0;
     public void SpawnAPiece()
     {
-        int x = BoardManager.Instance.emptySelectionX;
-        int z = BoardManager.Instance.emptySelectionZ;
-        if(x > -1 && z > -1 && BoardManager.Instance.Pieces[x,z] == null)
-        {
-            BoardManager.Instance.SpawnChessPiece(i%12, x, z);
-            i++;
-        }
+        BoardManager board = BoardManager.Instance;
+        int x = board.emptySelectionX;
+        int z = board.emptySelectionZ;
+
+        if (x > -1 && z > -1 && board.Pieces[x, z] == null)
+            PurchasePiece(x, z, board.isWhiteTurn);
         else
             OnButtonPress();
+    }
+
+    private void PurchasePiece(int x, int z, bool isWhiteTurn)
+    {
+        // Check for coins
+        if (isWhiteTurn && Coin.WhiteCoins >= 1 || !isWhiteTurn && Coin.BlackCoins >= 1)
+        {
+            BoardManager.Instance.SpawnChessPiece(i % 12, x, z);
+            i++;
+
+            // deduct coins from purchase
+            Coin.RemoveCoins(isWhiteTurn, 1);
+        }
     }
 }
