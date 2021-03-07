@@ -6,12 +6,6 @@ using UnityEngine.UI;
 public abstract class ButtonScript : MonoBehaviour
 {
     int n;
-
-    public void ButtonPress(string input)
-    {
-        Text txt = transform.Find("Text").GetComponent<Text>();
-        txt.text = input;
-    }
    
     public void OnButtonPress()
     {
