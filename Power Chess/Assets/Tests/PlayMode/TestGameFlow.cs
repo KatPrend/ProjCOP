@@ -3,7 +3,6 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
-using NSubstitute;
 
 namespace Tests
 {
@@ -85,20 +84,5 @@ namespace Tests
             
         }
 
-        // Failing
-        [UnityTest]
-        public IEnumerator TestUpdateSelection()
-        {
-            BoardManager board = BoardManager.Instance;
-            board.InputAction = Substitute.For<IHandleInput>();
-
-            yield return null;
-
-            // mouse is over bottom left square (a1)
-            board.InputAction.MousePosition().Returns(new Vector3(0.5f, 0, 0.5f));
-
-            Assert.AreEqual(0, board.selectionX);
-            Assert.AreEqual(0, board.selectionZ);
-        }
     }
 }

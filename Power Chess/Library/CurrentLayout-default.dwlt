@@ -20,271 +20,11 @@ MonoBehaviour:
     height: 637.3334
   m_ShowMode: 4
   m_Title: 
-  m_RootView: {fileID: 12}
-  m_MinSize: {x: 875, y: 542}
+  m_RootView: {fileID: 2}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 404
-    width: 625
-    height: 184
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 4}
-  - {fileID: 2}
-  m_Position:
-    serializedVersion: 2
-    x: 327
-    y: 0
-    width: 625
-    height: 588
-  m_MinSize: {x: 202, y: 342}
-  m_MaxSize: {x: 4002, y: 8042}
-  vertical: 1
-  controlID: 83
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 625
-    height: 404
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 23}
-  m_Panes:
-  - {fileID: 23}
-  - {fileID: 15}
-  - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 156
-    width: 328
-    height: 432
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &6
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 11}
-  - {fileID: 5}
-  m_Position:
-    serializedVersion: 2
-    x: 952
-    y: 0
-    width: 328
-    height: 588
-  m_MinSize: {x: 276, y: 192}
-  m_MaxSize: {x: 4001, y: 8042}
-  vertical: 1
-  controlID: 151
---- !u!114 &7
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 310
-    width: 327
-    height: 278
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 20}
-  m_Panes:
-  - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &8
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 9}
-  - {fileID: 7}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 327
-    height: 588
-  m_MinSize: {x: 231, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
-  vertical: 1
-  controlID: 35
---- !u!114 &9
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 327
-    height: 310
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 22}
-  m_Panes:
-  - {fileID: 22}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 8}
-  - {fileID: 3}
-  - {fileID: 6}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 1280
-    height: 588
-  m_MinSize: {x: 709, y: 492}
-  m_MaxSize: {x: 18004, y: 14042}
-  vertical: 0
-  controlID: 34
---- !u!114 &11
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 328
-    height: 156
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 21}
-  m_Panes:
-  - {fileID: 21}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -297,18 +37,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 13}
-  - {fileID: 10}
-  - {fileID: 14}
+  - {fileID: 3}
+  - {fileID: 5}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1280
     height: 638
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
---- !u!114 &13
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &14
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -351,6 +91,266 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 6}
+  - {fileID: 9}
+  - {fileID: 12}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1280
+    height: 588
+  m_MinSize: {x: 609, y: 471}
+  m_MaxSize: {x: 18004, y: 14021}
+  vertical: 0
+  controlID: 8799
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 7}
+  - {fileID: 8}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 277
+    height: 588
+  m_MinSize: {x: 231, y: 471}
+  m_MaxSize: {x: 10001, y: 14021}
+  vertical: 1
+  controlID: 8829
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneHierarchyWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 277
+    height: 310
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 310
+    width: 277
+    height: 278
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 277
+    y: 0
+    width: 625
+    height: 588
+  m_MinSize: {x: 102, y: 242}
+  m_MaxSize: {x: 4002, y: 8042}
+  vertical: 1
+  controlID: 8749
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 625
+    height: 406
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 18}
+  - {fileID: 15}
+  - {fileID: 19}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 406
+    width: 625
+    height: 182
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 20}
+  m_Panes:
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 13}
+  - {fileID: 14}
+  m_Position:
+    serializedVersion: 2
+    x: 902
+    y: 0
+    width: 378
+    height: 588
+  m_MinSize: {x: 276, y: 192}
+  m_MaxSize: {x: 4001, y: 8042}
+  vertical: 1
+  controlID: 8800
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 378
+    height: 101
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 21}
+  m_Panes:
+  - {fileID: 21}
+  - {fileID: 22}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: TestRunnerWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 101
+    width: 378
+    height: 487
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 23}
+  m_Panes:
+  - {fileID: 23}
+  m_Selected: 0
+  m_LastSelected: 0
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -372,10 +372,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 327.33334
+    x: 277.33334
     y: 72.66667
     width: 623
-    height: 383
+    height: 385
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 934.5, y: 543}
+  m_TargetSize: {x: 934.5, y: 546}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -402,8 +402,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -311.5
     m_HBaseRangeMax: 311.5
-    m_VBaseRangeMin: -181
-    m_VBaseRangeMax: 181
+    m_VBaseRangeMin: -182
+    m_VBaseRangeMax: 182
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -412,7 +412,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -422,9 +422,9 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 623
-      height: 362
+      height: 364
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 311.5, y: 181}
+    m_Translation: {x: 311.5, y: 182}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -432,12 +432,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -311.5
-      y: -181
+      y: -182
       width: 623
-      height: 362
+      height: 364
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 934.5, y: 574.5}
+  m_LastWindowPixelSize: {x: 934.5, y: 577.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -451,1409 +451,54 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 327.33334
-    y: 476.6667
-    width: 623
-    height: 163
-  m_ViewDataDictionary: {fileID: 0}
---- !u!114 &17
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Test Runner
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 952
-    y: 228.66667
-    width: 327
-    height: 411
-  m_ViewDataDictionary: {fileID: 0}
-  m_Spl:
-    ID: 180
-    splitterInitialOffset: 348
-    currentActiveSplitter: -1
-    realSizes: dd00000078000000
-    relativeSizes:
-    - 0.64788735
-    - 0.35211265
-    minSizes: 2000000020000000
-    maxSizes: 0000000000000000
-    lastTotalSize: 341
-    splitSize: 6
-    xOffset: 0
-  m_TestTypeToolbarIndex: 0
-  m_PlayModeTestListGUI:
-    m_Window: {fileID: 17}
-    newResultList:
-    - id: 1026
-      uniqueId: '[Power Chess][suite]'
-      name: Power Chess
-      fullName: Power Chess
-      resultStatus: 1
-      duration: 0.7903321
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    - id: 1004
-      uniqueId: '[PlayMode.dll][suite]'
-      name: PlayMode.dll
-      fullName: C:/Users/Kathleen/OneDrive/Desktop/COP4331/ProjCOP/Power Chess/Library/ScriptAssemblies/PlayMode.dll
-      resultStatus: 1
-      duration: 0.7347457
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1000
-      parentUniqueId: '[Power Chess][suite]'
-    - id: 1005
-      uniqueId: PlayMode.dll/[PlayMode][Tests][suite]
-      name: Tests
-      fullName: Tests
-      resultStatus: 1
-      duration: 0.7229105
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1004
-      parentUniqueId: '[PlayMode.dll][suite]'
-    - id: 1001
-      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
-      name: ButtonTests
-      fullName: Tests.ButtonTests
-      resultStatus: 1
-      duration: 0.7098461
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1024
-      parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
-    - id: 1002
-      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestButtonCanSpawnPieceInEmptySpot]
-      name: TestButtonCanSpawnPieceInEmptySpot
-      fullName: Tests.ButtonTests.TestButtonCanSpawnPieceInEmptySpot
-      resultStatus: 1
-      duration: 0.3220688
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
-    - id: 1003
-      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestButtonWillNotSpawnPieceInOccupiedSpot]
-      name: TestButtonWillNotSpawnPieceInOccupiedSpot
-      fullName: Tests.ButtonTests.TestButtonWillNotSpawnPieceInOccupiedSpot
-      resultStatus: 1
-      duration: 0.1763567
-      messages: 
-      output: 'Button clicked 1 times.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
-    - id: 1004
-      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestButtonWillNotSpawnWithoutEnoughCoins]
-      name: TestButtonWillNotSpawnWithoutEnoughCoins
-      fullName: Tests.ButtonTests.TestButtonWillNotSpawnWithoutEnoughCoins
-      resultStatus: 1
-      duration: 0.1820053
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
-    - id: 1001
-      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
-      name: TestGameFlow
-      fullName: Tests.TestGameFlow
-      resultStatus: 2
-      duration: 0.6183338
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1005
-      parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
-    - id: 1002
-      uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestGetSquareCenter]
-      name: TestGetSquareCenter
-      fullName: Tests.TestGameFlow.TestGetSquareCenter
-      resultStatus: 1
-      duration: 0.2180532
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
-    - id: 1005
-      uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestSpawnAllChessPiecesPutsPiecesInCorrectSquares]
-      name: TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
-      fullName: Tests.TestGameFlow.TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
-      resultStatus: 1
-      duration: 0.0415937
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-        There
-        are 2 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
-
-        There are 2 audio listeners in
-        the scene. Please ensure there is always exactly one audio listener in the
-        scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
-    - id: 1032
-      uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestStartingSelectionPosition]
-      name: TestStartingSelectionPosition
-      fullName: Tests.TestGameFlow.TestStartingSelectionPosition
-      resultStatus: 1
-      duration: 0.0398987
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1029
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
-    - id: 1033
-      uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestUpdateSelection]
-      name: TestUpdateSelection
-      fullName: Tests.TestGameFlow.TestUpdateSelection
-      resultStatus: 2
-      duration: 0.570369
-      messages: "  Expected: 0\r\n  But was:  -1\r\n"
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-        There
-        are 2 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
-
-        There are 2 audio listeners in
-        the scene. Please ensure there is always exactly one audio listener in the
-        scene.
-
-        There are 2 audio listeners in the scene. Please ensure there
-        is always exactly one audio listener in the scene.
-
-        There are 2 audio
-        listeners in the scene. Please ensure there is always exactly one audio listener
-        in the scene.
-
-'
-      stacktrace: 'at Tests.TestGameFlow+<TestUpdateSelection>d__4.MoveNext () [0x000ab]
-        in C:\Users\Kathleen\OneDrive\Desktop\COP4331\ProjCOP\Power Chess\Assets\Tests\PlayMode\TestGameFlow.cs:102
-
-        at
-        UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c]
-        in C:\Users\Kathleen\OneDrive\Desktop\COP4331\ProjCOP\Power Chess\Library\PackageCache\com.unity.test-framework@1.1.22\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-
-'
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1029
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
-    - id: 1004
-      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-      name: TestPieceMoves
-      fullName: Tests.TestPieceMoves
-      resultStatus: 1
-      duration: 2.0076306
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1008
-      parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
-    - id: 1012
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestBishopArrayOfValidMovesAtStartingPosition]
-      name: TestBishopArrayOfValidMovesAtStartingPosition
-      fullName: Tests.TestPieceMoves.TestBishopArrayOfValidMovesAtStartingPosition
-      resultStatus: 1
-      duration: 0.2909543
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1015
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestBishopArrayOfValidMovesCanMove]
-      name: TestBishopArrayOfValidMovesCanMove
-      fullName: Tests.TestPieceMoves.TestBishopArrayOfValidMovesCanMove
-      resultStatus: 1
-      duration: 0.1828591
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-        There
-        are 2 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
-
-        There are 2 audio listeners in
-        the scene. Please ensure there is always exactly one audio listener in the
-        scene.
-
-        There are 2 audio listeners in the scene. Please ensure there
-        is always exactly one audio listener in the scene.
-
-        There are 2 audio
-        listeners in the scene. Please ensure there is always exactly one audio listener
-        in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1008
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestBlackPawnArrayOfValidMovesAtStartingPosition]
-      name: TestBlackPawnArrayOfValidMovesAtStartingPosition
-      fullName: Tests.TestPieceMoves.TestBlackPawnArrayOfValidMovesAtStartingPosition
-      resultStatus: 1
-      duration: 0.1700696
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1005
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition]
-      name: TestKingArrayOfValidMovesAtStartingPosition
-      fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition
-      resultStatus: 1
-      duration: 0.118891
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-        There
-        are 2 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1006
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKingArrayOfValidMovesCanMove]
-      name: TestKingArrayOfValidMovesCanMove
-      fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesCanMove
-      resultStatus: 1
-      duration: 0.1337352
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1004
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1011
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKnightArrayOfValidMovesAtStartingPosition]
-      name: TestKnightArrayOfValidMovesAtStartingPosition
-      fullName: Tests.TestPieceMoves.TestKnightArrayOfValidMovesAtStartingPosition
-      resultStatus: 1
-      duration: 0.1236128
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-        There
-        are 2 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1013
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKnightArrayOfValidMovesCanCapture]
-      name: TestKnightArrayOfValidMovesCanCapture
-      fullName: Tests.TestPieceMoves.TestKnightArrayOfValidMovesCanCapture
-      resultStatus: 1
-      duration: 0.1513268
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-        There
-        are 2 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1009
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestPawnArrayOfValidMovesCapture]
-      name: TestPawnArrayOfValidMovesCapture
-      fullName: Tests.TestPieceMoves.TestPawnArrayOfValidMovesCapture
-      resultStatus: 1
-      duration: 0.1294666
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1013
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestQueenArrayOfValidMovesAtStartingPosition]
-      name: TestQueenArrayOfValidMovesAtStartingPosition
-      fullName: Tests.TestPieceMoves.TestQueenArrayOfValidMovesAtStartingPosition
-      resultStatus: 1
-      duration: 0.1269242
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1017
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestQueenArrayOfValidMovesCanCapture]
-      name: TestQueenArrayOfValidMovesCanCapture
-      fullName: Tests.TestPieceMoves.TestQueenArrayOfValidMovesCanCapture
-      resultStatus: 1
-      duration: 0.1188839
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-        There
-        are 2 audio listeners in the scene. Please ensure there is always exactly
-        one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1010
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestRookArrayOfValidMovesAtStartingPosition]
-      name: TestRookArrayOfValidMovesAtStartingPosition
-      fullName: Tests.TestPieceMoves.TestRookArrayOfValidMovesAtStartingPosition
-      resultStatus: 1
-      duration: 0.1230892
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1011
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestRookArrayOfValidMovesCanMove]
-      name: TestRookArrayOfValidMovesCanMove
-      fullName: Tests.TestPieceMoves.TestRookArrayOfValidMovesCanMove
-      resultStatus: 1
-      duration: 0.1120147
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    - id: 1007
-      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestWhitePawnArrayOfValidMovesAtStartingPosition]
-      name: TestWhitePawnArrayOfValidMovesAtStartingPosition
-      fullName: Tests.TestPieceMoves.TestWhitePawnArrayOfValidMovesAtStartingPosition
-      resultStatus: 1
-      duration: 0.1321068
-      messages: 
-      output: 'There are 2 audio listeners in the scene. Please ensure there is always
-        exactly one audio listener in the scene.
-
-        There are 2 audio listeners
-        in the scene. Please ensure there is always exactly one audio listener in
-        the scene.
-
-        There are 2 audio listeners in the scene. Please ensure
-        there is always exactly one audio listener in the scene.
-
-        There are
-        2 audio listeners in the scene. Please ensure there is always exactly one
-        audio listener in the scene.
-
-        There are 2 audio listeners in the
-        scene. Please ensure there is always exactly one audio listener in the scene.
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1006
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    m_ResultText: ButtonTests (0.710s)
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 175177bf
-      m_LastClickedID: -1082699497
-      m_ExpandedIDs: 849fc3859f5c62b6175177bfdae6f3cdd7e52e44bc805a6dffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
-    m_SelectedOption: 0
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 17}
-    newResultList:
-    - id: 1000
-      uniqueId: '[Power Chess][suite]'
-      name: Power Chess
-      fullName: Power Chess
-      resultStatus: 1
-      duration: 0.2675495
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    - id: 1005
-      uniqueId: '[Tests.dll][suite]'
-      name: Tests.dll
-      fullName: C:/Users/Dylan/Documents/GitHub/ProjCOP/Power Chess/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 0.1565126
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1000
-      parentUniqueId: '[Power Chess][suite]'
-    - id: 1006
-      uniqueId: Tests.dll/[Tests][suite]
-      name: Tests
-      fullName: Tests
-      resultStatus: 1
-      duration: 0.1400061
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1005
-      parentUniqueId: '[Tests.dll][suite]'
-    - id: 1001
-      uniqueId: Tests.dll/Tests/[Tests][Tests.CoinTests][suite]
-      name: CoinTests
-      fullName: Tests.CoinTests
-      resultStatus: 1
-      duration: 0.0588843
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1025
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1002
-      uniqueId: Tests.dll/Tests/CoinTests/[Tests][Tests.CoinTests.TestAddCoinMethod]
-      name: TestAddCoinMethod
-      fullName: Tests.CoinTests.TestAddCoinMethod
-      resultStatus: 1
-      duration: 0.0228295
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CoinTests][suite]
-    - id: 1003
-      uniqueId: Tests.dll/Tests/CoinTests/[Tests][Tests.CoinTests.TestRemoveCoinMethod]
-      name: TestRemoveCoinMethod
-      fullName: Tests.CoinTests.TestRemoveCoinMethod
-      resultStatus: 1
-      duration: 0.001091
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CoinTests][suite]
-    - id: 1001
-      uniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-      name: PositionTests
-      fullName: Tests.PositionTests
-      resultStatus: 1
-      duration: 0.0668795
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1006
-      parentUniqueId: Tests.dll/[Tests][suite]
-    - id: 1013
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestBishopWithInvalidMove]
-      name: TestBishopWithInvalidMove
-      fullName: Tests.PositionTests.TestBishopWithInvalidMove
-      resultStatus: 1
-      duration: 0.0046397
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1014
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestBishopWithMoveOffTheBoard]
-      name: TestBishopWithMoveOffTheBoard
-      fullName: Tests.PositionTests.TestBishopWithMoveOffTheBoard
-      resultStatus: 1
-      duration: 0.0007456
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1012
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestBishopWithValidMove]
-      name: TestBishopWithValidMove
-      fullName: Tests.PositionTests.TestBishopWithValidMove
-      resultStatus: 1
-      duration: 0.0010407
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1009
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKingWithInvalidMove]
-      name: TestKingWithInvalidMove
-      fullName: Tests.PositionTests.TestKingWithInvalidMove
-      resultStatus: 1
-      duration: 0.0026724
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1010
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKingWithMoveOffTheBoard]
-      name: TestKingWithMoveOffTheBoard
-      fullName: Tests.PositionTests.TestKingWithMoveOffTheBoard
-      resultStatus: 1
-      duration: 0.0006875
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1008
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKingWithValidMove]
-      name: TestKingWithValidMove
-      fullName: Tests.PositionTests.TestKingWithValidMove
-      resultStatus: 1
-      duration: 0.0005855
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1003
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKnightWithInvalidMove]
-      name: TestKnightWithInvalidMove
-      fullName: Tests.PositionTests.TestKnightWithInvalidMove
-      resultStatus: 1
-      duration: 0.0012955
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1004
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKnightWithMoveOffTheBoard]
-      name: TestKnightWithMoveOffTheBoard
-      fullName: Tests.PositionTests.TestKnightWithMoveOffTheBoard
-      resultStatus: 1
-      duration: 0.0004867
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1002
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKnightWithValidMove]
-      name: TestKnightWithValidMove
-      fullName: Tests.PositionTests.TestKnightWithValidMove
-      resultStatus: 1
-      duration: 0.0006157
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1004
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestPawnWithInvalidMove]
-      name: TestPawnWithInvalidMove
-      fullName: Tests.PositionTests.TestPawnWithInvalidMove
-      resultStatus: 1
-      duration: 0.0009623
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1005
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestPawnWithMoveOffTheBoard]
-      name: TestPawnWithMoveOffTheBoard
-      fullName: Tests.PositionTests.TestPawnWithMoveOffTheBoard
-      resultStatus: 1
-      duration: 0.000455
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1003
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestPawnWithValidMove]
-      name: TestPawnWithValidMove
-      fullName: Tests.PositionTests.TestPawnWithValidMove
-      resultStatus: 1
-      duration: 0.0003749
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1002
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestPawnWithValidOpeningMove]
-      name: TestPawnWithValidOpeningMove
-      fullName: Tests.PositionTests.TestPawnWithValidOpeningMove
-      resultStatus: 1
-      duration: 0.0003723
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1016
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestQueenWithInvalidMove]
-      name: TestQueenWithInvalidMove
-      fullName: Tests.PositionTests.TestQueenWithInvalidMove
-      resultStatus: 1
-      duration: 0.001905
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1017
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestQueenWithMoveOffTheBoard]
-      name: TestQueenWithMoveOffTheBoard
-      fullName: Tests.PositionTests.TestQueenWithMoveOffTheBoard
-      resultStatus: 1
-      duration: 0.0006045
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1015
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestQueenWithValidStraightMove]
-      name: TestQueenWithValidStraightMove
-      fullName: Tests.PositionTests.TestQueenWithValidStraightMove
-      resultStatus: 1
-      duration: 0.0004217
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1003
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestRookWithInvalidMove]
-      name: TestRookWithInvalidMove
-      fullName: Tests.PositionTests.TestRookWithInvalidMove
-      resultStatus: 1
-      duration: 0.0011438
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1004
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestRookWithMoveOffTheBoard]
-      name: TestRookWithMoveOffTheBoard
-      fullName: Tests.PositionTests.TestRookWithMoveOffTheBoard
-      resultStatus: 1
-      duration: 0.0004469
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    - id: 1002
-      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestRookWithValidMove]
-      name: TestRookWithValidMove
-      fullName: Tests.PositionTests.TestRookWithValidMove
-      resultStatus: 1
-      duration: 0.0003924
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
-    m_ResultText: TestAddCoinMethod (0.023s)
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: cebad507
-      m_LastClickedID: 131447502
-      m_ExpandedIDs: 30f38d841ef87793e557abf78359db41d7e52e44ffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12141, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 300, y: 360}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Navigation
-    m_Image: {fileID: 1087843850482249999, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1979
-    y: 75
-    width: 275
-    height: 1260
-  m_ViewDataDictionary: {fileID: 0}
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 400, y: 100}
-  m_MaxSize: {x: 2048, y: 2048}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000,
+    m_Text: Hierarchy
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 502
-    y: 73
-    width: 928
-    height: 610
+    x: 0
+    y: 72.66667
+    width: 276
+    height: 289
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &20
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 9a3effffb63efffff460ffff2667ffff6867ffff8467ffffc089ffff868affffa28affff9298ffff2e99ffff4a99ffff3e9bffff709bffff8c9bffff7ca9ffff70aaffff8caaffff80acffff34adffff50adffff44afffff04b0ffff20b0ffff04b5ffffbcb5ffffd8b5ffffacbaffff10faffff68fbffff04340000
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 7}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 46b7a0fefa812c44ca6fda42b4d7b176
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1876,7 +521,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 382.6667
-    width: 326
+    width: 276
     height: 257
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -1903,7 +548,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c2340000
     m_LastClickedID: 13506
-    m_ExpandedIDs: 000000001e350000a6350000a8350000aa350000ac350000ae350000b0350000b2350000b4350000b6350000b8350000ba350000bc350000be350000c0350000c2350000c4350000c6350000c8350000ca350000cc350000ce350000d0350000
+    m_ExpandedIDs: ffffffff0000000020350000a8350000aa350000ac350000ae350000b0350000b2350000b4350000b6350000b8350000ba350000bc350000be350000c0350000c2350000c4350000c6350000c8350000ca350000cc350000ce350000d0350000d2350000fe370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1928,10 +573,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 949.4975}
+    scrollPos: {x: 0, y: 1050.4954}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000001e350000a6350000a8350000aa350000ac350000ae350000b0350000b2350000b4350000b6350000b8350000ba350000bc350000be350000c0350000c2350000c4350000c6350000c8350000ca350000cc350000ce350000d0350000
+    m_ExpandedIDs: ffffffff0000000020350000a8350000aa350000ac350000ae350000b0350000b2350000b4350000b6350000b8350000ba350000bc350000be350000c0350000c2350000c4350000c6350000c8350000ca350000cc350000ce350000d0350000d2350000fe370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1947,7 +592,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 7}
+      m_ClientGUIView: {fileID: 8}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1975,7 +620,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 7}
+      m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1987,100 +632,7 @@ MonoBehaviour:
     m_GridSize: 55
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 110
---- !u!114 &21
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 952
-    y: 72.66667
-    width: 327
-    height: 135
-  m_ViewDataDictionary: {fileID: 0}
-  m_OpenAddComponentMenu: 0
-  m_ObjectsLockedBeforeSerialization: []
-  m_InstanceIDsLockedBeforeSerialization: 
-  m_LockTracker:
-    m_IsLocked: 0
-  m_PreviewResizer:
-    m_CachedPref: -239
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
---- !u!114 &22
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Hierarchy
-    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 72.66667
-    width: 326
-    height: 289
-  m_ViewDataDictionary: {fileID: 0}
-  m_SceneHierarchy:
-    m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 86ebffffa4ebffff70f0fffffcf0ffff1af1ffff78f4ffff12f5ffff30f5ffff20f7ffffa0f7ffffbef7ffffb6f9ffff68fbffff
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
-      m_SearchString: 
-    m_ExpandedScenes: []
-    m_CurrenRootInstanceID: 0
-    m_LockTracker:
-      m_IsLocked: 0
-    m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 46b7a0fefa812c44ca6fda42b4d7b176
---- !u!114 &23
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2101,7 +653,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 327.33334
+    x: 277.33334
     y: 72.66667
     width: 623
     height: 383
@@ -2116,9 +668,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 269.76297, y: 76.32774, z: 60.12149}
+    m_Target: {x: 467.25, y: 41.48999, z: 0}
     speed: 2
-    m_Value: {x: 269.76297, y: 76.32774, z: 60.12149}
+    m_Value: {x: 467.25, y: 41.48999, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2164,13 +716,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.000000056174663, y: -0.00149999, z: -0.000000024691799, w: 0.9999988}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0.000000056174667, y: -0.0014999901, z: -0.0000000246918, w: 0.99999887}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 174.00508
+    m_Target: 271.29614
     speed: 2
-    m_Value: 174.00508
+    m_Value: 271.29614
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2195,3 +747,1189 @@ MonoBehaviour:
   m_SceneVisActive: 0
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 400, y: 100}
+  m_MaxSize: {x: 2048, y: 2048}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: -7444545952099596278, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 502
+    y: 73
+    width: 928
+    height: 610
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &20
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 277.33334
+    y: 478.6667
+    width: 623
+    height: 161
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 902
+    y: 72.66667
+    width: 377
+    height: 80
+  m_ViewDataDictionary: {fileID: 0}
+  m_OpenAddComponentMenu: 0
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewResizer:
+    m_CachedPref: -239
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12141, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 360}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Navigation
+    m_Image: {fileID: 1087843850482249999, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1979
+    y: 75
+    width: 275
+    height: 1260
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &23
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 902
+    y: 174
+    width: 377
+    height: 466
+  m_ViewDataDictionary: {fileID: 0}
+  m_Spl:
+    ID: 8885
+    splitterInitialOffset: 348
+    currentActiveSplitter: -1
+    realSizes: 010100008b000000
+    relativeSizes:
+    - 0.64788735
+    - 0.35211265
+    minSizes: 2000000020000000
+    maxSizes: 0000000000000000
+    lastTotalSize: 396
+    splitSize: 6
+    xOffset: 0
+  m_TestTypeToolbarIndex: 0
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 23}
+    newResultList:
+    - id: 1026
+      uniqueId: '[Power Chess][suite]'
+      name: Power Chess
+      fullName: Power Chess
+      resultStatus: 1
+      duration: 3.5958672
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1004
+      uniqueId: '[PlayMode.dll][suite]'
+      name: PlayMode.dll
+      fullName: C:/Users/Kathleen/OneDrive/Desktop/COP4331/ProjCOP/Power Chess/Library/ScriptAssemblies/PlayMode.dll
+      resultStatus: 1
+      duration: 3.5268452
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Power Chess][suite]'
+    - id: 1005
+      uniqueId: PlayMode.dll/[PlayMode][Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 1
+      duration: 3.5029094
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: '[PlayMode.dll][suite]'
+    - id: 1001
+      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+      name: ButtonTests
+      fullName: Tests.ButtonTests
+      resultStatus: 1
+      duration: 1.5447794
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1024
+      parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
+    - id: 1009
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestBishopButtonSpawnsKing]
+      name: TestBishopButtonSpawnsKing
+      fullName: Tests.ButtonTests.TestBishopButtonSpawnsKing
+      resultStatus: 1
+      duration: 0.3266662
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1002
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestButtonCanSpawnPieceInEmptySpot]
+      name: TestButtonCanSpawnPieceInEmptySpot
+      fullName: Tests.ButtonTests.TestButtonCanSpawnPieceInEmptySpot
+      resultStatus: 1
+      duration: 0.175191
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1003
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestButtonWillNotSpawnPieceInOccupiedSpot]
+      name: TestButtonWillNotSpawnPieceInOccupiedSpot
+      fullName: Tests.ButtonTests.TestButtonWillNotSpawnPieceInOccupiedSpot
+      resultStatus: 1
+      duration: 0.1702143
+      messages: 
+      output: 'Button clicked 1 times.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1004
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestButtonWillNotSpawnWithoutEnoughCoins]
+      name: TestButtonWillNotSpawnWithoutEnoughCoins
+      fullName: Tests.ButtonTests.TestButtonWillNotSpawnWithoutEnoughCoins
+      resultStatus: 1
+      duration: 0.167504
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1005
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestKingButtonSpawnsKing]
+      name: TestKingButtonSpawnsKing
+      fullName: Tests.ButtonTests.TestKingButtonSpawnsKing
+      resultStatus: 1
+      duration: 0.1379285
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestKnightButtonSpawnsKing]
+      name: TestKnightButtonSpawnsKing
+      fullName: Tests.ButtonTests.TestKnightButtonSpawnsKing
+      resultStatus: 1
+      duration: 0.1364082
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1010
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestPawnButtonSpawnsKing]
+      name: TestPawnButtonSpawnsKing
+      fullName: Tests.ButtonTests.TestPawnButtonSpawnsKing
+      resultStatus: 1
+      duration: 0.1325434
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1006
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestQueenButtonSpawnsKing]
+      name: TestQueenButtonSpawnsKing
+      fullName: Tests.ButtonTests.TestQueenButtonSpawnsKing
+      resultStatus: 1
+      duration: 0.1258878
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestRookButtonSpawnsKing]
+      name: TestRookButtonSpawnsKing
+      fullName: Tests.ButtonTests.TestRookButtonSpawnsKing
+      resultStatus: 1
+      duration: 0.1256074
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1001
+      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
+      name: TestGameFlow
+      fullName: Tests.TestGameFlow
+      resultStatus: 1
+      duration: 0.2084511
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
+    - id: 1002
+      uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestGetSquareCenter]
+      name: TestGetSquareCenter
+      fullName: Tests.TestGameFlow.TestGetSquareCenter
+      resultStatus: 1
+      duration: 0.1137039
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
+    - id: 1005
+      uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestSpawnAllChessPiecesPutsPiecesInCorrectSquares]
+      name: TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
+      fullName: Tests.TestGameFlow.TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
+      resultStatus: 1
+      duration: 0.0259875
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
+    - id: 1032
+      uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestStartingSelectionPosition]
+      name: TestStartingSelectionPosition
+      fullName: Tests.TestGameFlow.TestStartingSelectionPosition
+      resultStatus: 1
+      duration: 0.0491599
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1029
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
+    - id: 1004
+      uniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+      name: TestPieceMoves
+      fullName: Tests.TestPieceMoves
+      resultStatus: 1
+      duration: 1.7225097
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
+      parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
+    - id: 1012
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestBishopArrayOfValidMovesAtStartingPosition]
+      name: TestBishopArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestBishopArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1255836
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1015
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestBishopArrayOfValidMovesCanMove]
+      name: TestBishopArrayOfValidMovesCanMove
+      fullName: Tests.TestPieceMoves.TestBishopArrayOfValidMovesCanMove
+      resultStatus: 1
+      duration: 0.1229369
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1008
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestBlackPawnArrayOfValidMovesAtStartingPosition]
+      name: TestBlackPawnArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestBlackPawnArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1296998
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1005
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition]
+      name: TestKingArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1200386
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1006
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKingArrayOfValidMovesCanMove]
+      name: TestKingArrayOfValidMovesCanMove
+      fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesCanMove
+      resultStatus: 1
+      duration: 0.1327221
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1004
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1011
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKnightArrayOfValidMovesAtStartingPosition]
+      name: TestKnightArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestKnightArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1306247
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1013
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestKnightArrayOfValidMovesCanCapture]
+      name: TestKnightArrayOfValidMovesCanCapture
+      fullName: Tests.TestPieceMoves.TestKnightArrayOfValidMovesCanCapture
+      resultStatus: 1
+      duration: 0.1344795
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1009
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestPawnArrayOfValidMovesCapture]
+      name: TestPawnArrayOfValidMovesCapture
+      fullName: Tests.TestPieceMoves.TestPawnArrayOfValidMovesCapture
+      resultStatus: 1
+      duration: 0.1347774
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1013
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestQueenArrayOfValidMovesAtStartingPosition]
+      name: TestQueenArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestQueenArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1326582
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1017
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestQueenArrayOfValidMovesCanCapture]
+      name: TestQueenArrayOfValidMovesCanCapture
+      fullName: Tests.TestPieceMoves.TestQueenArrayOfValidMovesCanCapture
+      resultStatus: 1
+      duration: 0.1325228
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1010
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestRookArrayOfValidMovesAtStartingPosition]
+      name: TestRookArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestRookArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1273645
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1011
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestRookArrayOfValidMovesCanMove]
+      name: TestRookArrayOfValidMovesCanMove
+      fullName: Tests.TestPieceMoves.TestRookArrayOfValidMovesCanMove
+      resultStatus: 1
+      duration: 0.133923
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    - id: 1007
+      uniqueId: PlayMode.dll/Tests/TestPieceMoves/[PlayMode][Tests.TestPieceMoves.TestWhitePawnArrayOfValidMovesAtStartingPosition]
+      name: TestWhitePawnArrayOfValidMovesAtStartingPosition
+      fullName: Tests.TestPieceMoves.TestWhitePawnArrayOfValidMovesAtStartingPosition
+      resultStatus: 1
+      duration: 0.1334193
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1006
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
+    m_ResultText: ButtonTests (1.545s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 243}
+      m_SelectedIDs: 175177bf
+      m_LastClickedID: -1082699497
+      m_ExpandedIDs: 849fc3859f5c62b6175177bfdae6f3cdd7e52e44bc805a6dffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 23}
+    newResultList:
+    - id: 1000
+      uniqueId: '[Power Chess][suite]'
+      name: Power Chess
+      fullName: Power Chess
+      resultStatus: 1
+      duration: 0.2520384
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1005
+      uniqueId: '[Tests.dll][suite]'
+      name: Tests.dll
+      fullName: C:/Users/Dylan/Documents/GitHub/ProjCOP/Power Chess/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 1
+      duration: 0.1612862
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Power Chess][suite]'
+    - id: 1006
+      uniqueId: Tests.dll/[Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 1
+      duration: 0.1353234
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: '[Tests.dll][suite]'
+    - id: 1001
+      uniqueId: Tests.dll/Tests/[Tests][Tests.CoinTests][suite]
+      name: CoinTests
+      fullName: Tests.CoinTests
+      resultStatus: 1
+      duration: 0.0113498
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1025
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1002
+      uniqueId: Tests.dll/Tests/CoinTests/[Tests][Tests.CoinTests.TestAddCoinMethod]
+      name: TestAddCoinMethod
+      fullName: Tests.CoinTests.TestAddCoinMethod
+      resultStatus: 1
+      duration: 0.002894
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CoinTests][suite]
+    - id: 1003
+      uniqueId: Tests.dll/Tests/CoinTests/[Tests][Tests.CoinTests.TestRemoveCoinMethod]
+      name: TestRemoveCoinMethod
+      fullName: Tests.CoinTests.TestRemoveCoinMethod
+      resultStatus: 1
+      duration: 0.0006431
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.CoinTests][suite]
+    - id: 1001
+      uniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+      name: PositionTests
+      fullName: Tests.PositionTests
+      resultStatus: 1
+      duration: 0.0994226
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1006
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1013
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestBishopWithInvalidMove]
+      name: TestBishopWithInvalidMove
+      fullName: Tests.PositionTests.TestBishopWithInvalidMove
+      resultStatus: 1
+      duration: 0.0011565
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1014
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestBishopWithMoveOffTheBoard]
+      name: TestBishopWithMoveOffTheBoard
+      fullName: Tests.PositionTests.TestBishopWithMoveOffTheBoard
+      resultStatus: 1
+      duration: 0.0006489
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1012
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestBishopWithValidMove]
+      name: TestBishopWithValidMove
+      fullName: Tests.PositionTests.TestBishopWithValidMove
+      resultStatus: 1
+      duration: 0.0007952
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1009
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKingWithInvalidMove]
+      name: TestKingWithInvalidMove
+      fullName: Tests.PositionTests.TestKingWithInvalidMove
+      resultStatus: 1
+      duration: 0.001631
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1010
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKingWithMoveOffTheBoard]
+      name: TestKingWithMoveOffTheBoard
+      fullName: Tests.PositionTests.TestKingWithMoveOffTheBoard
+      resultStatus: 1
+      duration: 0.0011636
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1008
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKingWithValidMove]
+      name: TestKingWithValidMove
+      fullName: Tests.PositionTests.TestKingWithValidMove
+      resultStatus: 1
+      duration: 0.0010011
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1003
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKnightWithInvalidMove]
+      name: TestKnightWithInvalidMove
+      fullName: Tests.PositionTests.TestKnightWithInvalidMove
+      resultStatus: 1
+      duration: 0.0011482
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKnightWithMoveOffTheBoard]
+      name: TestKnightWithMoveOffTheBoard
+      fullName: Tests.PositionTests.TestKnightWithMoveOffTheBoard
+      resultStatus: 1
+      duration: 0.0006778
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1002
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestKnightWithValidMove]
+      name: TestKnightWithValidMove
+      fullName: Tests.PositionTests.TestKnightWithValidMove
+      resultStatus: 1
+      duration: 0.0006945
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestPawnWithInvalidMove]
+      name: TestPawnWithInvalidMove
+      fullName: Tests.PositionTests.TestPawnWithInvalidMove
+      resultStatus: 1
+      duration: 0.0011249
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1005
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestPawnWithMoveOffTheBoard]
+      name: TestPawnWithMoveOffTheBoard
+      fullName: Tests.PositionTests.TestPawnWithMoveOffTheBoard
+      resultStatus: 1
+      duration: 0.0006241
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1003
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestPawnWithValidMove]
+      name: TestPawnWithValidMove
+      fullName: Tests.PositionTests.TestPawnWithValidMove
+      resultStatus: 1
+      duration: 0.0028686
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1002
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestPawnWithValidOpeningMove]
+      name: TestPawnWithValidOpeningMove
+      fullName: Tests.PositionTests.TestPawnWithValidOpeningMove
+      resultStatus: 1
+      duration: 0.0029036
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1016
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestQueenWithInvalidMove]
+      name: TestQueenWithInvalidMove
+      fullName: Tests.PositionTests.TestQueenWithInvalidMove
+      resultStatus: 1
+      duration: 0.0065916
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1017
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestQueenWithMoveOffTheBoard]
+      name: TestQueenWithMoveOffTheBoard
+      fullName: Tests.PositionTests.TestQueenWithMoveOffTheBoard
+      resultStatus: 1
+      duration: 0.0012109
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1015
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestQueenWithValidStraightMove]
+      name: TestQueenWithValidStraightMove
+      fullName: Tests.PositionTests.TestQueenWithValidStraightMove
+      resultStatus: 1
+      duration: 0.0012966
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1003
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestRookWithInvalidMove]
+      name: TestRookWithInvalidMove
+      fullName: Tests.PositionTests.TestRookWithInvalidMove
+      resultStatus: 1
+      duration: 0.0025765
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestRookWithMoveOffTheBoard]
+      name: TestRookWithMoveOffTheBoard
+      fullName: Tests.PositionTests.TestRookWithMoveOffTheBoard
+      resultStatus: 1
+      duration: 0.0015976
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    - id: 1002
+      uniqueId: Tests.dll/Tests/PositionTests/[Tests][Tests.PositionTests.TestRookWithValidMove]
+      name: TestRookWithValidMove
+      fullName: Tests.PositionTests.TestRookWithValidMove
+      resultStatus: 1
+      duration: 0.0017787
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PositionTests][suite]
+    m_ResultText: TestAddCoinMethod (0.003s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: cebad507
+      m_LastClickedID: 131447502
+      m_ExpandedIDs: 30f38d841ef87793e557abf78359db41d7e52e44ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
