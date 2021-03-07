@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -46,7 +46,6 @@ public class Bishop : Piece
             if(!ValidMove(i,j))
                 break;
 
-
             otherPiece = BoardManager.Instance.Pieces[i, j];
 
             if (otherPiece == null)
@@ -68,7 +67,6 @@ public class Bishop : Piece
             j++;
             if(!ValidMove(i,j))
                 break;
-
 
             otherPiece = BoardManager.Instance.Pieces[i, j];
 
@@ -92,7 +90,6 @@ public class Bishop : Piece
             if(!ValidMove(i,j))
                 break;
 
-
             otherPiece = BoardManager.Instance.Pieces[i, j];
 
             if (otherPiece == null)
@@ -114,7 +111,6 @@ public class Bishop : Piece
             j--;
             if(!ValidMove(i,j))
                 break;
-
 
             otherPiece = BoardManager.Instance.Pieces[i, j];
 

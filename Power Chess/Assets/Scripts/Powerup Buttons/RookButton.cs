@@ -1,13 +1,56 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RookButton : ButtonScript
 {
+    public Button button;
+
+    void Update()
+    {
+        BoardManager board = BoardManager.Instance;
+
+        if (board.isWhiteTurn)
+        {
+            if(Coin.WhiteCoins < 5)
+            {
+                ColorBlock colors = button.colors;
+                colors.normalColor = Color.red;
+                colors.highlightedColor = new Color32(255, 100, 100, 255);
+                button.colors = colors;
+            }
+            else   
+            {
+                ColorBlock colors = button.colors;
+                colors.normalColor = Color.green;
+                colors.highlightedColor = new Color32(60, 200, 50, 255);
+                button.colors = colors;
+            }
+        }
+        else
+        {
+            if(Coin.BlackCoins < 5)
+            {
+                ColorBlock colors = button.colors;
+                colors.normalColor = Color.red;
+                colors.highlightedColor = new Color32(255, 100, 100, 255);
+                button.colors = colors;
+            }
+            else   
+            {
+                ColorBlock colors = button.colors;
+                colors.normalColor = Color.green;
+                colors.highlightedColor = new Color32(60, 200, 50, 255);
+                button.colors = colors;
+            }
+        }
+    }
+
     protected override void PurchasePiece(int x, int z, bool isWhiteTurn)
     {
         // Check for coins
-        if (isWhiteTurn && Coin.WhiteCoins >= 1 || !isWhiteTurn && Coin.BlackCoins >= 1)
+        if (isWhiteTurn && Coin.WhiteCoins >= 5 || !isWhiteTurn && Coin.BlackCoins >= 5)
         {
             // spawn white rook
             if (isWhiteTurn)
@@ -17,7 +60,7 @@ public class RookButton : ButtonScript
                 BoardManager.Instance.SpawnChessPiece(8, x, z);
 
             // deduct coins from purchase
-            Coin.RemoveCoins(isWhiteTurn, 1);
+            Coin.RemoveCoins(isWhiteTurn, 5);
         }
     }
 }
