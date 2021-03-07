@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KingButton : ButtonScript
 {
     protected override void PurchasePiece(int x, int z, bool isWhiteTurn)
     {
+
         // Check for coins
         if (isWhiteTurn && Coin.WhiteCoins >= 1 || !isWhiteTurn && Coin.BlackCoins >= 1)
         {
