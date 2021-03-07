@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public abstract class ButtonScript : MonoBehaviour
 {
     int n;
-   
 
     public void OnButtonPress()
     {

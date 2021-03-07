@@ -35,11 +35,9 @@ BoardManager: The board class is used to create an instance of a board and monit
 
 BoardHighlights: This class manages highlighting the squares on the board where a certain piece can move legally.
 
-Store: The store class generates a list of power-ups that can be purchased with coins and applied to the squares in a board. Each store creates a storage object to track purchased power-ups before they are applied.
+Button: The button class allows for users to be able to purchase powerups with coins and apply them to the squares in a board. Each button that derives from the abstract button class (QueenButton, RookButton, etc) will allow the player to purchase that specific object and then use it in the game.
 
 Coins: The coins class exists to track the in-game economy. The class includes simple set and get methods.
-
-PowerUp: The powerup class is used to generate advantages from a pre-generated range that will be used to populate the Store. Powerups can be stored in a storage object and applied to a square.
 
 Piece: The Piece class is an abstract class from which the individual chess pieces will extend from. It tracks a piece's color and position. Since each piece moves differently, each chess piece will implement its own validMove() method.
 
@@ -49,10 +47,9 @@ Piece: The Piece class is an abstract class from which the individual chess piec
 | BoardManager | 000, 003, 009, 010, 012, 013, 015, 016, 017, 018 |
 | BoardHighlights | 015 |
 | Piece | 000, 003, 015 |
-| Store | 002, 004, 005 |
+| Button | 002, 004, 005, 012, 019 |
 | Coins | 001, 004, 009 |
-| Storage | 006, 012 |
-| Powerup | 002, 004, 006, 012 |
+| Storage | 006 |
 
 # Data Design
 
@@ -113,7 +110,7 @@ We will process errors through detection and with the help of Unity. For the err
 
 # Fault Tolerance
 
-If an error is detected, the system will revert back to how it was before the error occurred. For example, if a player puts a chess piece on a square that is not availabe or out of that piece's capability, it will go back to it's original location. Or, if a player tries to move something when it is not their turn, it will go back to its original location and an error message will give them a warning.
+If an error is detected, the system will revert back to how it was before the error occurred. For example, if a player puts a chess piece on a square that is not available or out of that piece's capability, it will go back to it's original location. Or, if a player tries to move something when it is not their turn, it will go back to its original location and an error message will give them a warning.
 
 # Architectural Feasibility
 
