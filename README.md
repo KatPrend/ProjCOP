@@ -108,3 +108,25 @@ Tyra -
 Veronica - Code Knight and Pawn behavior
 
 Kathleen - Code coin class and turn order
+
+# Sprint 5
+
+- [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
+- [Burndown Chart]()
+- [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Charts/Velocity%20Chart.png)
+- [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
+- [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
+- [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
+- [Product Demonstration](https://youtu.be/5KKvdFcj33c)
+
+## Task Allocation
+
+Blert -
+
+Dylan -
+
+Tyra -
+
+Veronica -
+
+Kathleen -
