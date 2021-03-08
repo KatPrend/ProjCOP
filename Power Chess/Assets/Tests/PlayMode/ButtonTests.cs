@@ -4,6 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Tests
 {
@@ -20,22 +21,24 @@ namespace Tests
         public IEnumerator TestButtonCanSpawnPieceInEmptySpot()
         {
             GameObject go = new GameObject();
-            ButtonScript button = go.AddComponent<KingButton>();
+            QueenButton button = go.AddComponent<QueenButton>();
+            button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
-            
+
             yield return null;
 
-            // Choose a3
+            // Choose a2
             Assert.Null(board.Pieces[0, 2]);
             board.emptySelectionX = 0;
             board.emptySelectionZ = 2;
 
             // It is white's turn and they have sufficient coins
             board.isWhiteTurn = true;
-            Coin.WhiteCoins = 1;
+            Coin.WhiteCoins = 9;
 
             button.SpawnAPiece();
+            // Piece is spawned in selected empty spot
             Assert.NotNull(board.Pieces[0, 2]);
         }
 
@@ -43,7 +46,8 @@ namespace Tests
         public IEnumerator TestButtonWillNotSpawnPieceInOccupiedSpot()
         {
             GameObject go = new GameObject();
-            ButtonScript button = go.AddComponent<QueenButton>();
+            QueenButton button = go.AddComponent<QueenButton>();
+            button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
 
@@ -57,7 +61,7 @@ namespace Tests
 
             // It is white's turn and they have sufficient coins
             board.isWhiteTurn = true;
-            Coin.WhiteCoins = 1;
+            Coin.WhiteCoins = 9;
 
             button.SpawnAPiece();
             // Piece is still original pawn and not a new spawned piece
@@ -68,7 +72,8 @@ namespace Tests
         public IEnumerator TestButtonWillNotSpawnWithoutEnoughCoins()
         {
             GameObject go = new GameObject();
-            ButtonScript button = go.AddComponent<RookButton>();
+            RookButton button = go.AddComponent<RookButton>();
+            button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
 
@@ -87,48 +92,52 @@ namespace Tests
             Assert.Null(board.Pieces[0, 2]);
         }
 
-        // Test Piece Buttons Spawn Correct Piece
-        // King
         [UnityTest]
-        public IEnumerator TestKingButtonSpawnsKing()
+        public IEnumerator TestCoinDedectionWithPurchase()
         {
             GameObject go = new GameObject();
-            ButtonScript button = go.AddComponent<KingButton>();
+            QueenButton button = go.AddComponent<QueenButton>();
+            button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
 
             yield return null;
 
-            Assert.Null(board.Pieces[3, 2]);
-            board.emptySelectionX = 3;
+            // Choose a2
+            Assert.Null(board.Pieces[5, 2]);
+            board.emptySelectionX = 5;
             board.emptySelectionZ = 2;
 
-            board.isWhiteTurn = true;
-            Coin.WhiteCoins = 1;
+            // It is white's turn and they have sufficient coins
+            board.isWhiteTurn = false;
+            Coin.BlackCoins = 15;
 
             button.SpawnAPiece();
-            Assert.IsInstanceOf(typeof(King), board.Pieces[3, 2]);
+            // Piece is spawned in selected empty spot
+            Assert.NotNull(board.Pieces[5, 2]);
+            Assert.AreEqual(6, Coin.BlackCoins);
         }
 
+        // Test Piece Buttons Spawn Correct Piece
         // Queen
         [UnityTest]
-        public IEnumerator TestQueenButtonSpawnsKing()
+        public IEnumerator TestQueenButtonSpawnsQueen()
         {
             GameObject go = new GameObject();
-            ButtonScript button = go.AddComponent<QueenButton>();
+            QueenButton button = go.AddComponent<QueenButton>();
+            button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
 
             yield return null;
 
-            // Choose a3
             Assert.Null(board.Pieces[3, 5]);
             board.emptySelectionX = 3;
             board.emptySelectionZ = 5;
 
-            // It is white's turn and they have sufficient coins
+            // It is black's turn and they have sufficient coins
             board.isWhiteTurn = false;
-            Coin.BlackCoins = 1;
+            Coin.BlackCoins = 9;
 
             button.SpawnAPiece();
             Assert.IsInstanceOf(typeof(Queen), board.Pieces[3, 5]);
@@ -136,10 +145,11 @@ namespace Tests
 
         // Rook
         [UnityTest]
-        public IEnumerator TestRookButtonSpawnsKing()
+        public IEnumerator TestRookButtonSpawnsRook()
         {
             GameObject go = new GameObject();
-            ButtonScript button = go.AddComponent<RookButton>();
+            RookButton button = go.AddComponent<RookButton>();
+            button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
 
@@ -150,7 +160,7 @@ namespace Tests
             board.emptySelectionZ = 2;
 
             board.isWhiteTurn = true;
-            Coin.WhiteCoins = 1;
+            Coin.WhiteCoins = 5;
 
             button.SpawnAPiece();
             Assert.IsInstanceOf(typeof(Rook), board.Pieces[3, 2]);
@@ -158,10 +168,11 @@ namespace Tests
 
         // Knight
         [UnityTest]
-        public IEnumerator TestKnightButtonSpawnsKing()
+        public IEnumerator TestKnightButtonSpawnsKnight()
         {
             GameObject go = new GameObject();
-            ButtonScript button = go.AddComponent<KnightButton>();
+            KnightButton button = go.AddComponent<KnightButton>();
+            button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
 
@@ -172,7 +183,7 @@ namespace Tests
             board.emptySelectionZ = 5;
 
             board.isWhiteTurn = false;
-            Coin.BlackCoins = 1;
+            Coin.BlackCoins = 3;
 
             button.SpawnAPiece();
             Assert.IsInstanceOf(typeof(Knight), board.Pieces[3, 5]);
@@ -180,10 +191,11 @@ namespace Tests
 
         // Bishop
         [UnityTest]
-        public IEnumerator TestBishopButtonSpawnsKing()
+        public IEnumerator TestBishopButtonSpawnsBishop()
         {
             GameObject go = new GameObject();
-            ButtonScript button = go.AddComponent<BishopButton>();
+            BishopButton button = go.AddComponent<BishopButton>();
+            button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
 
@@ -194,7 +206,7 @@ namespace Tests
             board.emptySelectionZ = 2;
 
             board.isWhiteTurn = true;
-            Coin.WhiteCoins = 1;
+            Coin.WhiteCoins = 3;
 
             button.SpawnAPiece();
             Assert.IsInstanceOf(typeof(Bishop), board.Pieces[3, 2]);
@@ -202,10 +214,11 @@ namespace Tests
 
         // Pawn
         [UnityTest]
-        public IEnumerator TestPawnButtonSpawnsKing()
+        public IEnumerator TestPawnButtonSpawnsPawn()
         {
             GameObject go = new GameObject();
-            ButtonScript button = go.AddComponent<PawnButton>();
+            PawnButton button = go.AddComponent<PawnButton>();
+            button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
 

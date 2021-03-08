@@ -8,6 +8,8 @@
 
 [Sprint 4](#sprint-4)
 
+[Sprint 5](#sprint-5)
+
 ## Vision Statement
 
 This product is for people who enjoyed normal as well as auto chess.
@@ -108,3 +110,25 @@ Tyra -
 Veronica - Code Knight and Pawn behavior
 
 Kathleen - Code coin class and turn order
+
+# Sprint 5
+
+- [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
+- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown5.png)
+- [Velocity Chart]
+- [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
+- [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
+- [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
+- [Product Demonstration]
+
+## Task Allocation
+
+Blert - Video demonstration
+
+Dylan - Create button for powerups store, add board selection for powerup placement, add coin value to buttons, and add color to buttons
+
+Tyra -
+
+Veronica - allow user to put a piece on only their half of the board
+
+Kathleen - Coin display, add button for each piece, make powerup buttons deploy the correct pieces, and link coins to buttons

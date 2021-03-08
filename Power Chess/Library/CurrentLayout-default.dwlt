@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 521}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1280
     height: 638
-  m_MinSize: {x: 875, y: 521}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -113,10 +113,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 588
-  m_MinSize: {x: 609, y: 471}
-  m_MaxSize: {x: 18004, y: 14021}
+  m_MinSize: {x: 709, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 137
+  controlID: 147
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 270
     height: 588
-  m_MinSize: {x: 231, y: 471}
-  m_MaxSize: {x: 10001, y: 14021}
+  m_MinSize: {x: 231, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 60
+  controlID: 56
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,8 +161,8 @@ MonoBehaviour:
     y: 0
     width: 270
     height: 310
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -213,10 +213,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 270
     y: 0
-    width: 607
+    width: 622
     height: 588
-  m_MinSize: {x: 102, y: 242}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MinSize: {x: 202, y: 321}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
   controlID: 80
 --- !u!114 &10
@@ -229,24 +229,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 607
+    width: 622
     height: 405
-  m_MinSize: {x: 102, y: 121}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 15}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,7 +264,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 405
-    width: 607
+    width: 622
     height: 183
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
@@ -290,14 +290,14 @@ MonoBehaviour:
   - {fileID: 14}
   m_Position:
     serializedVersion: 2
-    x: 877
+    x: 892
     y: 0
-    width: 403
+    width: 388
     height: 588
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 138
+  controlID: 148
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -315,7 +315,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 403
+    width: 388
     height: 93
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -342,7 +342,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 93
-    width: 403
+    width: 388
     height: 495
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
@@ -374,7 +374,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 270
     y: 72.66667
-    width: 605
+    width: 620
     height: 384
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 907.5, y: 544.5}
+  m_TargetSize: {x: 930, y: 544.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -400,8 +400,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -302.5
-    m_HBaseRangeMax: 302.5
+    m_HBaseRangeMin: -310
+    m_HBaseRangeMax: 310
     m_VBaseRangeMin: -181.5
     m_VBaseRangeMax: 181.5
     m_HAllowExceedBaseRangeMin: 1
@@ -412,7 +412,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -421,23 +421,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 605
+      width: 620
       height: 363
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 302.5, y: 181.5}
+    m_Translation: {x: 310, y: 181.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -302.5
+      x: -310
       y: -181.5
-      width: 605
+      width: 620
       height: 363
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 907.5, y: 576}
+  m_LastWindowPixelSize: {x: 930, y: 576}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -472,9 +472,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7a2c0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 68fbffff
+      m_ExpandedIDs: 8ad5ffffa8d5ffffd0f7ffff02f8ffff20f8ffff20faffff68fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -536,8 +536,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Scripts/Powerup Buttons
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 55
   m_LastFolders: []
@@ -549,7 +548,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c2340000
     m_LastClickedID: 13506
-    m_ExpandedIDs: 00000000b035000030360000323600003436000036360000383600003a3600003c3600003e36000040360000423600004436000046360000483600004a3600004c3600004e36000050360000523600005436000056360000583600005a3600005c360000
+    m_ExpandedIDs: 0000000098350000183600001a3600001c3600001e36000020360000223600002436000026360000283600002a3600002c3600002e36000030360000323600003436000036360000383600003a3600003c3600003e360000403600004236000044360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -574,10 +573,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 778.9995}
+    scrollPos: {x: 0, y: 1057.9998}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000b035000030360000323600003436000036360000383600003a3600003c3600003e36000040360000423600004436000046360000483600004a3600004c3600004e36000050360000523600005436000056360000583600005a3600005c360000
+    m_ExpandedIDs: ffffffff0000000098350000183600001a3600001c3600001e36000020360000223600002436000026360000283600002a3600002c3600002e36000030360000323600003436000036360000383600003a3600003c3600003e360000403600004236000044360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -654,10 +653,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 415
-    y: 73
-    width: 936
-    height: 632
+    x: 270
+    y: 72.66667
+    width: 620
+    height: 384
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: d69a67902db7f994ca099bec79d22ce1
@@ -797,7 +796,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 270
     y: 478
-    width: 605
+    width: 620
     height: 162
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &21
@@ -821,9 +820,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 877.3334
+    x: 892
     y: 72.66667
-    width: 402
+    width: 387
     height: 72
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -884,13 +883,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 877.3334
+    x: 892
     y: 166
-    width: 402
+    width: 387
     height: 474
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 172
+    ID: 177
     splitterInitialOffset: 348
     currentActiveSplitter: -1
     realSizes: 060100008e000000
@@ -911,7 +910,7 @@ MonoBehaviour:
       name: Power Chess
       fullName: Power Chess
       resultStatus: 1
-      duration: 3.5958672
+      duration: 3.9193568
       messages: 
       output: 
       stacktrace: 
@@ -927,7 +926,7 @@ MonoBehaviour:
       name: PlayMode.dll
       fullName: C:/Users/Kathleen/OneDrive/Desktop/COP4331/ProjCOP/Power Chess/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 1
-      duration: 3.5268452
+      duration: 3.8443034
       messages: 
       output: 
       stacktrace: 
@@ -943,7 +942,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 3.5029094
+      duration: 3.8230934
       messages: 
       output: 
       stacktrace: 
@@ -959,7 +958,7 @@ MonoBehaviour:
       name: ButtonTests
       fullName: Tests.ButtonTests
       resultStatus: 1
-      duration: 1.5447794
+      duration: 1.7570015
       messages: 
       output: 
       stacktrace: 
@@ -970,12 +969,12 @@ MonoBehaviour:
       categories: []
       parentId: 1024
       parentUniqueId: PlayMode.dll/[PlayMode][Tests][suite]
-    - id: 1009
-      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestBishopButtonSpawnsKing]
-      name: TestBishopButtonSpawnsKing
-      fullName: Tests.ButtonTests.TestBishopButtonSpawnsKing
+    - id: 1008
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestBishopButtonSpawnsBishop]
+      name: TestBishopButtonSpawnsBishop
+      fullName: Tests.ButtonTests.TestBishopButtonSpawnsBishop
       resultStatus: 1
-      duration: 0.3266662
+      duration: 0.4010246
       messages: 
       output: 
       stacktrace: 
@@ -992,7 +991,7 @@ MonoBehaviour:
       name: TestButtonCanSpawnPieceInEmptySpot
       fullName: Tests.ButtonTests.TestButtonCanSpawnPieceInEmptySpot
       resultStatus: 1
-      duration: 0.175191
+      duration: 0.2056338
       messages: 
       output: 
       stacktrace: 
@@ -1009,7 +1008,7 @@ MonoBehaviour:
       name: TestButtonWillNotSpawnPieceInOccupiedSpot
       fullName: Tests.ButtonTests.TestButtonWillNotSpawnPieceInOccupiedSpot
       resultStatus: 1
-      duration: 0.1702143
+      duration: 0.1829601
       messages: 
       output: 'Button clicked 1 times.
 
@@ -1028,7 +1027,7 @@ MonoBehaviour:
       name: TestButtonWillNotSpawnWithoutEnoughCoins
       fullName: Tests.ButtonTests.TestButtonWillNotSpawnWithoutEnoughCoins
       resultStatus: 1
-      duration: 0.167504
+      duration: 0.1458874
       messages: 
       output: 
       stacktrace: 
@@ -1041,62 +1040,11 @@ MonoBehaviour:
       parentId: 1001
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
     - id: 1005
-      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestKingButtonSpawnsKing]
-      name: TestKingButtonSpawnsKing
-      fullName: Tests.ButtonTests.TestKingButtonSpawnsKing
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestCoinDedectionWithPurchase]
+      name: TestCoinDedectionWithPurchase
+      fullName: Tests.ButtonTests.TestCoinDedectionWithPurchase
       resultStatus: 1
-      duration: 0.1379285
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
-    - id: 1008
-      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestKnightButtonSpawnsKing]
-      name: TestKnightButtonSpawnsKing
-      fullName: Tests.ButtonTests.TestKnightButtonSpawnsKing
-      resultStatus: 1
-      duration: 0.1364082
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
-    - id: 1010
-      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestPawnButtonSpawnsKing]
-      name: TestPawnButtonSpawnsKing
-      fullName: Tests.ButtonTests.TestPawnButtonSpawnsKing
-      resultStatus: 1
-      duration: 0.1325434
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
-    - id: 1006
-      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestQueenButtonSpawnsKing]
-      name: TestQueenButtonSpawnsKing
-      fullName: Tests.ButtonTests.TestQueenButtonSpawnsKing
-      resultStatus: 1
-      duration: 0.1258878
+      duration: 0.1386858
       messages: 
       output: 
       stacktrace: 
@@ -1109,11 +1057,62 @@ MonoBehaviour:
       parentId: 1001
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
     - id: 1007
-      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestRookButtonSpawnsKing]
-      name: TestRookButtonSpawnsKing
-      fullName: Tests.ButtonTests.TestRookButtonSpawnsKing
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestKnightButtonSpawnsKnight]
+      name: TestKnightButtonSpawnsKnight
+      fullName: Tests.ButtonTests.TestKnightButtonSpawnsKnight
       resultStatus: 1
-      duration: 0.1256074
+      duration: 0.1353065
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1009
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestPawnButtonSpawnsPawn]
+      name: TestPawnButtonSpawnsPawn
+      fullName: Tests.ButtonTests.TestPawnButtonSpawnsPawn
+      resultStatus: 1
+      duration: 0.1310232
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1005
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestQueenButtonSpawnsQueen]
+      name: TestQueenButtonSpawnsQueen
+      fullName: Tests.ButtonTests.TestQueenButtonSpawnsQueen
+      resultStatus: 1
+      duration: 0.1780604
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.ButtonTests][suite]
+    - id: 1006
+      uniqueId: PlayMode.dll/Tests/ButtonTests/[PlayMode][Tests.ButtonTests.TestRookButtonSpawnsRook]
+      name: TestRookButtonSpawnsRook
+      fullName: Tests.ButtonTests.TestRookButtonSpawnsRook
+      resultStatus: 1
+      duration: 0.1782609
       messages: 
       output: 
       stacktrace: 
@@ -1130,7 +1129,7 @@ MonoBehaviour:
       name: TestGameFlow
       fullName: Tests.TestGameFlow
       resultStatus: 1
-      duration: 0.2084511
+      duration: 0.2348313
       messages: 
       output: 
       stacktrace: 
@@ -1146,7 +1145,7 @@ MonoBehaviour:
       name: TestGetSquareCenter
       fullName: Tests.TestGameFlow.TestGetSquareCenter
       resultStatus: 1
-      duration: 0.1137039
+      duration: 0.1365407
       messages: 
       output: 
       stacktrace: 
@@ -1163,7 +1162,7 @@ MonoBehaviour:
       name: TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
       fullName: Tests.TestGameFlow.TestSpawnAllChessPiecesPutsPiecesInCorrectSquares
       resultStatus: 1
-      duration: 0.0259875
+      duration: 0.0362016
       messages: 
       output: 
       stacktrace: 
@@ -1180,7 +1179,7 @@ MonoBehaviour:
       name: TestStartingSelectionPosition
       fullName: Tests.TestGameFlow.TestStartingSelectionPosition
       resultStatus: 1
-      duration: 0.0491599
+      duration: 0.0300501
       messages: 
       output: 
       stacktrace: 
@@ -1197,7 +1196,7 @@ MonoBehaviour:
       name: TestPieceMoves
       fullName: Tests.TestPieceMoves
       resultStatus: 1
-      duration: 1.7225097
+      duration: 1.7971897
       messages: 
       output: 
       stacktrace: 
@@ -1213,7 +1212,7 @@ MonoBehaviour:
       name: TestBishopArrayOfValidMovesAtStartingPosition
       fullName: Tests.TestPieceMoves.TestBishopArrayOfValidMovesAtStartingPosition
       resultStatus: 1
-      duration: 0.1255836
+      duration: 0.1363324
       messages: 
       output: 
       stacktrace: 
@@ -1230,7 +1229,7 @@ MonoBehaviour:
       name: TestBishopArrayOfValidMovesCanMove
       fullName: Tests.TestPieceMoves.TestBishopArrayOfValidMovesCanMove
       resultStatus: 1
-      duration: 0.1229369
+      duration: 0.1411481
       messages: 
       output: 
       stacktrace: 
@@ -1247,7 +1246,7 @@ MonoBehaviour:
       name: TestBlackPawnArrayOfValidMovesAtStartingPosition
       fullName: Tests.TestPieceMoves.TestBlackPawnArrayOfValidMovesAtStartingPosition
       resultStatus: 1
-      duration: 0.1296998
+      duration: 0.1577197
       messages: 
       output: 
       stacktrace: 
@@ -1264,7 +1263,7 @@ MonoBehaviour:
       name: TestKingArrayOfValidMovesAtStartingPosition
       fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesAtStartingPosition
       resultStatus: 1
-      duration: 0.1200386
+      duration: 0.1421781
       messages: 
       output: 
       stacktrace: 
@@ -1281,7 +1280,7 @@ MonoBehaviour:
       name: TestKingArrayOfValidMovesCanMove
       fullName: Tests.TestPieceMoves.TestKingArrayOfValidMovesCanMove
       resultStatus: 1
-      duration: 0.1327221
+      duration: 0.1173021
       messages: 
       output: 
       stacktrace: 
@@ -1298,7 +1297,7 @@ MonoBehaviour:
       name: TestKnightArrayOfValidMovesAtStartingPosition
       fullName: Tests.TestPieceMoves.TestKnightArrayOfValidMovesAtStartingPosition
       resultStatus: 1
-      duration: 0.1306247
+      duration: 0.1263201
       messages: 
       output: 
       stacktrace: 
@@ -1315,7 +1314,7 @@ MonoBehaviour:
       name: TestKnightArrayOfValidMovesCanCapture
       fullName: Tests.TestPieceMoves.TestKnightArrayOfValidMovesCanCapture
       resultStatus: 1
-      duration: 0.1344795
+      duration: 0.1249864
       messages: 
       output: 
       stacktrace: 
@@ -1332,7 +1331,7 @@ MonoBehaviour:
       name: TestPawnArrayOfValidMovesCapture
       fullName: Tests.TestPieceMoves.TestPawnArrayOfValidMovesCapture
       resultStatus: 1
-      duration: 0.1347774
+      duration: 0.1239486
       messages: 
       output: 
       stacktrace: 
@@ -1349,7 +1348,7 @@ MonoBehaviour:
       name: TestQueenArrayOfValidMovesAtStartingPosition
       fullName: Tests.TestPieceMoves.TestQueenArrayOfValidMovesAtStartingPosition
       resultStatus: 1
-      duration: 0.1326582
+      duration: 0.1220069
       messages: 
       output: 
       stacktrace: 
@@ -1366,7 +1365,7 @@ MonoBehaviour:
       name: TestQueenArrayOfValidMovesCanCapture
       fullName: Tests.TestPieceMoves.TestQueenArrayOfValidMovesCanCapture
       resultStatus: 1
-      duration: 0.1325228
+      duration: 0.1633683
       messages: 
       output: 
       stacktrace: 
@@ -1383,7 +1382,7 @@ MonoBehaviour:
       name: TestRookArrayOfValidMovesAtStartingPosition
       fullName: Tests.TestPieceMoves.TestRookArrayOfValidMovesAtStartingPosition
       resultStatus: 1
-      duration: 0.1273645
+      duration: 0.1500366
       messages: 
       output: 
       stacktrace: 
@@ -1400,7 +1399,7 @@ MonoBehaviour:
       name: TestRookArrayOfValidMovesCanMove
       fullName: Tests.TestPieceMoves.TestRookArrayOfValidMovesCanMove
       resultStatus: 1
-      duration: 0.133923
+      duration: 0.1287937
       messages: 
       output: 
       stacktrace: 
@@ -1417,7 +1416,7 @@ MonoBehaviour:
       name: TestWhitePawnArrayOfValidMovesAtStartingPosition
       fullName: Tests.TestPieceMoves.TestWhitePawnArrayOfValidMovesAtStartingPosition
       resultStatus: 1
-      duration: 0.1334193
+      duration: 0.1206552
       messages: 
       output: 
       stacktrace: 
@@ -1429,12 +1428,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1006
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    m_ResultText: ButtonTests (1.545s)
+    m_ResultText: TestCoinDedectionWithPurchase (0.139s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 175177bf
-      m_LastClickedID: -1082699497
+      m_SelectedIDs: ec956915
+      m_LastClickedID: 359241196
       m_ExpandedIDs: 849fc3859f5c62b6175177bfdae6f3cdd7e52e44bc805a6dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
