@@ -119,7 +119,7 @@ Kathleen - Code coin class and turn order
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
 - [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
-- [Product Demonstration]
+- [Product Demonstration](https://www.youtube.com/watch?v=we7w2qLWzjk&t=3s)
 
 ## Task Allocation
 
