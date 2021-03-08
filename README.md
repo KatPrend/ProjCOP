@@ -112,8 +112,8 @@ Kathleen - Code coin class and turn order
 # Sprint 5
 
 - [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
-- [Burndown Chart]()
-- [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Charts/Velocity%20Chart.png)
+- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown5.png)
+- [Velocity Chart]()
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
 - [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
@@ -121,12 +121,12 @@ Kathleen - Code coin class and turn order
 
 ## Task Allocation
 
-Blert -
+Blert - Video demonstration
 
-Dylan -
+Dylan - Create button for powerups store, add board selection for powerup placement, add coin value to buttons, and add color to buttons
 
 Tyra -
 
-Veronica -
+Veronica - allow user to put a piece on only their half of the board
 
-Kathleen -
+Kathleen - Coin display, add button for each piece, make powerup buttons deploy the correct pieces, and link coins to buttons
