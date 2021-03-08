@@ -92,6 +92,32 @@ namespace Tests
             Assert.Null(board.Pieces[0, 2]);
         }
 
+        [UnityTest]
+        public IEnumerator TestCoinDedectionWithPurchase()
+        {
+            GameObject go = new GameObject();
+            QueenButton button = go.AddComponent<QueenButton>();
+            button.button = go.AddComponent<Button>();
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            // Choose a2
+            Assert.Null(board.Pieces[5, 2]);
+            board.emptySelectionX = 5;
+            board.emptySelectionZ = 2;
+
+            // It is white's turn and they have sufficient coins
+            board.isWhiteTurn = false;
+            Coin.BlackCoins = 15;
+
+            button.SpawnAPiece();
+            // Piece is spawned in selected empty spot
+            Assert.NotNull(board.Pieces[5, 2]);
+            Assert.AreEqual(6, Coin.BlackCoins);
+        }
+
         // Test Piece Buttons Spawn Correct Piece
         // Queen
         [UnityTest]
