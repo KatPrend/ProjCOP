@@ -20,9 +20,21 @@ public abstract class ButtonScript : MonoBehaviour
         int z = board.emptySelectionZ;
 
         if (x > -1 && z > -1 && board.Pieces[x, z] == null)
-            PurchasePiece(x, z, board.isWhiteTurn);
+            if (CheckSideOfBoard(x, z, board.isWhiteTurn))
+                PurchasePiece(x, z, board.isWhiteTurn);
         else
             OnButtonPress();
+    }
+
+    private bool CheckSideOfBoard(int x, int z, bool isWhiteTurn)
+    {
+        // Place piece on player's side of the board
+        if (isWhiteTurn && z >= 4)
+            return false;
+        if (!isWhiteTurn && z < 4)
+            return false;
+
+        return true;
     }
 
     protected abstract void PurchasePiece(int x, int z, bool isWhiteTurn);

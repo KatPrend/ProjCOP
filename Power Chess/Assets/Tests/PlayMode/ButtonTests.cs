@@ -104,9 +104,9 @@ namespace Tests
             yield return null;
 
             // Choose a2
-            Assert.Null(board.Pieces[5, 2]);
+            Assert.Null(board.Pieces[5, 5]);
             board.emptySelectionX = 5;
-            board.emptySelectionZ = 2;
+            board.emptySelectionZ = 5;
 
             // It is white's turn and they have sufficient coins
             board.isWhiteTurn = false;
@@ -114,8 +114,108 @@ namespace Tests
 
             button.SpawnAPiece();
             // Piece is spawned in selected empty spot
-            Assert.NotNull(board.Pieces[5, 2]);
+            Assert.NotNull(board.Pieces[5, 5]);
             Assert.AreEqual(6, Coin.BlackCoins);
+        }
+
+        [UnityTest]
+        public IEnumerator TestWhitePlayerCannotPlacePowerupPieceOnOppenentSide()
+        {
+            GameObject go = new GameObject();
+            QueenButton button = go.AddComponent<QueenButton>();
+            button.button = go.AddComponent<Button>();
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            // Choose a2
+            Assert.Null(board.Pieces[0, 4]);
+            board.emptySelectionX = 0;
+            board.emptySelectionZ = 4;
+
+            // It is white's turn and they have sufficient coins
+            board.isWhiteTurn = true;
+            Coin.WhiteCoins = 15;
+
+            button.SpawnAPiece();
+            // Piece is spawned in selected empty spot
+            Assert.Null(board.Pieces[0, 4]);
+        }
+
+        [UnityTest]
+        public IEnumerator TestWhitePlayerCanPlacePowerupPieceOnTheirSide()
+        {
+            GameObject go = new GameObject();
+            QueenButton button = go.AddComponent<QueenButton>();
+            button.button = go.AddComponent<Button>();
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            // Choose a2
+            Assert.Null(board.Pieces[0, 3]);
+            board.emptySelectionX = 0;
+            board.emptySelectionZ = 3;
+
+            // It is white's turn and they have sufficient coins
+            board.isWhiteTurn = true;
+            Coin.WhiteCoins = 15;
+
+            button.SpawnAPiece();
+            // Piece is spawned in selected empty spot
+            Assert.NotNull(board.Pieces[0, 3]);
+        }
+
+        [UnityTest]
+        public IEnumerator TestBlackPlayerCannotPlacePowerupPieceOnOppenentSide()
+        {
+            GameObject go = new GameObject();
+            QueenButton button = go.AddComponent<QueenButton>();
+            button.button = go.AddComponent<Button>();
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            // Choose a2
+            Assert.Null(board.Pieces[0, 3]);
+            board.emptySelectionX = 0;
+            board.emptySelectionZ = 3;
+
+            // It is white's turn and they have sufficient coins
+            board.isWhiteTurn = false;
+            Coin.BlackCoins = 15;
+
+            button.SpawnAPiece();
+            // Piece is spawned in selected empty spot
+            Assert.Null(board.Pieces[0, 3]);
+        }
+
+        [UnityTest]
+        public IEnumerator TestBlackPlayerCanPlacePowerupPieceOnTheirSide()
+        {
+            GameObject go = new GameObject();
+            QueenButton button = go.AddComponent<QueenButton>();
+            button.button = go.AddComponent<Button>();
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            // Choose a2
+            Assert.Null(board.Pieces[0, 4]);
+            board.emptySelectionX = 0;
+            board.emptySelectionZ = 4;
+
+            // It is white's turn and they have sufficient coins
+            board.isWhiteTurn = false;
+            Coin.WhiteCoins = 15;
+
+            button.SpawnAPiece();
+            // Piece is spawned in selected empty spot
+            Assert.NotNull(board.Pieces[0, 4]);
         }
 
         // Test Piece Buttons Spawn Correct Piece
