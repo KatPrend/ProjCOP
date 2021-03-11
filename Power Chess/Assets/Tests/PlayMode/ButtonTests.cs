@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
@@ -25,10 +24,11 @@ namespace Tests
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 
-            // Choose a2
+            // Choose a3
             Assert.Null(board.Pieces[0, 2]);
             board.emptySelectionX = 0;
             board.emptySelectionZ = 2;
@@ -46,18 +46,18 @@ namespace Tests
         public IEnumerator TestButtonWillNotSpawnPieceInOccupiedSpot()
         {
             GameObject go = new GameObject();
-            QueenButton button = go.AddComponent<QueenButton>();
+            PawnButton button = go.AddComponent<PawnButton>();
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
 
             yield return null;
 
-            // Choose a2
-            Assert.NotNull(board.Pieces[0, 1]);
-            board.emptySelectionX = 0;
-            board.emptySelectionZ = 1;
-            Piece original = board.Pieces[0, 1];
+            // Choose e1
+            Assert.NotNull(board.Pieces[4, 0]);
+            board.emptySelectionX = 4;
+            board.emptySelectionZ = 0;
+            Piece original = board.Pieces[4, 0];
 
             // It is white's turn and they have sufficient coins
             board.isWhiteTurn = true;
@@ -65,7 +65,7 @@ namespace Tests
 
             button.SpawnAPiece();
             // Piece is still original pawn and not a new spawned piece
-            Assert.AreEqual(original, board.Pieces[0, 1]);
+            Assert.AreEqual(original, board.Pieces[4, 0]);
         }
 
         [UnityTest]
@@ -79,17 +79,17 @@ namespace Tests
 
             yield return null;
 
-            // Choose a3
-            Assert.Null(board.Pieces[0, 2]);
+            // Choose a2
+            Assert.Null(board.Pieces[0, 1]);
             board.emptySelectionX = 0;
-            board.emptySelectionZ = 2;
+            board.emptySelectionZ = 1;
 
             // It is white's turn and they do not have sufficient coins
             board.isWhiteTurn = true;
             Coin.WhiteCoins = 0;
 
             button.SpawnAPiece();
-            Assert.Null(board.Pieces[0, 2]);
+            Assert.Null(board.Pieces[0, 1]);
         }
 
         [UnityTest]
@@ -100,10 +100,11 @@ namespace Tests
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 
-            // Choose a2
+            // Choose d6
             Assert.Null(board.Pieces[5, 5]);
             board.emptySelectionX = 5;
             board.emptySelectionZ = 5;
@@ -126,10 +127,11 @@ namespace Tests
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 
-            // Choose a2
+            // Choose a5
             Assert.Null(board.Pieces[0, 4]);
             board.emptySelectionX = 0;
             board.emptySelectionZ = 4;
@@ -151,10 +153,11 @@ namespace Tests
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 
-            // Choose a2
+            // Choose a4
             Assert.Null(board.Pieces[0, 3]);
             board.emptySelectionX = 0;
             board.emptySelectionZ = 3;
@@ -176,10 +179,11 @@ namespace Tests
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 
-            // Choose a2
+            // Choose a4
             Assert.Null(board.Pieces[0, 3]);
             board.emptySelectionX = 0;
             board.emptySelectionZ = 3;
@@ -197,19 +201,20 @@ namespace Tests
         public IEnumerator TestBlackPlayerCanPlacePowerupPieceOnTheirSide()
         {
             GameObject go = new GameObject();
-            QueenButton button = go.AddComponent<QueenButton>();
+            PawnButton button = go.AddComponent<PawnButton>();
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 
-            // Choose a2
+            // Choose a5
             Assert.Null(board.Pieces[0, 4]);
             board.emptySelectionX = 0;
             board.emptySelectionZ = 4;
 
-            // It is white's turn and they have sufficient coins
+            // It is black's turn and they have sufficient coins
             board.isWhiteTurn = false;
             Coin.WhiteCoins = 15;
 
@@ -228,6 +233,7 @@ namespace Tests
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 
@@ -252,6 +258,7 @@ namespace Tests
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 
@@ -275,6 +282,7 @@ namespace Tests
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 
@@ -298,6 +306,7 @@ namespace Tests
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 
@@ -321,6 +330,7 @@ namespace Tests
             button.button = go.AddComponent<Button>();
 
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
 
             yield return null;
 

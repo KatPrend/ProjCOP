@@ -32,6 +32,8 @@ public class BoardManager : MonoBehaviour
 
     public bool isWhiteTurn = true;
 
+    public bool isFirstMove = true;
+
     private void Start()
     {
         Instance = this;
@@ -40,9 +42,11 @@ public class BoardManager : MonoBehaviour
             InputAction = new HandleInput();
 
         //Spawn all pieces
-        SpawnAllChessPieces();
+        StartingBoard();
         WhiteCamera.enabled = true;
         BlackCamera.enabled = false;
+
+
     }
 
     private void Update()
@@ -107,6 +111,10 @@ public class BoardManager : MonoBehaviour
 
         // Update player's coins
         Coin.AddCoin(isWhiteTurn);
+
+        // After black makes first move, first turn is over
+        if (!isWhiteTurn && isFirstMove)
+            isFirstMove = false;
 
         // Pass turn and swap cameras
         isWhiteTurn = !isWhiteTurn;
@@ -197,7 +205,7 @@ public class BoardManager : MonoBehaviour
         return orientation;
     }
 
-    private void SpawnAllChessPieces()
+    private void StartingBoard()
     {
         activeChessPieces = new List<GameObject>();
         Pieces = new Piece[8,8];
@@ -206,34 +214,8 @@ public class BoardManager : MonoBehaviour
         SpawnChessPiece(0, 4, 0);
         SpawnChessPiece(6, 4, 7);
 
-        //Spawns Queen
-        SpawnChessPiece(1, 3, 0);
-        SpawnChessPiece(7, 3, 7);
-
-        //Spawn Rooks
-        SpawnChessPiece(2, 0, 0);
-        SpawnChessPiece(2, 7, 0);
-        SpawnChessPiece(8, 0, 7);
-        SpawnChessPiece(8, 7, 7);
-
-        //Spawn Bishops
-        SpawnChessPiece(3, 2, 0);
-        SpawnChessPiece(3, 5, 0);
-        SpawnChessPiece(9, 2, 7);
-        SpawnChessPiece(9, 5, 7);
-
-        //Spawn Knights
-        SpawnChessPiece(4, 1, 0);
-        SpawnChessPiece(4, 6, 0);
-        SpawnChessPiece(10, 1, 7);
-        SpawnChessPiece(10, 6, 7);
-
-        //Spawn Pawns
-        for(int i = 0; i < 8; i++)
-        {
-            SpawnChessPiece(5, i, 1);
-            SpawnChessPiece(11, i, 6);
-        }
+        Coin.WhiteCoins = 3;
+        Coin.BlackCoins = 3;
     }
 
     //Takes in squares position and returns a Vector3 with that squares center

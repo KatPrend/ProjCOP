@@ -4,6 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Tests
 {
@@ -19,21 +20,25 @@ namespace Tests
         [UnityTest]
         public IEnumerator TestWhitePawnArrayOfValidMovesAtStartingPosition()
         {
+            GameObject go = new GameObject();
+            PawnButton button = go.AddComponent<PawnButton>();
+            button.button = go.AddComponent<Button>();
+
             BoardManager board = BoardManager.Instance;
             bool[,] expectedArray;
 
             yield return null;
 
-            Piece whitePawn;
-            for (int i = 0; i < 8; i++)
-            {
-                expectedArray = new bool[8, 8];
-                expectedArray[i, 2] = true;
-                expectedArray[i, 3] = true;
+            board.emptySelectionX = 0;
+            board.emptySelectionZ = 1;
+            button.SpawnAPiece();
 
-                whitePawn = board.Pieces[i, 1];
-                Assert.AreEqual(expectedArray, whitePawn.ArrayOfValidMove());
-            }
+            expectedArray = new bool[8, 8];
+            expectedArray[0, 2] = true;
+            expectedArray[0, 3] = true;
+
+            Piece whitePawn = board.Pieces[0, 1];
+            Assert.AreEqual(expectedArray, whitePawn.ArrayOfValidMove());
         }
 
         [UnityTest]
@@ -44,35 +49,30 @@ namespace Tests
 
             yield return null;
 
-            Piece blackPawn;
-            for (int i = 0; i < 8; i++)
-            {
-                expectedArray = new bool[8, 8];
-                expectedArray[i, 5] = true;
-                expectedArray[i, 4] = true;
+            board.SpawnChessPiece(11, 7, 6);
 
-                blackPawn = board.Pieces[i, 6];
-                Assert.AreEqual(expectedArray, blackPawn.ArrayOfValidMove());
-            }
+            expectedArray = new bool[8, 8];
+            expectedArray[7, 5] = true;
+            expectedArray[7, 4] = true;
+
+            Piece blackPawn = board.Pieces[7, 6];
+            Assert.AreEqual(expectedArray, blackPawn.ArrayOfValidMove());
         }
 
         [UnityTest]
         public IEnumerator TestPawnArrayOfValidMovesCapture()
         {
             BoardManager board = BoardManager.Instance;
+            board.isFirstMove = false;
             bool[,] expectedArray;
 
             yield return null;
 
-            // Move white pawn above queen up two
-            board.Pieces[3, 1].SetPosition(3, 3);
-            board.Pieces[3, 3] = board.Pieces[3, 1];
-            board.Pieces[3, 1] = null;
+            // Set white pawn at d4
+            board.SpawnChessPiece(5, 3, 3);
 
-            // Move pawn below king down two
-            board.Pieces[4, 6].SetPosition(4, 4);
-            board.Pieces[4, 4] = board.Pieces[4, 6];
-            board.Pieces[4, 6] = null;
+            // Set black pawn at e5
+            board.SpawnChessPiece(11, 4, 4);
 
             expectedArray = new bool[8, 8];
             expectedArray[3, 4] = true;
@@ -87,19 +87,6 @@ namespace Tests
 
         // Rook
         [UnityTest]
-        public IEnumerator TestRookArrayOfValidMovesAtStartingPosition()
-        {
-            BoardManager board = BoardManager.Instance;
-            bool[,] expectedArray = new bool[8, 8]; // all false
-
-            yield return null;
-
-            // Rook cannot move at start of game
-            Piece whiteRook = board.Pieces[0, 0];
-            Assert.AreEqual(expectedArray, whiteRook.ArrayOfValidMove());
-        }
-
-        [UnityTest]
         public IEnumerator TestRookArrayOfValidMovesCanMove()
         {
             BoardManager board = BoardManager.Instance;
@@ -107,34 +94,18 @@ namespace Tests
 
             yield return null;
 
-            // Move left black pawn below roook down two.
-            board.Pieces[0, 6].SetPosition(0, 4);
-            board.Pieces[0, 4] = board.Pieces[0, 6];
-            board.Pieces[0, 6] = null;
+            board.SpawnChessPiece(8, 0, 7); // Black rook at a8
+            board.SpawnChessPiece(7, 0, 5); // Black queen at a6
+            board.SpawnChessPiece(7, 2, 7); // Black queen at c8
 
             expectedArray[0, 6] = true;
-            expectedArray[0, 5] = true;
+            expectedArray[1, 7] = true;
 
             Piece blackRook = board.Pieces[0, 7];
             Assert.AreEqual(expectedArray, blackRook.ArrayOfValidMove());
         }
 
         // Knight
-        [UnityTest]
-        public IEnumerator TestKnightArrayOfValidMovesAtStartingPosition()
-        {
-            BoardManager board = BoardManager.Instance;
-            bool[,] expectedArray = new bool[8, 8];
-
-            expectedArray[5, 5] = true;
-            expectedArray[7, 5] = true;
-
-            yield return null;
-
-            Piece blackKnight = board.Pieces[6, 7];
-            Assert.AreEqual(expectedArray, blackKnight.ArrayOfValidMove());
-        }
-
         [UnityTest]
         public IEnumerator TestKnightArrayOfValidMovesCanCapture()
         {
@@ -144,31 +115,18 @@ namespace Tests
             yield return null;
 
             // Move black queen in path of white knight.
-            board.Pieces[3, 7].SetPosition(2, 2);
-            board.Pieces[2, 2] = board.Pieces[3, 7];
-            board.Pieces[3, 7] = null;
+            board.SpawnChessPiece(7, 2, 2); // Black Queen c3
+            board.SpawnChessPiece(4, 1, 0); // White Knight b1
 
             expectedArray[0, 2] = true;
             expectedArray[2, 2] = true;
+            expectedArray[3, 1] = true;
 
             Piece whiteKnight = board.Pieces[1, 0];
             Assert.AreEqual(expectedArray, whiteKnight.ArrayOfValidMove());
         }
 
         // Bishop
-        [UnityTest]
-        public IEnumerator TestBishopArrayOfValidMovesAtStartingPosition()
-        {
-            BoardManager board = BoardManager.Instance;
-            bool[,] expectedArray = new bool[8, 8]; // all false
-
-            yield return null;
-
-            // Bishop cannot move at start of game
-            Piece whiteBishop = board.Pieces[2, 0];
-            Assert.AreEqual(expectedArray, whiteBishop.ArrayOfValidMove());
-        }
-
         [UnityTest]
         public IEnumerator TestBishopArrayOfValidMovesCanMove()
         {
@@ -177,10 +135,8 @@ namespace Tests
 
             yield return null;
 
-            // Move down black pawn below right knight down one.
-            board.Pieces[6, 6].SetPosition(6, 5);
-            board.Pieces[6, 5] = board.Pieces[6, 6];
-            board.Pieces[6, 6] = null;
+            board.SpawnChessPiece(9, 5, 7); // Black Bishop f8
+            board.SpawnChessPiece(11, 4, 6); // Black Pawn e7
 
             expectedArray[6, 6] = true;
             expectedArray[7, 5] = true;
@@ -191,19 +147,6 @@ namespace Tests
 
         // Queen
         [UnityTest]
-        public IEnumerator TestQueenArrayOfValidMovesAtStartingPosition()
-        {
-            BoardManager board = BoardManager.Instance;
-            bool[,] expectedArray = new bool[8, 8]; // all false
-
-            yield return null;
-
-            // Queen cannot move at start of game
-            Piece blackQueen = board.Pieces[3, 7];
-            Assert.AreEqual(expectedArray, blackQueen.ArrayOfValidMove());
-        }
-
-        [UnityTest]
         public IEnumerator TestQueenArrayOfValidMovesCanCapture()
         {
             BoardManager board = BoardManager.Instance;
@@ -211,13 +154,11 @@ namespace Tests
 
             yield return null;
 
-            // Remove white pawn left of queen.
-            board.Pieces[2, 1] = null;
-
-            // Move black pawn down to diagonal path of queen.
-            board.Pieces[1, 6].SetPosition(1, 2);
-            board.Pieces[1, 2] = board.Pieces[1, 6];
-            board.Pieces[1, 6] = null;
+            board.SpawnChessPiece(1, 3, 0); // White Queen d1
+            board.SpawnChessPiece(5, 3, 1); // White Pawn d2
+            board.SpawnChessPiece(5, 4, 1); // White Pawn e2
+            board.SpawnChessPiece(3, 2, 0); // White Bishop c1
+            board.SpawnChessPiece(7, 1, 2); // Black Queen b3
 
             expectedArray[2, 1] = true;
             expectedArray[1, 2] = true;
@@ -228,19 +169,6 @@ namespace Tests
 
         // King
         [UnityTest]
-        public IEnumerator TestKingArrayOfValidMovesAtStartingPosition()
-        {
-            BoardManager board = BoardManager.Instance;
-            bool[,] expectedArray = new bool[8, 8]; // all false
-
-            yield return null;
-
-            // King cannot move at start of game
-            Piece whiteKing = board.Pieces[4, 0];
-            Assert.AreEqual(expectedArray, whiteKing.ArrayOfValidMove());
-        }
-
-        [UnityTest]
         public IEnumerator TestKingArrayOfValidMovesCanMove()
         {
             BoardManager board = BoardManager.Instance;
@@ -248,14 +176,21 @@ namespace Tests
 
             yield return null;
 
-            // Move pawn above king up one. King can now move up
-            board.Pieces[4, 1].SetPosition(4, 2);
-            board.Pieces[4, 2] = board.Pieces[4, 1];
-            board.Pieces[4, 1] = null;
+            // Move white king up one. King can now move in any direction.
+            board.Pieces[4, 0].SetPosition(4, 1);
+            board.Pieces[4, 1] = board.Pieces[4, 0];
+            board.Pieces[4, 0] = null;
 
-            expectedArray[4, 1] = true;
+            expectedArray[3, 0] = true;
+            expectedArray[4, 0] = true;
+            expectedArray[5, 0] = true;
+            expectedArray[3, 1] = true;
+            expectedArray[5, 1] = true;
+            expectedArray[3, 2] = true;
+            expectedArray[4, 2] = true;
+            expectedArray[5, 2] = true;
 
-            Piece whiteKing = board.Pieces[4, 0];
+            Piece whiteKing = board.Pieces[4, 1];
             Assert.AreEqual(expectedArray, whiteKing.ArrayOfValidMove());
         }
     }
