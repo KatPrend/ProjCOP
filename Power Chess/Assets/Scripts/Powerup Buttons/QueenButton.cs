@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class QueenButton : ButtonScript
 {
     public Button button;
+    public int Cost;
 
     void Update()
     {
@@ -13,7 +14,7 @@ public class QueenButton : ButtonScript
 
         if (board.isWhiteTurn)
         {
-            if(Coin.WhiteCoins < 9)
+            if(Coin.WhiteCoins < Cost)
             {
                 ColorBlock colors = button.colors;
                 colors.normalColor = Color.red;
@@ -30,7 +31,7 @@ public class QueenButton : ButtonScript
         }
         else
         {
-            if(Coin.BlackCoins < 9)
+            if(Coin.BlackCoins < Cost)
             {
                 ColorBlock colors = button.colors;
                 colors.normalColor = Color.red;
@@ -50,7 +51,7 @@ public class QueenButton : ButtonScript
     protected override void PurchasePiece(int x, int z, bool isWhiteTurn)
     {
         // Check for coins
-        if (isWhiteTurn && Coin.WhiteCoins >= 9 || !isWhiteTurn && Coin.BlackCoins >= 9)
+        if (isWhiteTurn && Coin.WhiteCoins >= Cost || !isWhiteTurn && Coin.BlackCoins >= Cost)
         {
             // spawn white queen
             if (isWhiteTurn)
@@ -60,7 +61,7 @@ public class QueenButton : ButtonScript
                 BoardManager.Instance.SpawnChessPiece(7, x, z);
 
             // deduct coins from purchase
-            Coin.RemoveCoins(isWhiteTurn, 9);
+            Coin.RemoveCoins(isWhiteTurn, Cost);
         }
     }
 }

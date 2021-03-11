@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PawnButton : ButtonScript
 {
     public Button button;
+    public int Cost;
 
     void Update()
     {
@@ -13,7 +14,7 @@ public class PawnButton : ButtonScript
 
         if (board.isWhiteTurn)
         {
-            if(Coin.WhiteCoins < 1)
+            if(Coin.WhiteCoins < Cost)
             {
                 ColorBlock colors = button.colors;
                 colors.normalColor = Color.red;
@@ -30,7 +31,7 @@ public class PawnButton : ButtonScript
         }
         else
         {
-            if(Coin.BlackCoins < 1)
+            if(Coin.BlackCoins < Cost)
             {
                 ColorBlock colors = button.colors;
                 colors.normalColor = Color.red;
@@ -50,7 +51,7 @@ public class PawnButton : ButtonScript
     protected override void PurchasePiece(int x, int z, bool isWhiteTurn)
     {
         // Check for coins
-        if (isWhiteTurn && Coin.WhiteCoins >= 1 || !isWhiteTurn && Coin.BlackCoins >= 1)
+        if (isWhiteTurn && Coin.WhiteCoins >= Cost || !isWhiteTurn && Coin.BlackCoins >= Cost)
         {
             // spawn white pawn
             if (isWhiteTurn)
@@ -60,7 +61,7 @@ public class PawnButton : ButtonScript
                 BoardManager.Instance.SpawnChessPiece(11, x, z);
 
             // deduct coins from purchase
-            Coin.RemoveCoins(isWhiteTurn, 1);
+            Coin.RemoveCoins(isWhiteTurn, Cost);
         }
     }
 }

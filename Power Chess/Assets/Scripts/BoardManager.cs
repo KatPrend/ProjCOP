@@ -45,8 +45,6 @@ public class BoardManager : MonoBehaviour
         StartingBoard();
         WhiteCamera.enabled = true;
         BlackCamera.enabled = false;
-
-
     }
 
     private void Update()
@@ -150,7 +148,10 @@ public class BoardManager : MonoBehaviour
         if (capturedPiece.GetType() == typeof(King))
         {
             //End the game
-            Application.Quit();
+            if(isWhiteTurn)
+                Debug.Log("White Win");
+            else   
+                Debug.Log("Black Win");
         }
 
         // Add additional coin for capture

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class BishopButton : ButtonScript
 {
     public Button button;
+    public int Cost;
 
     void Update()
     {
@@ -13,7 +14,7 @@ public class BishopButton : ButtonScript
 
         if (board.isWhiteTurn)
         {
-            if(Coin.WhiteCoins < 3)
+            if(Coin.WhiteCoins < Cost)
             {
                 ColorBlock colors = button.colors;
                 colors.normalColor = Color.red;
@@ -30,7 +31,7 @@ public class BishopButton : ButtonScript
         }
         else
         {
-            if(Coin.BlackCoins < 3)
+            if(Coin.BlackCoins < Cost)
             {
                 ColorBlock colors = button.colors;
                 colors.normalColor = Color.red;
@@ -50,7 +51,7 @@ public class BishopButton : ButtonScript
     protected override void PurchasePiece(int x, int z, bool isWhiteTurn)
     {
         // Check for coins
-        if (isWhiteTurn && Coin.WhiteCoins >= 3 || !isWhiteTurn && Coin.BlackCoins >= 3)
+        if (isWhiteTurn && Coin.WhiteCoins >= Cost || !isWhiteTurn && Coin.BlackCoins >= Cost)
         {
             // spawn white bishop
             if (isWhiteTurn)
@@ -60,7 +61,7 @@ public class BishopButton : ButtonScript
                 BoardManager.Instance.SpawnChessPiece(9, x, z);
 
             // deduct coins from purchase
-            Coin.RemoveCoins(isWhiteTurn, 3);
+            Coin.RemoveCoins(isWhiteTurn, Cost);
         }
     }
 }

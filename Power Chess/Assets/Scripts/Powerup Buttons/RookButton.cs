@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class RookButton : ButtonScript
 {
     public Button button;
+    public int Cost;
 
     void Update()
     {
@@ -13,7 +14,7 @@ public class RookButton : ButtonScript
 
         if (board.isWhiteTurn)
         {
-            if(Coin.WhiteCoins < 5)
+            if(Coin.WhiteCoins < Cost)
             {
                 ColorBlock colors = button.colors;
                 colors.normalColor = Color.red;
@@ -30,7 +31,7 @@ public class RookButton : ButtonScript
         }
         else
         {
-            if(Coin.BlackCoins < 5)
+            if(Coin.BlackCoins < Cost)
             {
                 ColorBlock colors = button.colors;
                 colors.normalColor = Color.red;
@@ -50,7 +51,7 @@ public class RookButton : ButtonScript
     protected override void PurchasePiece(int x, int z, bool isWhiteTurn)
     {
         // Check for coins
-        if (isWhiteTurn && Coin.WhiteCoins >= 5 || !isWhiteTurn && Coin.BlackCoins >= 5)
+        if (isWhiteTurn && Coin.WhiteCoins >= Cost || !isWhiteTurn && Coin.BlackCoins >= Cost)
         {
             // spawn white rook
             if (isWhiteTurn)
@@ -60,7 +61,7 @@ public class RookButton : ButtonScript
                 BoardManager.Instance.SpawnChessPiece(8, x, z);
 
             // deduct coins from purchase
-            Coin.RemoveCoins(isWhiteTurn, 5);
+            Coin.RemoveCoins(isWhiteTurn, Cost);
         }
     }
 }
