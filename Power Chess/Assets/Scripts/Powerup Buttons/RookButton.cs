@@ -21,7 +21,7 @@ public class RookButton : ButtonScript
                 colors.highlightedColor = new Color32(255, 100, 100, 255);
                 button.colors = colors;
             }
-            else   
+            else
             {
                 ColorBlock colors = button.colors;
                 colors.normalColor = Color.green;
@@ -38,7 +38,7 @@ public class RookButton : ButtonScript
                 colors.highlightedColor = new Color32(255, 100, 100, 255);
                 button.colors = colors;
             }
-            else   
+            else
             {
                 ColorBlock colors = button.colors;
                 colors.normalColor = Color.green;
@@ -51,7 +51,7 @@ public class RookButton : ButtonScript
     protected override void PurchasePiece(int x, int z, bool isWhiteTurn)
     {
         // Check for coins
-        if (isWhiteTurn && Coin.WhiteCoins >= Cost || !isWhiteTurn && Coin.BlackCoins >= Cost)
+        if ((isWhiteTurn && Coin.WhiteCoins >= Cost && z <= 1) || (!isWhiteTurn && Coin.BlackCoins >= Cost & z >=  6))
         {
             // spawn white rook
             if (isWhiteTurn)

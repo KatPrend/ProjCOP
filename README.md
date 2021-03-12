@@ -132,3 +132,25 @@ Tyra -
 Veronica - allow user to put a piece on only their half of the board
 
 Kathleen - Coin display, add button for each piece, make powerup buttons deploy the correct pieces, and link coins to buttons
+
+# Sprint 6
+
+- [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
+- [Burndown Chart]
+- [Velocity Chart]
+- [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
+- [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
+- [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
+- [Product Demonstration]
+
+## Task Allocation
+
+Blert - Limit spawn limit to first 2 rows. 
+
+Dylan -
+
+Tyra -
+
+Veronica -
+
+Kathleen -
