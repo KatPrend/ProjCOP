@@ -153,4 +153,4 @@ Tyra -
 
 Veronica -
 
-Kathleen -
+Kathleen - Set up starting board.
