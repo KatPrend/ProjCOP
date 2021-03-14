@@ -51,7 +51,7 @@ public class QueenButton : ButtonScript
     protected override void PurchasePiece(int x, int z, bool isWhiteTurn)
     {
         // Check for coins
-        if ((isWhiteTurn && Coin.WhiteCoins >= Cost && z <= 1) || (!isWhiteTurn && Coin.BlackCoins >= Cost & z >=  6))
+        if ((isWhiteTurn && Coin.WhiteCoins >= this.Cost) || (!isWhiteTurn && Coin.BlackCoins >= this.Cost))
         {
             // spawn white queen
             if (isWhiteTurn)
@@ -61,7 +61,7 @@ public class QueenButton : ButtonScript
                 BoardManager.Instance.SpawnChessPiece(7, x, z);
 
             // deduct coins from purchase
-            Coin.RemoveCoins(isWhiteTurn, Cost);
+            Coin.RemoveCoins(isWhiteTurn, this.Cost);
         }
     }
 }

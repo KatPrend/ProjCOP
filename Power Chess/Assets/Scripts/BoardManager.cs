@@ -32,8 +32,6 @@ public class BoardManager : MonoBehaviour
 
     public bool isWhiteTurn = true;
 
-    public bool isFirstMove = true;
-
     private void Start()
     {
         Instance = this;
@@ -109,10 +107,6 @@ public class BoardManager : MonoBehaviour
 
         // Update player's coins
         Coin.AddCoin(isWhiteTurn);
-
-        // After black makes first move, first turn is over
-        if (!isWhiteTurn && isFirstMove)
-            isFirstMove = false;
 
         // Pass turn and swap cameras
         isWhiteTurn = !isWhiteTurn;

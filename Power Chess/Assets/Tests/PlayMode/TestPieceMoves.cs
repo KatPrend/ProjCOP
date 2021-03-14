@@ -63,7 +63,6 @@ namespace Tests
         public IEnumerator TestPawnArrayOfValidMovesCapture()
         {
             BoardManager board = BoardManager.Instance;
-            board.isFirstMove = false;
             bool[,] expectedArray;
 
             yield return null;

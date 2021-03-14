@@ -20,19 +20,18 @@ public abstract class ButtonScript : MonoBehaviour
         int z = board.emptySelectionZ;
 
         if (x > -1 && z > -1 && board.Pieces[x, z] == null)
-            if (CheckSideOfBoard(x, z, board.isWhiteTurn, board.isFirstMove))
+            if (CheckRows(x, z, board.isWhiteTurn))
                 PurchasePiece(x, z, board.isWhiteTurn);
         else
             OnButtonPress();
     }
 
-    private bool CheckSideOfBoard(int x, int z, bool isWhiteTurn, bool isFirstMove)
+    private bool CheckRows(int x, int z, bool isWhiteTurn)
     {
-        // Place piece on player's side of the board
-        // If it's the player's first turn, limit to first 2 rows
-        if ((isWhiteTurn && z >= 4) || (isWhiteTurn && isFirstMove && z >= 2))
+        // Place piece on player's side of the board and limit to first/last 2 rows
+        if (isWhiteTurn && z >= 2)
             return false;
-        if ((!isWhiteTurn && z < 4) || (!isWhiteTurn && isFirstMove && z < 6))
+        if (!isWhiteTurn && z < 6)
             return false;
 
         return true;
