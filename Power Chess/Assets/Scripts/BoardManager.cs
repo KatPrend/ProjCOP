@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class BoardManager : MonoBehaviour
 {
@@ -32,12 +34,21 @@ public class BoardManager : MonoBehaviour
 
     public bool isWhiteTurn = true;
 
+    public Text gameOverText;
+
+    public bool isGameActive;
+
+    public Button restartButton;
+
     private void Start()
     {
+        isGameActive = true;
         Instance = this;
 
         if (InputAction == null)
             InputAction = new HandleInput();
+
+        //gameOverText.gameObject.SetActive(false);
 
         //Spawn all pieces
         StartingBoard();
@@ -47,21 +58,26 @@ public class BoardManager : MonoBehaviour
 
     private void Update()
     {
-        UpdateSelection();
-        DrawChessBoard();
+        
 
-        if(InputAction.GetMouseButtonDown(0)) //If left click
+        if(isGameActive)
         {
-            if(selectionX >= 0 && selectionZ >= 0) //If clicking on board
+            UpdateSelection();
+            DrawChessBoard();
+
+            if(InputAction.GetMouseButtonDown(0)) //If left click
             {
-                if (selectedPiece == null) //If clicking on a piece
+                if(selectionX >= 0 && selectionZ >= 0) //If clicking on board
                 {
-                    BoardHighlights.Instance.HideHighlights();
-                    SelectPiece(selectionX, selectionZ);
-                }
-                else
-                {
-                    TakeTurn(selectionX, selectionZ);
+                    if (selectedPiece == null) //If clicking on a piece
+                    {
+                        BoardHighlights.Instance.HideHighlights();
+                        SelectPiece(selectionX, selectionZ);
+                    }
+                    else
+                    {
+                        TakeTurn(selectionX, selectionZ);
+                    }
                 }
             }
         }
@@ -146,6 +162,7 @@ public class BoardManager : MonoBehaviour
                 Debug.Log("White Win");
             else   
                 Debug.Log("Black Win");
+            GameOver();
         }
 
         // Add additional coin for capture
@@ -249,5 +266,42 @@ public class BoardManager : MonoBehaviour
             Debug.DrawLine(Vector3.forward * selectionZ + Vector3.right * selectionX, Vector3.forward * (selectionZ + 1) + Vector3.right * (selectionX + 1));
             Debug.DrawLine(Vector3.forward * (selectionZ + 1) + Vector3.right * selectionX, Vector3.forward * selectionZ + Vector3.right * (selectionX + 1));
         }
+    }
+
+    private void GameOver() //When called shows game over text and sets gameActive to false
+    {
+        if(isWhiteTurn)
+        {
+            gameOverText.text = "Game Over White Won";
+        }
+        else
+        {
+            gameOverText.text = "Game Over Black Won";
+        }
+        
+        gameOverText.gameObject.SetActive(true);
+        restartButton.gameObject.SetActive(true);
+        isGameActive = false;
+    }
+
+    private void ClearBoard() //When called Clears the board of pieces
+    {
+        for(int x = 0; x < 8; x++)
+        {
+            for(int z = 0; z < 8; z++)
+            {
+                if (Pieces[x,z] != null)
+                    CapturePiece(Pieces[x,z]);
+            }
+        }
+    }
+
+    public void ResartGame() //Restarts the game
+    {
+        ClearBoard();
+        isGameActive = true;
+        StartingBoard();
+        gameOverText.gameObject.SetActive(false);
+        restartButton.gameObject.SetActive(false);
     }
 }
