@@ -136,7 +136,7 @@ Kathleen - Coin display, add button for each piece, make powerup buttons deploy 
 # Sprint 6
 
 - [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
-- [Burndown Chart]
+- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown6.png)
 - [Velocity Chart]
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
@@ -145,12 +145,12 @@ Kathleen - Coin display, add button for each piece, make powerup buttons deploy 
 
 ## Task Allocation
 
-Blert - Limit spawn limit to first 2 rows. 
+Blert - Limit spawn limit to first 2 rows.
 
-Dylan -
+Dylan - Add checkmate, economy win, and game over.
 
-Tyra - Create AI algorithm function - alpha-beta algorithm 
+Tyra - Create AI algorithm function - alpha-beta algorithm.
 
-Veronica -
+Veronica - Create coin flip powerups that add turns to a player.
 
 Kathleen - Set up starting board.

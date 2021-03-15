@@ -63,18 +63,15 @@ The constraints on our system and the users pertain mostly to the rules of the g
 
 ![UI Design](UI-Design.png)
 
-The top diagram shows what a player will mainly see. Given it is a chess game, the chess board will be the main focus. The player will move the pieces on the board, as in a normal chess game, and they can click on the "Store" tab to the left or the "My Powerups" tab at the bottom to view available/purchased powerups. They can see how many coins they have gained in the top left corner. <br />The bottom left diagram gives an idea of what the store will look like. Here, the player can look at the various powerups they can buy. <br />The bottom right diagram shows a player's storage where the powerups they have purchased can be found.
-
+The top diagram shows the beginning state of the game. Given it is a chess game, the chess board will be the main focus. The powerups available to them are displayed at the bottom and are green when a player can afford them and red when they cannot. The player will move the pieces on the board, as in a normal chess game, and they can click on a button in the "Powerups" tab at the bottom to use powerups. They can see how many coins they have gained in the top left corner. <br />The bottom diagram shows the board after the player has bought a pawn and placed in on the board.
 
 
 | UI Component | User Story |
 | ----- | ---------- |
-| Board | 000, 003, 009, 010, 012, 015 |
-| Piece | 000, 003 |
-| Powerups | 004, 009, 012 |
-| Store | 002, 004, 005 |
+| Board | 000, 003, 009, 010, 012, 015, 017, 018, 019, 020 |
+| Piece | 000, 003, 017 |
+| Powerups | 002, 004, 005, 009, 012, 021, 022 |
 | Coin Tab | 001, 004, 009 |
-| Storage | 004, 006, 012 |
 
 # Resource Management
 
