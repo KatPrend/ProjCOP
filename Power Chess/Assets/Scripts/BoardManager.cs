@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,11 +21,17 @@ public class BoardManager : MonoBehaviour
     private int selectionX = -1;
     private int selectionZ = -1;
 
+    public int opponentX = 0, opponentZ = 0;
+
     public List<GameObject> chessPiecesPrefabs;
 
     private List<GameObject> activeChessPieces;
 
     public bool isWhiteTurn = true;
+
+    public bool AIturn = false;
+
+    GameAI ai = new GameAI();
 
     private void Start()
     {
@@ -53,13 +59,34 @@ public class BoardManager : MonoBehaviour
                 else
                 {
                     TakeTurn(selectionX, selectionZ);
+                    // Debug.Log(selectionX);
+                    // Debug.Log(selectionZ);
+                    opponentZ = selectionZ;
+                    opponentX = selectionX;
+                    AIturn = true;
                 }
             }
+        }
+
+        if(AIturn && !isWhiteTurn)
+        {
+            if (selectedPiece == null) 
+            {
+                // SelectPiece(7, 6);//start post
+            }
+            else
+            {
+                // TakeTurn(7,5);//end pos move
+            }
+
+            // ai.AlphaBeta(opponentX, opponentZ); //send latest opponet moves
+
+
         }
     }
 
     //Given cursor location pick piece at that location if it exists
-    private void SelectPiece(int x, int z)
+    public void SelectPiece(int x, int z)
     {
         if (Pieces[x,z] == null)
             return;
@@ -67,11 +94,15 @@ public class BoardManager : MonoBehaviour
             return;
 
         allowedRelativeMoves = Pieces[x, z].ArrayOfValidMove(); 
+        // Debug.Log("Allowed Moves  " + allowedRelativeMoves[0,0]);
         selectedPiece = Pieces[x,z];
+        // Debug.Log("Selected  " + selectedPiece.PositionX);
+        // Debug.Log("Selected  " + selectedPiece.PositionZ);
+
         BoardHighlights.Instance.HighlightAllowedMoves(allowedRelativeMoves);
     }
 
-    private void TakeTurn(int x, int z)
+    public void TakeTurn(int x, int z)
     {
         MoveAPiece(x, z);
 
@@ -84,7 +115,7 @@ public class BoardManager : MonoBehaviour
         BlackCamera.enabled = !BlackCamera.enabled;
     }
 
-    private void MoveAPiece(int x, int z)
+    public void MoveAPiece(int x, int z)
     {
         Vector3 newSquare = GetSquareCenter(x, z);
 
@@ -101,6 +132,9 @@ public class BoardManager : MonoBehaviour
             selectedPiece.transform.position = newSquare;
             selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
             Pieces[x, z] = selectedPiece;
+            // Debug.Log("Move X  " + selectedPiece.PositionX);
+            // Debug.Log("Move Z  " + selectedPiece.PositionZ);
+
         }
 
         //And remove the board highlight
