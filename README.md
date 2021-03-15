@@ -137,7 +137,7 @@ Kathleen - Coin display, add button for each piece, make powerup buttons deploy 
 
 - [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
 - [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown6.png)
-- [Velocity Chart]
+- [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Charts/Velocity%20Chart.png)
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
 - [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
