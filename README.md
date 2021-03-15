@@ -149,7 +149,7 @@ Blert - Limit spawn limit to first 2 rows.
 
 Dylan -
 
-Tyra -
+Tyra - Create AI algorithm function - alpha-beta algorithm 
 
 Veronica -
 
