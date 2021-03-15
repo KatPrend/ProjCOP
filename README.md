@@ -141,7 +141,7 @@ Kathleen - Coin display, add button for each piece, make powerup buttons deploy 
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
 - [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
-- [Product Demonstration]
+- [Product Demonstration](https://youtu.be/x0b9gW4oyso)
 
 ## Task Allocation
 

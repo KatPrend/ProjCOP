@@ -1279,7 +1279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 689368472}
-  Cost: 50
+  Cost: 10
 --- !u!114 &689368472
 MonoBehaviour:
   m_ObjectHideFlags: 0
