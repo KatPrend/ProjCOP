@@ -124,10 +124,26 @@ public class BoardManager : MonoBehaviour
         // Update player's coins
         Coin.AddCoin(isWhiteTurn);
 
+        // Check for extra white turns
+        if (CoinFlip.extraWhiteTurn != 0)
+        {
+            CoinFlip.extraWhiteTurn--;
+        }
+
+        // Check for extra black turns
+        else if (CoinFlip.extraBlackTurn != 0)
+        {
+            CoinFlip.extraBlackTurn--;
+        }
+
         // Pass turn and swap cameras
-        isWhiteTurn = !isWhiteTurn;
-        WhiteCamera.enabled = !WhiteCamera.enabled;
-        BlackCamera.enabled = !BlackCamera.enabled;
+        else
+        {
+            isWhiteTurn = !isWhiteTurn;
+            WhiteCamera.enabled = !WhiteCamera.enabled;
+            BlackCamera.enabled = !BlackCamera.enabled;
+        }
+        
     }
 
     private void MoveAPiece(int x, int z)
