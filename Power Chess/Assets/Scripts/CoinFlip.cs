@@ -15,7 +15,8 @@ public class CoinFlip : MonoBehaviour
     public static int extraBlackTurn;
     System.Random random = new System.Random();
 
-    public void FlipTheCoin()
+    // Add either two or one extra turns per coin flip
+    public void TwoExtraTurns()
     {
         result = random.Next(0, 2);
         quarterImage.sprite = sides[result];
@@ -44,34 +45,6 @@ public class CoinFlip : MonoBehaviour
                 extraBlackTurn = 1;
         }
     }
-
-    // Add either two or one extra turns per coin flip
-    //public void TwoExtraTurns()
-    //{
-    //    BoardManager board = BoardManager.Instance;
-
-    //    // Heads = 2 extra turns
-    //    if (result == 0)
-    //    {
-    //        if (board.isWhiteTurn)
-    //        {
-    //            extraWhiteTurn = 2;
-    //        }
-    //        else
-    //            extraBlackTurn = 2;
-    //    }
-
-    //    // Tails = 1 extra turn
-    //    if (result == 1)
-    //    {
-    //        if (board.isWhiteTurn)
-    //        {
-    //            extraWhiteTurn = 1;
-    //        }
-    //        else
-    //            extraBlackTurn = 1;
-    //    }
-    //}
 
     // Add either one or zero extra turns per coin flip
     //public void OneExtraTurn()

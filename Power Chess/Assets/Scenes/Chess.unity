@@ -3657,7 +3657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Quarter: {fileID: 634302055}
   button: {fileID: 1909010038}
-  Cost: 1
+  Cost: 10
 --- !u!114 &1909010038
 MonoBehaviour:
   m_ObjectHideFlags: 0

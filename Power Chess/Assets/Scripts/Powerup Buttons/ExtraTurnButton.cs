@@ -57,13 +57,20 @@ public class ExtraTurnButton : MonoBehaviour
         if (board.isWhiteTurn && Coin.WhiteCoins >= Cost || !board.isWhiteTurn && Coin.BlackCoins >= Cost)
         {
             // Make coin visible
-            Quarter.SetActive(true);
+            StartCoroutine(ShowAndHide(Quarter, 3.0f)); // 3 seconds
 
             // Implement coin flip
-            //Quarter.GetComponent<CoinFlip>().TwoExtraTurns();
+            Quarter.GetComponent<CoinFlip>().TwoExtraTurns();
 
             // Deduct coins from purchase
             Coin.RemoveCoins(board.isWhiteTurn, Cost);
         }
+    }
+
+    IEnumerator ShowAndHide(GameObject go, float delay)
+    {
+        go.SetActive(true);
+        yield return new WaitForSeconds(delay);
+        go.SetActive(false);
     }
 }
