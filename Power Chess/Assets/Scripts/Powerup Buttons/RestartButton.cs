@@ -16,9 +16,9 @@ public class RestartButton : MonoBehaviour
             button.colors = colors;
     }
 
-    public void Resart()
+    public void Restart()
     {
         BoardManager board = BoardManager.Instance;
-        board.ResartGame();
+        board.RestartGame();
     }
 }

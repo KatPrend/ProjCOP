@@ -335,5 +335,25 @@ namespace Tests
             button.SpawnAPiece();
             Assert.IsInstanceOf(typeof(Pawn), board.Pieces[7, 7]);
         }
+
+        [UnityTest]
+        public IEnumerator TestEconomyWinButton()
+        {
+            GameObject go = new GameObject();
+            EconomyWinButton button = go.AddComponent<EconomyWinButton>();
+            button.button = go.AddComponent<Button>();
+            button.Cost = 30;
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            // It is black's turn and they have sufficient coins
+            board.isWhiteTurn = false;
+            Coin.BlackCoins = 33;
+
+            button.PurchaseAWin();
+            Assert.False(board.isGameActive);
+        }
     }
 }

@@ -37,7 +37,6 @@ public class BoardManager : MonoBehaviour
     public Text gameOverText;
 
     public bool isGameActive;
-
     public Button restartButton;
 
     private void Start()
@@ -59,7 +58,6 @@ public class BoardManager : MonoBehaviour
     private void Update()
     {
         
-
         if(isGameActive)
         {
             UpdateSelection();
@@ -172,14 +170,8 @@ public class BoardManager : MonoBehaviour
         Destroy(capturedPiece.gameObject);
 
         if (capturedPiece.GetType() == typeof(King))
-        {
             //End the game
-            if(isWhiteTurn)
-                Debug.Log("White Win");
-            else   
-                Debug.Log("Black Win");
             GameOver();
-        }
 
         // Add additional coin for capture
         Coin.AddCoin(isWhiteTurn);
@@ -284,7 +276,7 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    private void GameOver() //When called shows game over text and sets gameActive to false
+    public void GameOver() //When called shows game over text and sets gameActive to false
     {
         if(isWhiteTurn)
         {
@@ -312,7 +304,7 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    public void ResartGame() //Restarts the game
+    public void RestartGame() //Restarts the game
     {
         ClearBoard();
         isGameActive = true;

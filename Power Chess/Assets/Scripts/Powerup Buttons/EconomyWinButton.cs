@@ -55,15 +55,10 @@ public class EconomyWinButton : MonoBehaviour
         // Check for coins
         if (board.isWhiteTurn && Coin.WhiteCoins >= Cost || !board.isWhiteTurn && Coin.BlackCoins >= Cost)
         {
-            // spawn white pawn
-            if (board.isWhiteTurn)
-                Debug.Log("White Win");
-            // spawn black pawn
-            else
-                Debug.Log("Black Win");
-
             // deduct coins from purchase
             Coin.RemoveCoins(board.isWhiteTurn, Cost);
+
+            board.GameOver();
         }
     }
 }
