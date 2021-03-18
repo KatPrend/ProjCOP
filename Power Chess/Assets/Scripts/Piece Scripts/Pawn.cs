@@ -41,8 +41,94 @@ public class Pawn : Piece
     public override bool[,] ArrayOfValidMove()
     {
         bool[,] array = new bool[8,8];
-        array[3,3] = true;
+        Piece otherPiece;
+        int i;
+        int j;
 
+        // Initialize array
+        for(i = 0; i < 8; i++)
+        {
+            for(j = 0; j < 8; j++)
+            {
+                array[i, j] = false;
+            }
+        }
+
+        if(isWhite)
+        {
+            // Scan in rows above
+            for(j = PositionZ + 1; j < 8; j++)
+            {
+                otherPiece = BoardManager.Instance.Pieces[PositionX, j];
+
+                if (otherPiece == null && ValidMove(PositionX, j))
+                    array[PositionX, j] = true;
+            }
+
+            // Scan for diagonal opposing pieces to capture
+            // Top right
+            i = PositionX + 1;
+            j = PositionZ + 1;
+            // Check bounds
+            if (i >= 0 && i < 8 && j >= 0 && j < 8)
+            {
+                otherPiece = BoardManager.Instance.Pieces[i, j];
+
+                // Check if the other piece belongs to opposing player
+                if (otherPiece != null && otherPiece.isWhite != isWhite)
+                    array[i, j] = true;
+            }
+
+            // Top left
+            i = PositionX - 1;
+            j = PositionZ + 1;
+            if (i >= 0 && i < 8 && j >= 0 && j < 8)
+            {
+                otherPiece = BoardManager.Instance.Pieces[i, j];
+
+                if (otherPiece != null && otherPiece.isWhite != isWhite)
+                    array[i, j] = true;
+            }
+        }
+
+        else
+        {
+            // Scan in rows above
+            for(j = PositionZ - 1; j > 0; j--)
+            {
+                otherPiece = BoardManager.Instance.Pieces[PositionX, j];
+
+                if (otherPiece == null && ValidMove(PositionX, j))
+                    array[PositionX, j] = true;
+            }
+
+            // Scan for diagonal opposing pieces to capture
+            // Top right
+            i = PositionX + 1;
+            j = PositionZ - 1;
+            // Check bounds
+            if (i >= 0 && i < 8 && j >= 0 && j < 8)
+            {
+                otherPiece = BoardManager.Instance.Pieces[i, j];
+
+                // Check if the other piece belongs to opposing player
+                if (otherPiece != null && otherPiece.isWhite != isWhite)
+                    array[i, j] = true;
+            }
+
+            // Top left
+            i = PositionX - 1;
+            j = PositionZ - 1;
+            if (i >= 0 && i < 8 && j >= 0 && j < 8)
+            {
+                otherPiece = BoardManager.Instance.Pieces[i, j];
+
+                if (otherPiece != null && otherPiece.isWhite != isWhite)
+                    array[i, j] = true;
+            }
+        }
         return array;
     }
+
+
 }

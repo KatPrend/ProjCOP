@@ -8,6 +8,8 @@
 
 [Sprint 4](#sprint-4)
 
+[Sprint 5](#sprint-5)
+
 ## Vision Statement
 
 This product is for people who enjoyed normal as well as auto chess.
@@ -91,20 +93,64 @@ Kathleen - Code the Knight and piece class
 # Sprint 4
 
 - [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
-- [Burndown Chart]
-- [Velocity Chart]
+- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown4.png)
+- [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Charts/Velocity%20Chart.png)
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
-- [Automated Tests]
-- [Product Demonstration]
+- [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
+- [Product Demonstration](https://youtu.be/5KKvdFcj33c)
 
 ## Task Allocation
-Blert - 
+Blert - Code Piece Capture, King and Queen behavior
 
-Dylan - 
+Dylan - Code Highlight, Rook and Bishop behavior
 
-Tyra - 
+Tyra -
 
-Veronica - 
+Veronica - Code Knight and Pawn behavior
 
-Kathleen - 
+Kathleen - Code coin class and turn order
+
+# Sprint 5
+
+- [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
+- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown5.png)
+- [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Charts/Velocity%20Chart.png)
+- [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
+- [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
+- [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
+- [Product Demonstration](https://www.youtube.com/watch?v=we7w2qLWzjk&t=3s)
+
+## Task Allocation
+
+Blert - Video demonstration
+
+Dylan - Create button for powerups store, add board selection for powerup placement, add coin value to buttons, and add color to buttons
+
+Tyra -
+
+Veronica - allow user to put a piece on only their half of the board
+
+Kathleen - Coin display, add button for each piece, make powerup buttons deploy the correct pieces, and link coins to buttons
+
+# Sprint 6
+
+- [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
+- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown6.png)
+- [Velocity Chart](https://github.com/aryt431/ProjCOP/blob/main/Velocity%20Charts/Velocity%20Chart.png)
+- [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
+- [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
+- [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
+- [Product Demonstration](https://youtu.be/x0b9gW4oyso)
+
+## Task Allocation
+
+Blert - Limit spawn limit to first 2 rows.
+
+Dylan - Add checkmate, economy win, and game over.
+
+Tyra - Create AI algorithm function - alpha-beta algorithm.
+
+Veronica - Create coin flip powerups that add turns to a player.
+
+Kathleen - Set up starting board.

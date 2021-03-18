@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class BoardManager : MonoBehaviour
 {
     public static BoardManager Instance { set; get; }
+
+    public IHandleInput InputAction;
 
     private bool[,] allowedRelativeMoves{ set; get; }
 
@@ -18,8 +22,11 @@ public class BoardManager : MonoBehaviour
     private const float SQUARE_SIZE  = 1.0F; //Square is 1 meter by 1 meter
     private const float SQUARE_OFFSET  = 0.5F; //Offset to center a piece
 
-    private int selectionX = -1;
-    private int selectionZ = -1;
+    public int selectionX = -1;
+    public int selectionZ = -1;
+
+    public int emptySelectionX = -1;
+    public int emptySelectionZ = -1;
 
     public int opponentX = 0, opponentZ = 0;
 
@@ -32,31 +39,38 @@ public class BoardManager : MonoBehaviour
     public bool AIturn = false;
 
     GameAI ai = new GameAI();
+    public Text gameOverText;
+
+    public bool isGameActive;
+    public Button restartButton;
 
     private void Start()
     {
+        isGameActive = true;
         Instance = this;
 
+        if (InputAction == null)
+            InputAction = new HandleInput();
+
+        //gameOverText.gameObject.SetActive(false);
+
         //Spawn all pieces
-        SpawnAllChessPieces();
+        StartingBoard();
         WhiteCamera.enabled = true;
         BlackCamera.enabled = false;
     }
 
     private void Update()
     {
-        UpdateSelection();
-        DrawChessBoard();
-
-        if(Input.GetMouseButtonDown(0)) //If left click
+        
+        if(isGameActive)
         {
-            if(selectionX >= 0 && selectionZ >= 0) //If clicking on board
+            UpdateSelection();
+            DrawChessBoard();
+
+            if(InputAction.GetMouseButtonDown(0)) //If left click
             {
-                if (selectedPiece == null) //If clicking on a piece
-                {
-                    SelectPiece(selectionX, selectionZ);
-                }
-                else
+                if(selectionX >= 0 && selectionZ >= 0) //If clicking on board
                 {
                     TakeTurn(selectionX, selectionZ);
                     // Debug.Log(selectionX);
@@ -64,6 +78,15 @@ public class BoardManager : MonoBehaviour
                     opponentZ = selectionZ;
                     opponentX = selectionX;
                     AIturn = true;
+                    if (selectedPiece == null) //If clicking on a piece
+                    {
+                        BoardHighlights.Instance.HideHighlights();
+                        SelectPiece(selectionX, selectionZ);
+                    }
+                    else
+                    {
+                        TakeTurn(selectionX, selectionZ);
+                    }
                 }
             }
         }
@@ -89,42 +112,75 @@ public class BoardManager : MonoBehaviour
     public void SelectPiece(int x, int z)
     {
         if (Pieces[x,z] == null)
+        {
+            emptySelectionX = x;
+            emptySelectionZ = z;
+            bool[,] array = new bool[8,8];
+            array[x,z] = true;
+            BoardHighlights.Instance.HighlightAllowedMoves(array);
             return;
+        }
         if (Pieces[x,z].isWhite != isWhiteTurn)
+        {
+            emptySelectionX = -1;
+            emptySelectionZ = -1;
             return;
+        }            
 
-        allowedRelativeMoves = Pieces[x, z].ArrayOfValidMove(); 
+        allowedRelativeMoves = Pieces[x, z].ArrayOfValidMove();
         selectedPiece = Pieces[x,z];
 
         BoardHighlights.Instance.HighlightAllowedMoves(allowedRelativeMoves);
+        emptySelectionX = -1;
+        emptySelectionZ = -1;
     }
 
     public void TakeTurn(int x, int z)
     {
-        MoveAPiece(x, z);
+        if (allowedRelativeMoves[x, z])
+            MoveAPiece(x, z);
+        // If move is not allowed, unselect piece
+        else
+        {
+            selectedPiece = null;
+            BoardHighlights.Instance.HideHighlights();
+            return;
+        }
 
         // Update player's coins
         Coin.AddCoin(isWhiteTurn);
 
+        // Check for extra white turns
+        if (CoinFlip.extraWhiteTurn != 0)
+        {
+            CoinFlip.extraWhiteTurn--;
+        }
+
+        // Check for extra black turns
+        else if (CoinFlip.extraBlackTurn != 0)
+        {
+            CoinFlip.extraBlackTurn--;
+        }
+
         // Pass turn and swap cameras
-        isWhiteTurn = !isWhiteTurn;
-        WhiteCamera.enabled = !WhiteCamera.enabled;
-        BlackCamera.enabled = !BlackCamera.enabled;
+        else
+        {
+            isWhiteTurn = !isWhiteTurn;
+            WhiteCamera.enabled = !WhiteCamera.enabled;
+            BlackCamera.enabled = !BlackCamera.enabled;
+        }
+        
     }
 
     public void MoveAPiece(int x, int z)
     {
         Vector3 newSquare = GetSquareCenter(x, z);
+        Piece otherPiece = Pieces[x,z];
 
-        //If a move is valid move the piece
-        if (selectedPiece.ValidMove(x,z))
-        {
-            Piece otherPiece = Pieces[x,z];
+        if (otherPiece != null && otherPiece.isWhite != isWhiteTurn)
+            CapturePiece(otherPiece);
 
-            if (otherPiece != null && otherPiece.isWhite != isWhiteTurn)
-                CapturePiece(otherPiece);
-
-            Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
+        Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
 
             selectedPiece.transform.position = newSquare;
             selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
@@ -132,6 +188,9 @@ public class BoardManager : MonoBehaviour
         
 
         }
+        selectedPiece.transform.position = newSquare;
+        selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
+        Pieces[x, z] = selectedPiece;
 
         //And remove the board highlight
         BoardHighlights.Instance.HideHighlights();
@@ -145,10 +204,8 @@ public class BoardManager : MonoBehaviour
         Destroy(capturedPiece.gameObject);
 
         if (capturedPiece.GetType() == typeof(King))
-        {
             //End the game
-            Application.Quit();
-        }
+            GameOver();
 
         // Add additional coin for capture
         Coin.AddCoin(isWhiteTurn);
@@ -163,7 +220,7 @@ public class BoardManager : MonoBehaviour
         RaycastHit hit;
 
         //If mouse is over the board update selection variables to current position
-        if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 25.0f, LayerMask.GetMask("Chess Plane")))
+        if(Physics.Raycast(Camera.main.ScreenPointToRay(InputAction.MousePosition()), out hit, 25.0f, LayerMask.GetMask("Chess Plane")))
         {
             Debug.Log(hit.point); //Prints position to console for testing
 
@@ -181,7 +238,7 @@ public class BoardManager : MonoBehaviour
     }
 
     //Given an index in the ChessPiecesPrefab list spawn that pieces at position
-    private void SpawnChessPiece(int index, int x, int z)
+    public void SpawnChessPiece(int index, int x, int z)
     {
         GameObject go = Instantiate(chessPiecesPrefabs[index], GetSquareCenter(x,z), FixRotation(index)) as GameObject; //Create it as a game object
         go.transform.SetParent(transform);
@@ -202,7 +259,7 @@ public class BoardManager : MonoBehaviour
         return orientation;
     }
 
-    private void SpawnAllChessPieces()
+    private void StartingBoard()
     {
         activeChessPieces = new List<GameObject>();
         Pieces = new Piece[8,8];
@@ -211,34 +268,8 @@ public class BoardManager : MonoBehaviour
         SpawnChessPiece(0, 4, 0);
         SpawnChessPiece(6, 4, 7);
 
-        //Spawns Queen
-        SpawnChessPiece(1, 3, 0);
-        SpawnChessPiece(7, 3, 7);
-
-        //Spawn Rooks
-        SpawnChessPiece(2, 0, 0);
-        SpawnChessPiece(2, 7, 0);
-        SpawnChessPiece(8, 0, 7);
-        SpawnChessPiece(8, 7, 7);
-
-        //Spawn Bishops
-        SpawnChessPiece(3, 2, 0);
-        SpawnChessPiece(3, 5, 0);
-        SpawnChessPiece(9, 2, 7);
-        SpawnChessPiece(9, 5, 7);
-
-        //Spawn Knights
-        SpawnChessPiece(4, 1, 0);
-        SpawnChessPiece(4, 6, 0);
-        SpawnChessPiece(10, 1, 7);
-        SpawnChessPiece(10, 6, 7);
-
-        //Spawn Pawns
-        for(int i = 0; i < 8; i++)
-        {
-            SpawnChessPiece(5, i, 1);
-            SpawnChessPiece(11, i, 6);
-        }
+        Coin.WhiteCoins = 3;
+        Coin.BlackCoins = 3;
     }
 
     //Takes in squares position and returns a Vector3 with that squares center
@@ -277,5 +308,42 @@ public class BoardManager : MonoBehaviour
             Debug.DrawLine(Vector3.forward * selectionZ + Vector3.right * selectionX, Vector3.forward * (selectionZ + 1) + Vector3.right * (selectionX + 1));
             Debug.DrawLine(Vector3.forward * (selectionZ + 1) + Vector3.right * selectionX, Vector3.forward * selectionZ + Vector3.right * (selectionX + 1));
         }
+    }
+
+    public void GameOver() //When called shows game over text and sets gameActive to false
+    {
+        if(isWhiteTurn)
+        {
+            gameOverText.text = "Game Over White Won";
+        }
+        else
+        {
+            gameOverText.text = "Game Over Black Won";
+        }
+        
+        gameOverText.gameObject.SetActive(true);
+        restartButton.gameObject.SetActive(true);
+        isGameActive = false;
+    }
+
+    private void ClearBoard() //When called Clears the board of pieces
+    {
+        for(int x = 0; x < 8; x++)
+        {
+            for(int z = 0; z < 8; z++)
+            {
+                if (Pieces[x,z] != null)
+                    CapturePiece(Pieces[x,z]);
+            }
+        }
+    }
+
+    public void RestartGame() //Restarts the game
+    {
+        ClearBoard();
+        isGameActive = true;
+        StartingBoard();
+        gameOverText.gameObject.SetActive(false);
+        restartButton.gameObject.SetActive(false);
     }
 }

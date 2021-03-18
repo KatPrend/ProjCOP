@@ -33,23 +33,23 @@ Description of the major classes:
 
 BoardManager: The board class is used to create an instance of a board and monitors the state of the game (whose turn it is and if the game is over). Since our current idea of the game does not have multiple instances of games running concurrently there is no need to have a higher level class track these attributes. The board class maintains a double dimension array of Piece instances and at least one instance of a store object.
 
-Store: The store class generates a list of power-ups that can be purchased with coins and applied to the squares in a board. Each store creates a storage object to track purchased power-ups before they are applied.
+BoardHighlights: This class manages highlighting the squares on the board where a certain piece can move legally.
+
+Button: The button class allows for users to be able to purchase powerups with coins and apply them to the squares in a board. Each button that derives from the abstract button class (QueenButton, RookButton, etc) will allow the player to purchase that specific object and then use it in the game.
 
 Coins: The coins class exists to track the in-game economy. The class includes simple set and get methods.
-
-PowerUp: The powerup class is used to generate advantages from a pre-generated range that will be used to populate the Store. Powerups can be stored in a storage object and applied to a square.
 
 Piece: The Piece class is an abstract class from which the individual chess pieces will extend from. It tracks a piece's color and position. Since each piece moves differently, each chess piece will implement its own validMove() method.
 
 
 | Class | User Story |
 | ----- | ---------- |
-| Board | 000, 003, 009, 010, 012, 013, 015, 016, 017, 018 |
+| BoardManager | 000, 003, 009, 010, 012, 013, 015, 016, 017, 018 |
+| BoardHighlights | 015 |
 | Piece | 000, 003, 015 |
-| Store | 002, 004, 005 |
+| Button | 002, 004, 005, 012, 019 |
 | Coins | 001, 004, 009 |
-| Storage | 006, 012 |
-| Powerup | 002, 004, 006, 012 |
+| Storage | 006 |
 
 # Data Design
 
@@ -63,18 +63,15 @@ The constraints on our system and the users pertain mostly to the rules of the g
 
 ![UI Design](UI-Design.png)
 
-The top diagram shows what a player will mainly see. Given it is a chess game, the chess board will be the main focus. The player will move the pieces on the board, as in a normal chess game, and they can click on the "Store" tab to the left or the "My Powerups" tab at the bottom to view available/purchased powerups. They can see how many coins they have gained in the top left corner. <br />The bottom left diagram gives an idea of what the store will look like. Here, the player can look at the various powerups they can buy. <br />The bottom right diagram shows a player's storage where the powerups they have purchased can be found.
-
+The top diagram shows the beginning state of the game. Given it is a chess game, the chess board will be the main focus. The powerups available to them are displayed at the bottom and are green when a player can afford them and red when they cannot. The player will move the pieces on the board, as in a normal chess game, and they can click on a button in the "Powerups" tab at the bottom to use powerups. They can see how many coins they have gained in the top left corner. <br />The bottom diagram shows the board after the player has bought a pawn and placed in on the board.
 
 
 | UI Component | User Story |
 | ----- | ---------- |
-| Board | 000, 003, 009, 010, 012, 015 |
-| Piece | 000, 003 |
-| Powerups | 004, 009, 012 |
-| Store | 002, 004, 005 |
+| Board | 000, 003, 009, 010, 012, 015, 017, 018, 019, 020 |
+| Piece | 000, 003, 017 |
+| Powerups | 002, 004, 005, 009, 012, 021, 022 |
 | Coin Tab | 001, 004, 009 |
-| Storage | 004, 006, 012 |
 
 # Resource Management
 
@@ -110,7 +107,7 @@ We will process errors through detection and with the help of Unity. For the err
 
 # Fault Tolerance
 
-If an error is detected, the system will revert back to how it was before the error occurred. For example, if a player puts a chess piece on a square that is not availabe or out of that piece's capability, it will go back to it's original location. Or, if a player tries to move something when it is not their turn, it will go back to its original location and an error message will give them a warning.
+If an error is detected, the system will revert back to how it was before the error occurred. For example, if a player puts a chess piece on a square that is not available or out of that piece's capability, it will go back to it's original location. Or, if a player tries to move something when it is not their turn, it will go back to its original location and an error message will give them a warning.
 
 # Architectural Feasibility
 
