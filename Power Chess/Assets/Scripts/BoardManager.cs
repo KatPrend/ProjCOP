@@ -46,11 +46,11 @@ public class BoardManager : MonoBehaviour
     
     public AudioSource noise1;
     public AudioSource noise2;
+    public AudioSource noise3;
 
     private void Start()
     {
-        
-
+        noise1.Play();
         isGameActive = true;
         Instance = this;
 
@@ -309,6 +309,7 @@ public class BoardManager : MonoBehaviour
     public void GameOver() //When called shows game over text and sets gameActive to false
     {
         noise1.Stop();
+        noise3.Play();
         if(isWhiteTurn)
         {
             gameOverText.text = "Game Over White Won";
@@ -340,7 +341,11 @@ public class BoardManager : MonoBehaviour
         ClearBoard();
         isGameActive = true;
         StartingBoard();
+        
+        if(noise3.isPlaying)
+            noise3.Stop();
         gameOverText.gameObject.SetActive(false);
         restartButton.gameObject.SetActive(false);
+        noise1.Play();
     }
 }
