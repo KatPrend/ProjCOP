@@ -37,10 +37,9 @@ public class BoardManager : MonoBehaviour
     public bool isWhiteTurn = true;
 
     public bool AIturn = false;
-
     GameAI ai = new GameAI();
-    public Text gameOverText;
 
+    public Text gameOverText;
     public bool isGameActive;
     public Button restartButton;
 
@@ -62,7 +61,6 @@ public class BoardManager : MonoBehaviour
 
     private void Update()
     {
-        
         if(isGameActive)
         {
             UpdateSelection();
@@ -72,12 +70,6 @@ public class BoardManager : MonoBehaviour
             {
                 if(selectionX >= 0 && selectionZ >= 0) //If clicking on board
                 {
-                    TakeTurn(selectionX, selectionZ);
-                    // Debug.Log(selectionX);
-                    // Debug.Log(selectionZ);
-                    opponentZ = selectionZ;
-                    opponentX = selectionX;
-                    AIturn = true;
                     if (selectedPiece == null) //If clicking on a piece
                     {
                         BoardHighlights.Instance.HideHighlights();
@@ -86,6 +78,10 @@ public class BoardManager : MonoBehaviour
                     else
                     {
                         TakeTurn(selectionX, selectionZ);
+
+                        opponentZ = selectionZ;
+                        opponentX = selectionX;
+                        AIturn = true;
                     }
                 }
             }
@@ -103,13 +99,11 @@ public class BoardManager : MonoBehaviour
             }
 
             // ai.AlphaBeta(opponentX, opponentZ); //send latest opponet moves
-
-
         }
     }
 
     //Given cursor location pick piece at that location if it exists
-    public void SelectPiece(int x, int z)
+    private void SelectPiece(int x, int z)
     {
         if (Pieces[x,z] == null)
         {
@@ -135,7 +129,7 @@ public class BoardManager : MonoBehaviour
         emptySelectionZ = -1;
     }
 
-    public void TakeTurn(int x, int z)
+    private void TakeTurn(int x, int z)
     {
         if (allowedRelativeMoves[x, z])
             MoveAPiece(x, z);
@@ -172,7 +166,7 @@ public class BoardManager : MonoBehaviour
         
     }
 
-    public void MoveAPiece(int x, int z)
+    private void MoveAPiece(int x, int z)
     {
         Vector3 newSquare = GetSquareCenter(x, z);
         Piece otherPiece = Pieces[x,z];
@@ -182,16 +176,10 @@ public class BoardManager : MonoBehaviour
 
         Pieces[selectedPiece.PositionX, selectedPiece.PositionZ] = null;
 
-            selectedPiece.transform.position = newSquare;
-            selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
-            Pieces[x, z] = selectedPiece;
-        
-
-        }
         selectedPiece.transform.position = newSquare;
         selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
         Pieces[x, z] = selectedPiece;
-
+        
         //And remove the board highlight
         BoardHighlights.Instance.HideHighlights();
         selectedPiece = null;
