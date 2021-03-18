@@ -43,8 +43,14 @@ public class BoardManager : MonoBehaviour
     public bool isGameActive;
     public Button restartButton;
 
+    
+    public AudioSource noise1;
+    public AudioSource noise2;
+
     private void Start()
     {
+        
+
         isGameActive = true;
         Instance = this;
 
@@ -178,6 +184,7 @@ public class BoardManager : MonoBehaviour
 
         selectedPiece.transform.position = newSquare;
         selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
+        noise2.Play();
         Pieces[x, z] = selectedPiece;
         
         //And remove the board highlight
@@ -233,6 +240,7 @@ public class BoardManager : MonoBehaviour
 
         Pieces[x,z] = go.GetComponent<Piece>();
         Pieces[x,z].SetPosition(x,z);
+        noise2.Play();
         activeChessPieces.Add(go);
     }
 
@@ -300,6 +308,7 @@ public class BoardManager : MonoBehaviour
 
     public void GameOver() //When called shows game over text and sets gameActive to false
     {
+        noise1.Stop();
         if(isWhiteTurn)
         {
             gameOverText.text = "Game Over White Won";
