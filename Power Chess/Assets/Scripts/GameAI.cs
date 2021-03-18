@@ -2,21 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// public class GameAI : MonoBehaviour
-// {
-//     // Start is called before the first frame update
-//     void Start()
-//     {
-        
-//     }
-
-//     // Update is called once per frame
-//     void Update()
-//     {
-        
-//     }
-// }
-
 
 public class GameAI 
 {
@@ -108,15 +93,6 @@ public class GameAI
 		//put all of the valid moves in an array
 		//where on the board that that certain piece can move, true or false
 
-		//valid moves for Bishop
-		// public bool[,] bishopallowedMoves
-		// {
-		// 	// leftwhite
-		// 	// {
-		// 	// 	bishopallowedMoves = Pieces[2,0].ArrayOfValidMove(); //white 
-
-		// 	// }
-		// }
 		// allowedMoves.Add(Pieces[5,0].ArrayOfValidMove()); //white 
 		// allowedMoves.Add(Pieces[2,7].ArrayOfValidMove()); //black
 		// allowedMoves.Add(Pieces[5,7].ArrayOfValidMove()); //black 

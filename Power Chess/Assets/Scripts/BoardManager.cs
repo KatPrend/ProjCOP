@@ -94,10 +94,7 @@ public class BoardManager : MonoBehaviour
             return;
 
         allowedRelativeMoves = Pieces[x, z].ArrayOfValidMove(); 
-        // Debug.Log("Allowed Moves  " + allowedRelativeMoves[0,0]);
         selectedPiece = Pieces[x,z];
-        // Debug.Log("Selected  " + selectedPiece.PositionX);
-        // Debug.Log("Selected  " + selectedPiece.PositionZ);
 
         BoardHighlights.Instance.HighlightAllowedMoves(allowedRelativeMoves);
     }
@@ -132,8 +129,7 @@ public class BoardManager : MonoBehaviour
             selectedPiece.transform.position = newSquare;
             selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
             Pieces[x, z] = selectedPiece;
-            // Debug.Log("Move X  " + selectedPiece.PositionX);
-            // Debug.Log("Move Z  " + selectedPiece.PositionZ);
+        
 
         }
 
