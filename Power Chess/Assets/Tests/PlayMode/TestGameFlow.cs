@@ -1,10 +1,10 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using NSubstitute;
 
 namespace Tests
 {
@@ -56,6 +56,9 @@ namespace Tests
         [UnityTest]
         public IEnumerator TestPlayersStartWithThreeCoins()
         {
+            BoardManager board = BoardManager.Instance;
+            board.RestartGame();
+
             yield return null;
 
             Assert.AreEqual(3, Coin.WhiteCoins);
@@ -104,6 +107,40 @@ namespace Tests
             button.SpawnAPiece();
             // Piece is NOT spawned in selected empty spot
             Assert.Null(board.Pieces[0, 5]);
+        }
+
+        [UnityTest]
+        public IEnumerator TestBuyMultiplePiecePowerupsInSameTurn()
+        {
+            GameObject go = new GameObject();
+            PawnButton button = go.AddComponent<PawnButton>();
+            button.button = go.AddComponent<Button>();
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            // Choose a2
+            Assert.Null(board.Pieces[0, 1]);
+            board.emptySelectionX = 0;
+            board.emptySelectionZ = 1;
+
+            // It is white's turn and they have sufficient coins
+            board.isWhiteTurn = true;
+            Coin.WhiteCoins = 9;
+
+            button.SpawnAPiece();
+            // Piece is spawned in selected empty spot
+            Assert.NotNull(board.Pieces[0, 1]);
+
+            // Choose b2
+            Assert.Null(board.Pieces[1, 1]);
+            board.emptySelectionX = 1;
+            board.emptySelectionZ = 1;
+
+            button.SpawnAPiece();
+            // Another piece is spawned in selected empty spot
+            Assert.NotNull(board.Pieces[0, 1]);
         }
     }
 }

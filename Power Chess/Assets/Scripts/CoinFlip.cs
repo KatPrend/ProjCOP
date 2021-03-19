@@ -13,6 +13,8 @@ public class CoinFlip : MonoBehaviour
     public int white;
     public int black;
     public static int extraBlackTurn;
+    public static bool whitePurchased = false;
+    public static bool blackPurchased = false;
     System.Random random = new System.Random();
 
     // Add either two or one extra turns per coin flip

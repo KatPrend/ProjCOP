@@ -42,7 +42,6 @@ public class BoardManager : MonoBehaviour
     public Text gameOverText;
     public bool isGameActive;
     public Button restartButton;
-
     
     public AudioSource noise1;
     public AudioSource noise2;
@@ -137,6 +136,12 @@ public class BoardManager : MonoBehaviour
 
     private void TakeTurn(int x, int z)
     {
+        // Player can purchase 1 coin flip
+        if (isWhiteTurn && CoinFlip.extraWhiteTurn == 0)
+            CoinFlip.whitePurchased = false;
+        else if (!isWhiteTurn && CoinFlip.extraBlackTurn == 0)
+            CoinFlip.blackPurchased = false;
+
         if (allowedRelativeMoves[x, z])
             MoveAPiece(x, z);
         // If move is not allowed, unselect piece
