@@ -10,6 +10,10 @@
 
 [Sprint 5](#sprint-5)
 
+[Sprint 6](#sprint-6)
+
+[Sprint 7](#sprint-7)
+
 ## Vision Statement
 
 This product is for people who enjoyed normal as well as auto chess.
@@ -154,3 +158,25 @@ Tyra - Create AI algorithm function - alpha-beta algorithm.
 Veronica - Create coin flip powerups that add turns to a player.
 
 Kathleen - Set up starting board.
+
+# Sprint 7
+
+- [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
+- [Burndown Chart]
+- [Velocity Chart]
+- [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
+- [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
+- [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
+- [Product Demonstration]
+
+## Task Allocation
+
+Blert -
+
+Dylan -
+
+Tyra -
+
+Veronica -
+
+Kathleen - 

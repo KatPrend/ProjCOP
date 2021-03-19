@@ -142,5 +142,26 @@ namespace Tests
             // Another piece is spawned in selected empty spot
             Assert.NotNull(board.Pieces[0, 1]);
         }
+
+        [UnityTest]
+        public IEnumerator TestPlayerCanPurchaseOnlyOneCoinFlipPerTurn()
+        {
+            GameObject go = new GameObject();
+            ExtraTurnButton button = go.AddComponent<ExtraTurnButton>();
+            button.button = go.AddComponent<Button>();
+            button.Cost = 10;
+            button.Quarter = new GameObject();
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            // It is black's turn and they have sufficient coins
+            board.isWhiteTurn = false;
+            Coin.BlackCoins = 11;
+
+            button.PurchaseTurnLogic(board.isWhiteTurn);
+            Assert.True(CoinFlip.blackPurchased);
+        }
     }
 }

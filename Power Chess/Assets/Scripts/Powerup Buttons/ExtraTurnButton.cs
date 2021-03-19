@@ -66,14 +66,19 @@ public class ExtraTurnButton : MonoBehaviour
             // Implement coin flip
             Quarter.GetComponent<CoinFlip>().TwoExtraTurns();
 
-            // Deduct coins from purchase
-            Coin.RemoveCoins(board.isWhiteTurn, Cost);
-
-            if (board.isWhiteTurn)
-                CoinFlip.whitePurchased = true;
-            else
-                CoinFlip.blackPurchased = true;
+            PurchaseTurnLogic(board.isWhiteTurn);
         }
+    }
+
+    public void PurchaseTurnLogic(bool isWhiteTurn)
+    {
+        // Deduct coins from purchase
+        Coin.RemoveCoins(isWhiteTurn, Cost);
+
+        if (isWhiteTurn)
+            CoinFlip.whitePurchased = true;
+        else
+            CoinFlip.blackPurchased = true;
     }
 
     IEnumerator ShowAndHide(GameObject go, float delay)

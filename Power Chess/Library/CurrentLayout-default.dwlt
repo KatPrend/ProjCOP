@@ -41,7 +41,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 120.666664
-    width: 535.3333
+    width: 276.6667
     height: 466.33334
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
@@ -67,14 +67,14 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 744.6667
+    x: 1003.3333
     y: 0
-    width: 535.3333
+    width: 276.6667
     height: 587
   m_MinSize: {x: 276, y: 242}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 113
+  controlID: 115
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 609, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 112
+  controlID: 114
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_MinSize: {x: 231, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 65
+  controlID: 62
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,12 +271,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 230.66667
     y: 0
-    width: 514
+    width: 772.6667
     height: 587
   m_MinSize: {x: 102, y: 242}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 142
+  controlID: 124
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,7 +294,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 514
+    width: 772.6667
     height: 434.66666
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -322,7 +322,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 434.66666
-    width: 514
+    width: 772.6667
     height: 152.33334
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -348,7 +348,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 535.3333
+    width: 276.6667
     height: 120.666664
   m_MinSize: {x: 276, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
@@ -380,9 +380,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 744.6667
+    x: 1003.3334
     y: 72.66667
-    width: 534.3333
+    width: 275.6667
     height: 99.666664
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -420,7 +420,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 230.66667
     y: 72.66667
-    width: 512
+    width: 770.6667
     height: 413.66666
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 768, y: 589}
+  m_TargetSize: {x: 1156, y: 589}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -444,8 +444,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -256
-    m_HBaseRangeMax: 256
+    m_HBaseRangeMin: -385.33334
+    m_HBaseRangeMax: 385.33334
     m_VBaseRangeMin: -196.33334
     m_VBaseRangeMax: 196.33334
     m_HAllowExceedBaseRangeMin: 1
@@ -465,23 +465,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 512
+      width: 770.6667
       height: 392.66666
-    m_Scale: {x: 0.9999999, y: 0.99999994}
-    m_Translation: {x: 256, y: 196.33333}
+    m_Scale: {x: 0.99999994, y: 0.99999994}
+    m_Translation: {x: 385.33334, y: 196.33333}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -256.00003
+      x: -385.33337
       y: -196.33334
-      width: 512.00006
+      width: 770.66675
       height: 392.6667
     m_MinimalGUI: 1
   m_defaultScale: 0.99999994
-  m_LastWindowPixelSize: {x: 768, y: 620.5}
+  m_LastWindowPixelSize: {x: 1156, y: 620.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -518,7 +518,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9cd7ffffbcd7ffff96e0ffff86e1ffffa6e1ffff6aeafffff0eeffff10efffffe2efffff7ef0ffff9ef0ffff70f1ffff14f2ffff34f2ffff06f3ffff98f5ffffb8f5ffff9af6ffff52fbffff7a3a0000f447000066480000
+      m_ExpandedIDs: 96f2ffffb6f2ffff86f3ffffc2f4ffffdef4fffffcf4ffff54f5ffff74f5ffff46f6ffff34f7ffff54f7ffff20f8ffff60f8ffff80f8ffff48f9ffff52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -619,7 +619,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 311.167}
+    scrollPos: {x: 0, y: 204.99893}
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: ffffffff00000000603c0000de3c0000e03c0000e23c0000e43c0000e63c0000e83c0000ea3c0000ec3c0000ee3c0000f03c0000f23c0000f43c0000f63c0000f83c0000fa3c0000fc3c0000fe3c0000003d0000023d0000043d0000063d0000
@@ -844,7 +844,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 230.66667
     y: 507.33334
-    width: 512
+    width: 770.6667
     height: 131.33334
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &22
@@ -931,13 +931,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 744.6667
+    x: 1003.3334
     y: 193.33334
-    width: 534.3333
+    width: 275.6667
     height: 445.33334
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 185
+    ID: 184
     splitterInitialOffset: 268
     currentActiveSplitter: -1
     realSizes:
@@ -969,7 +969,7 @@ MonoBehaviour:
       name: Power Chess
       fullName: Power Chess
       resultStatus: 1
-      duration: 2.6448689
+      duration: 0.5804865
       messages: 
       output: 
       stacktrace: 
@@ -985,7 +985,7 @@ MonoBehaviour:
       name: PlayMode.dll
       fullName: C:/Users/Kathleen/OneDrive/Desktop/COP4331/ProjCOP/Power Chess/Library/ScriptAssemblies/PlayMode.dll
       resultStatus: 1
-      duration: 2.6124408
+      duration: 0.5504788
       messages: 
       output: 
       stacktrace: 
@@ -1001,7 +1001,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 2.605007
+      duration: 0.5470937
       messages: 
       output: 
       stacktrace: 
@@ -1275,7 +1275,7 @@ MonoBehaviour:
       name: TestGameFlow
       fullName: Tests.TestGameFlow
       resultStatus: 1
-      duration: 0.1950724
+      duration: 0.5441542
       messages: 
       output: 
       stacktrace: 
@@ -1327,7 +1327,7 @@ MonoBehaviour:
       name: TestGetSquareCenter
       fullName: Tests.TestGameFlow.TestGetSquareCenter
       resultStatus: 1
-      duration: 0.0176979
+      duration: 0.1933698
       messages: 
       output: 
       stacktrace: 
@@ -1338,6 +1338,23 @@ MonoBehaviour:
       categories:
       - Uncategorized
       parentId: 1001
+      parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
+    - id: 1024
+      uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestPlayerCanPurchaseOnlyOneCoinFlipPerTurn]
+      name: TestPlayerCanPurchaseOnlyOneCoinFlipPerTurn
+      fullName: Tests.TestGameFlow.TestPlayerCanPurchaseOnlyOneCoinFlipPerTurn
+      resultStatus: 1
+      duration: 0.5248832
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1016
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestGameFlow][suite]
     - id: 1018
       uniqueId: PlayMode.dll/Tests/TestGameFlow/[PlayMode][Tests.TestGameFlow.TestPlayersStartWithThreeCoins]
@@ -1561,12 +1578,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1006
       parentUniqueId: PlayMode.dll/Tests/[PlayMode][Tests.TestPieceMoves][suite]
-    m_ResultText: TestPlayersStartWithThreeCoins (0.017s)
+    m_ResultText: TestPlayerCanPurchaseOnlyOneCoinFlipPerTurn (0.525s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 369}
-      m_SelectedIDs: f30eb494
-      m_LastClickedID: -1800139021
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 61b7eb31
+      m_LastClickedID: 837531489
       m_ExpandedIDs: 849fc3859f5c62b6175177bfdae6f3cdd7e52e44bc805a6dffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
