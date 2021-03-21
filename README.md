@@ -162,7 +162,7 @@ Kathleen - Set up starting board.
 # Sprint 7
 
 - [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
-- [Burndown Chart]
+- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown7.png)
 - [Velocity Chart]
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
@@ -171,12 +171,12 @@ Kathleen - Set up starting board.
 
 ## Task Allocation
 
-Blert -
+Blert - Change starting board to include 3 pawns and change value of bishop.
 
-Dylan -
+Dylan - Add background music and movement sounds.
 
 Tyra -
 
-Veronica -
+Veronica - Coin flip powerups.
 
-Kathleen - 
+Kathleen - Allow one coin flip purchase (non-piece powerups) per turn.
