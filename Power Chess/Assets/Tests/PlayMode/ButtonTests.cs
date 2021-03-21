@@ -356,5 +356,69 @@ namespace Tests
             button.PurchaseAWin();
             Assert.False(board.isGameActive);
         }
+
+        [UnityTest]
+        public IEnumerator TestExtraTurnButton1AddsOneTurnsForHeads()
+        {
+            CoinFlip quarter = new CoinFlip();
+            int result = 0; // heads = 1 extra turn
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            board.isWhiteTurn = true;
+
+            quarter.OneExtraTurn(result);
+            Assert.AreEqual(1, CoinFlip.extraWhiteTurn);
+        }
+
+        [UnityTest]
+        public IEnumerator TestExtraTurnButton1AddsZeroTurnsForTails()
+        {
+            CoinFlip quarter = new CoinFlip();
+            int result = 1; // tails = 0 extra turns
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            board.isWhiteTurn = false;
+
+            quarter.OneExtraTurn(result);
+            Assert.AreEqual(0, CoinFlip.extraBlackTurn);
+        }
+
+        [UnityTest]
+        public IEnumerator TestExtraTurnButton2AddsTwoTurnsForHeads()
+        {
+            CoinFlip quarter = new CoinFlip();
+            int result = 0; // heads = 2 extra turns
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            board.isWhiteTurn = true;
+
+            quarter.TwoExtraTurns(result);
+            Assert.AreEqual(2, CoinFlip.extraWhiteTurn);
+        }
+
+        [UnityTest]
+        public IEnumerator TestExtraTurnButton2AddsOneTurnForTails()
+        {
+            CoinFlip quarter = new CoinFlip();
+            int result = 1; // tails = 1 extra turn
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            board.isWhiteTurn = false;
+
+            quarter.TwoExtraTurns(result);
+            Assert.AreEqual(1, CoinFlip.extraBlackTurn);
+        }
     }
 }

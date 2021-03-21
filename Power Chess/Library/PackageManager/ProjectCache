@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637517042117400516
+      ticks: 637518886544399801
     m_Hash: 4007186375
   m_LockFileStatus:
     m_FilePath: C:/Users/Kat/OneDrive/Desktop/COP4331/ProjCOP/Power Chess/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637517042719850761
+      ticks: 637518887620333589
     m_Hash: 38571225
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

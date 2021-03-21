@@ -64,7 +64,12 @@ public class ExtraTurnButton : MonoBehaviour
                 StartCoroutine(ShowAndHide(Quarter, 3.0f)); // 3 seconds
 
             // Implement coin flip
-            Quarter.GetComponent<CoinFlip>().TwoExtraTurns();
+            int result = Quarter.GetComponent<CoinFlip>().ShowCoin();
+
+            if (this.Cost == 5)
+                Quarter.GetComponent<CoinFlip>().OneExtraTurn(result);
+            else if (this.Cost == 10)
+                Quarter.GetComponent<CoinFlip>().TwoExtraTurns(result);
 
             PurchaseTurnLogic(board.isWhiteTurn);
         }
