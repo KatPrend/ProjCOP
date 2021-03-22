@@ -42,7 +42,7 @@ public class BoardManager : MonoBehaviour
     public Text gameOverText;
     public bool isGameActive;
     public Button restartButton;
-    
+
     public AudioSource noise1;
     public AudioSource noise2;
     public AudioSource noise3;
@@ -94,7 +94,7 @@ public class BoardManager : MonoBehaviour
 
         if(AIturn && !isWhiteTurn)
         {
-            if (selectedPiece == null) 
+            if (selectedPiece == null)
             {
                 // SelectPiece(7, 6);//start post
             }
@@ -124,7 +124,7 @@ public class BoardManager : MonoBehaviour
             emptySelectionX = -1;
             emptySelectionZ = -1;
             return;
-        }            
+        }
 
         allowedRelativeMoves = Pieces[x, z].ArrayOfValidMove();
         selectedPiece = Pieces[x,z];
@@ -174,7 +174,7 @@ public class BoardManager : MonoBehaviour
             WhiteCamera.enabled = !WhiteCamera.enabled;
             BlackCamera.enabled = !BlackCamera.enabled;
         }
-        
+
     }
 
     private void MoveAPiece(int x, int z)
@@ -191,7 +191,7 @@ public class BoardManager : MonoBehaviour
         selectedPiece.SetPosition((int)newSquare.x, (int)newSquare.z);
         noise2.Play();
         Pieces[x, z] = selectedPiece;
-        
+
         //And remove the board highlight
         BoardHighlights.Instance.HideHighlights();
         selectedPiece = null;
@@ -269,6 +269,15 @@ public class BoardManager : MonoBehaviour
         SpawnChessPiece(0, 4, 0);
         SpawnChessPiece(6, 4, 7);
 
+        //Spawn Pawns
+        SpawnChessPiece(5, 3, 1);
+        SpawnChessPiece(5, 4, 1);
+        SpawnChessPiece(5, 5, 1);
+        SpawnChessPiece(11, 3, 6);
+        SpawnChessPiece(11, 4, 6);
+        SpawnChessPiece(11, 5, 6);
+
+
         Coin.WhiteCoins = 3;
         Coin.BlackCoins = 3;
     }
@@ -323,7 +332,7 @@ public class BoardManager : MonoBehaviour
         {
             gameOverText.text = "Game Over Black Won";
         }
-        
+
         gameOverText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(true);
         isGameActive = false;
@@ -346,7 +355,7 @@ public class BoardManager : MonoBehaviour
         ClearBoard();
         isGameActive = true;
         StartingBoard();
-        
+
         if(noise3.isPlaying)
             noise3.Stop();
         gameOverText.gameObject.SetActive(false);
