@@ -420,5 +420,28 @@ namespace Tests
             quarter.TwoExtraTurns(result);
             Assert.AreEqual(1, CoinFlip.extraBlackTurn);
         }
+
+        [UnityTest]
+        public IEnumerator TestBishopButtonRemoves4CoinsFromPlayer()
+        {
+            GameObject go = new GameObject();
+            BishopButton button = go.AddComponent<BishopButton>();
+            button.button = go.AddComponent<Button>();
+            button.Cost = 4;
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            Assert.Null(board.Pieces[2, 0]);
+            board.emptySelectionX = 2;
+            board.emptySelectionZ = 0;
+
+            board.isWhiteTurn = true;
+            Coin.WhiteCoins = 4;
+
+            button.SpawnAPiece();
+            Assert.AreEqual(0, Coin.WhiteCoins);
+        }
     }
 }

@@ -54,6 +54,40 @@ namespace Tests
         }
 
         [UnityTest]
+        public IEnumerator TestStartingBoardSpawns3WhitePawns()
+        {
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            Assert.IsInstanceOf(typeof(Pawn), actual: board.Pieces[3, 1]); // d2
+            Assert.True(board.Pieces[3, 1].isWhite);
+
+            Assert.IsInstanceOf(typeof(Pawn), actual: board.Pieces[4, 1]); // e2
+            Assert.True(board.Pieces[4, 1].isWhite);
+
+            Assert.IsInstanceOf(typeof(Pawn), actual: board.Pieces[5, 1]); // f2
+            Assert.True(board.Pieces[5, 1].isWhite);
+        }
+
+        [UnityTest]
+        public IEnumerator TestStartingBoardSpawns3BlackPawns()
+        {
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            Assert.IsInstanceOf(typeof(Pawn), actual: board.Pieces[3, 6]); // d7
+            Assert.False(board.Pieces[3, 6].isWhite);
+
+            Assert.IsInstanceOf(typeof(Pawn), actual: board.Pieces[4, 6]); // e7
+            Assert.False(board.Pieces[4, 6].isWhite);
+
+            Assert.IsInstanceOf(typeof(Pawn), actual: board.Pieces[5, 6]); // f7
+            Assert.False(board.Pieces[5, 6].isWhite);
+        }
+
+        [UnityTest]
         public IEnumerator TestPlayersStartWithThreeCoins()
         {
             BoardManager board = BoardManager.Instance;
