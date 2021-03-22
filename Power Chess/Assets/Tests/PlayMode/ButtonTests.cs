@@ -257,15 +257,15 @@ namespace Tests
 
             yield return null;
 
-            Assert.Null(board.Pieces[3, 1]);
-            board.emptySelectionX = 3;
+            Assert.Null(board.Pieces[6, 1]);
+            board.emptySelectionX = 6;
             board.emptySelectionZ = 1;
 
             board.isWhiteTurn = true;
             Coin.WhiteCoins = 5;
 
             button.SpawnAPiece();
-            Assert.IsInstanceOf(typeof(Rook), board.Pieces[3, 1]);
+            Assert.IsInstanceOf(typeof(Rook), board.Pieces[6, 1]);
         }
 
         // Knight
@@ -280,15 +280,15 @@ namespace Tests
 
             yield return null;
 
-            Assert.Null(board.Pieces[3, 6]);
-            board.emptySelectionX = 3;
+            Assert.Null(board.Pieces[6, 6]);
+            board.emptySelectionX = 6;
             board.emptySelectionZ = 6;
 
             board.isWhiteTurn = false;
             Coin.BlackCoins = 3;
 
             button.SpawnAPiece();
-            Assert.IsInstanceOf(typeof(Knight), board.Pieces[3, 6]);
+            Assert.IsInstanceOf(typeof(Knight), board.Pieces[6, 6]);
         }
 
         // Bishop

@@ -119,7 +119,7 @@ namespace Tests
 
             expectedArray[0, 2] = true;
             expectedArray[2, 2] = true;
-            expectedArray[3, 1] = true;
+            // expectedArray[3, 1] = true;
 
             Piece whiteKnight = board.Pieces[1, 0];
             Assert.AreEqual(expectedArray, whiteKnight.ArrayOfValidMove());
@@ -183,8 +183,8 @@ namespace Tests
             expectedArray[3, 0] = true;
             expectedArray[4, 0] = true;
             expectedArray[5, 0] = true;
-            expectedArray[3, 1] = true;
-            expectedArray[5, 1] = true;
+            // expectedArray[3, 1] = true;
+            // expectedArray[5, 1] = true;
             expectedArray[3, 2] = true;
             expectedArray[4, 2] = true;
             expectedArray[5, 2] = true;
