@@ -175,7 +175,7 @@ Blert - Change starting board to include 3 pawns and change value of bishop.
 
 Dylan - Add background music and movement sounds.
 
-Tyra -
+Tyra - create list to store moves
 
 Veronica - Coin flip powerups.
 
