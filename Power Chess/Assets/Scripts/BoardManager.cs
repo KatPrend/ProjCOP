@@ -43,9 +43,11 @@ public class BoardManager : MonoBehaviour
     public bool isGameActive;
     public Button restartButton;
 
-    public AudioSource noise1;
-    public AudioSource noise2;
-    public AudioSource noise3;
+    public AudioSource noise1; //Background Music
+    public AudioSource noise2; //Piece move sfx
+    public AudioSource noise3; //Win sfx
+
+    public int requiredInfiltrators;
 
     private void Start()
     {
@@ -195,6 +197,9 @@ public class BoardManager : MonoBehaviour
         //And remove the board highlight
         BoardHighlights.Instance.HideHighlights();
         selectedPiece = null;
+
+        //Check if a pawn has infilitrated
+        CheckIfInfiltrated();
     }
 
     private void CapturePiece(Piece capturedPiece)
@@ -317,6 +322,34 @@ public class BoardManager : MonoBehaviour
         {
             Debug.DrawLine(Vector3.forward * selectionZ + Vector3.right * selectionX, Vector3.forward * (selectionZ + 1) + Vector3.right * (selectionX + 1));
             Debug.DrawLine(Vector3.forward * (selectionZ + 1) + Vector3.right * selectionX, Vector3.forward * selectionZ + Vector3.right * (selectionX + 1));
+        }
+    }
+
+    public void CheckIfInfiltrated() //When called checks if a pawn has made it to the other side of the board
+    {
+        int numInfil = 0;
+        for(int x = 0; x < 8; x++)
+        {
+            if(isWhiteTurn)
+            {
+                Piece infiltrator = Pieces[x,7];
+
+                if (infiltrator != null && infiltrator.isWhite == isWhiteTurn)
+                {
+                    if (infiltrator.GetType() == typeof(Pawn))
+                        GameOver();
+                }
+            }
+            else
+            {
+                Piece infiltrator = Pieces[x,0];
+
+                if (infiltrator != null && infiltrator.isWhite == isWhiteTurn)
+                {
+                    if (infiltrator.GetType() == typeof(Pawn))
+                        GameOver();
+                }
+            }
         }
     }
 
