@@ -94,7 +94,7 @@ public class Pawn : Piece
         else
         {
             // Scan in rows above
-            for(j = PositionZ - 1; j > 0; j--)
+            for(j = PositionZ - 1; j >= 0; j--)
             {
                 otherPiece = BoardManager.Instance.Pieces[PositionX, j];
 
