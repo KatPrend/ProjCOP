@@ -197,5 +197,30 @@ namespace Tests
             button.PurchaseTurnLogic(board.isWhiteTurn);
             Assert.True(CoinFlip.blackPurchased);
         }
+
+        [UnityTest]
+        public IEnumerator TestPlayerCannotMovePieceTheyJustPurchased()
+        {
+            GameObject go = new GameObject();
+            QueenButton button = go.AddComponent<QueenButton>();
+            button.button = go.AddComponent<Button>();
+
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            // Choose c1
+            Assert.Null(board.Pieces[2, 0]);
+            board.emptySelectionX = 2;
+            board.emptySelectionZ = 0;
+
+            button.SpawnAPiece();
+
+            Assert.True(board.Pieces[2, 0].justPurchased);
+            // (SelectionX, SelectionZ) starts at (-1,-1)
+            Assert.AreEqual(-1, board.selectionX);
+            Assert.AreEqual(-1, board.selectionZ);
+
+        }
     }
 }
