@@ -8,6 +8,7 @@ public abstract class Piece : MonoBehaviour
     public int PositionZ { get; set; }
 
     public bool isWhite;
+    public bool justPurchased = false;
 
     public void SetPosition(int x, int z)
     {

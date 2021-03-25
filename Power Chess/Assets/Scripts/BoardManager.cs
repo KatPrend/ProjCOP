@@ -28,16 +28,11 @@ public class BoardManager : MonoBehaviour
     public int emptySelectionX = -1;
     public int emptySelectionZ = -1;
 
-    public int opponentX = 0, opponentZ = 0;
-
     public List<GameObject> chessPiecesPrefabs;
 
     private List<GameObject> activeChessPieces;
 
     public bool isWhiteTurn = true;
-
-    public bool AIturn = false;
-    GameAI ai = new GameAI();
 
     public Text gameOverText;
     public bool isGameActive;
@@ -85,27 +80,9 @@ public class BoardManager : MonoBehaviour
                     else
                     {
                         TakeTurn(selectionX, selectionZ);
-
-                        opponentZ = selectionZ;
-                        opponentX = selectionX;
-                        AIturn = true;
                     }
                 }
             }
-        }
-
-        if(AIturn && !isWhiteTurn)
-        {
-            if (selectedPiece == null)
-            {
-                // SelectPiece(7, 6);//start post
-            }
-            else
-            {
-                // TakeTurn(7,5);//end pos move
-            }
-
-            // ai.AlphaBeta(opponentX, opponentZ); //send latest opponet moves
         }
     }
 
@@ -121,7 +98,8 @@ public class BoardManager : MonoBehaviour
             BoardHighlights.Instance.HighlightAllowedMoves(array);
             return;
         }
-        if (Pieces[x,z].isWhite != isWhiteTurn)
+        // Unselect if it is not that player's turn or they just purchased the selected piece
+        if (Pieces[x, z].isWhite != isWhiteTurn || Pieces[x, z].justPurchased == true)
         {
             emptySelectionX = -1;
             emptySelectionZ = -1;
@@ -172,6 +150,8 @@ public class BoardManager : MonoBehaviour
         // Pass turn and swap cameras
         else
         {
+            ChangePiecesJustPurchased();
+
             isWhiteTurn = !isWhiteTurn;
             WhiteCamera.enabled = !WhiteCamera.enabled;
             BlackCamera.enabled = !BlackCamera.enabled;
@@ -214,6 +194,13 @@ public class BoardManager : MonoBehaviour
 
         // Add additional coin for capture
         Coin.AddCoin(isWhiteTurn);
+    }
+
+    private void ChangePiecesJustPurchased()
+    {
+        foreach (Piece piece in Pieces)
+            if (piece != null && piece.justPurchased == true)
+                piece.justPurchased = false;
     }
 
     private void UpdateSelection()

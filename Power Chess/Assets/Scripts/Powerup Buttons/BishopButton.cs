@@ -62,6 +62,8 @@ public class BishopButton : ButtonScript
 
             // deduct coins from purchase
             Coin.RemoveCoins(isWhiteTurn, Cost);
+
+            BoardManager.Instance.Pieces[x, z].justPurchased = true;
         }
     }
 }

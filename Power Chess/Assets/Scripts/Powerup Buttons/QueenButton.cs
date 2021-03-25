@@ -62,6 +62,8 @@ public class QueenButton : ButtonScript
 
             // deduct coins from purchase
             Coin.RemoveCoins(isWhiteTurn, this.Cost);
+
+            BoardManager.Instance.Pieces[x, z].justPurchased = true;
         }
     }
 }
