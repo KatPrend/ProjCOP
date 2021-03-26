@@ -37,7 +37,6 @@ namespace Tests
             // (SelectionX, SelectionZ) starts at (-1,-1)
             Assert.AreEqual(-1, board.selectionX);
             Assert.AreEqual(-1, board.selectionZ);
-
         }
 
         [UnityTest]
@@ -221,6 +220,34 @@ namespace Tests
             Assert.AreEqual(-1, board.selectionX);
             Assert.AreEqual(-1, board.selectionZ);
 
+        }
+
+        [UnityTest]
+        public IEnumerator TestBlackPawnInfiltrationEndsGame()
+        {
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            board.isWhiteTurn = false;
+            board.SpawnChessPiece(11, 0, 0); // black pawn a1
+
+            board.CheckIfInfiltrated();
+            Assert.False(board.isGameActive);
+        }
+
+        [UnityTest]
+        public IEnumerator TestWhitePawnInfiltrationEndsGame()
+        {
+            BoardManager board = BoardManager.Instance;
+
+            yield return null;
+
+            board.isWhiteTurn = true;
+            board.SpawnChessPiece(5, 7, 7); // white pawn h8
+
+            board.CheckIfInfiltrated();
+            Assert.False(board.isGameActive);
         }
     }
 }
