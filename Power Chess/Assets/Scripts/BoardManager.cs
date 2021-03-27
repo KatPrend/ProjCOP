@@ -150,8 +150,6 @@ public class BoardManager : MonoBehaviour
         // Pass turn and swap cameras
         else
         {
-            ChangePiecesJustPurchased();
-
             isWhiteTurn = !isWhiteTurn;
             WhiteCamera.enabled = !WhiteCamera.enabled;
             BlackCamera.enabled = !BlackCamera.enabled;
@@ -180,6 +178,8 @@ public class BoardManager : MonoBehaviour
 
         //Check if a pawn has infilitrated
         CheckIfInfiltrated();
+
+        ChangePiecesJustPurchased();
     }
 
     private void CapturePiece(Piece capturedPiece)
