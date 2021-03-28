@@ -4011,7 +4011,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -211, y: 189}
+  m_AnchoredPosition: {x: -227, y: 189}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1587457398
@@ -4655,7 +4655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -36}
+  m_AnchoredPosition: {x: -26, y: -36}
   m_SizeDelta: {x: 700, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1929875825
@@ -4694,14 +4694,16 @@ MonoBehaviour:
   m_Text: "\t\t\tEach player starts with 3 pawns, 1 king, and 3 coins\r\n\r\n\t\t\tPieces
     move as in regular chess\r.\n\r\t\t\tWith each turn, each player earns 1 coin
     for moving a piece and an additional coin if they\n\t\t\tmake a capture.\n\n\t\t\tPowerup
-    costs:\r\n  \t\t\t - Pawn: 1\r coin\t\t\t\t\t\t- CoinFlip (1): 5\r coins\n  \t\t\t
-    - Knight: 3 \rcoins\t\t\t\t\t- CoinFlip (2): 10\r coins\n  \t\t\t - Bishop: 4\r
-    coins\t\t\t\t    - EconomyWin: 30\r coins\n  \t\t\t - Rook: 5\r coins\n  \t\t\t
-    - Queen: 9\r coins\n\t\t\tEach player can buy multiple piece powerups in a turn,
-    but only 1 of the other powerups\r\n\t\t\tIf a player purchases a piece powerup,
-    they cannot then move it in the same turn.\n\r\n\t\t\tWays to win:\n\t\t\t- If
-    a player can get their pawn to the other side of the board.\n\t\t\t- If a player
-    captures their opponent's king\n\t\t\t- If a player purchases the \"Economy Win\"\n\t\t\t"
+    costs:\r\n  \t\t\t - Pawn: 1\r coin\t\t\t\t\t\t- CoinFlip (1): 5\r coins      
+    (Heads = 1 extra turn, Tails = 0 extra turns)\n  \t\t\t - Knight: 3 \rcoins\t\t\t\t\t-
+    CoinFlip (2): 10\r coins     (Heads = 2 extra turns, Tails = 1 extra turn)\n 
+    \t\t\t - Bishop: 4\r coins\t\t\t\t    - EconomyWin: 30\r coins\n  \t\t\t - Rook:
+    5\r coins\n  \t\t\t - Queen: 9\r coins\n\t\t\tEach player can buy multiple piece
+    powerups in a turn, but only 1 of the other powerups\r.\n\t\t\tIf a player purchases
+    a piece powerup, they cannot then move it in the same turn.\n\r\n\t\t\tWays to
+    win:\n\t\t\t- If a player can get their pawn to the other side of the board\n\t\t\t-
+    If a player captures their opponent's king\n\t\t\t- If a player purchases the
+    \"Economy Win\"\n\t\t\t"
 --- !u!222 &1929875826
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4897,7 +4899,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -3, y: -1}
-  m_SizeDelta: {x: 700, y: 450}
+  m_SizeDelta: {x: 750, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2111318346
 MonoBehaviour:
