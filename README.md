@@ -195,7 +195,7 @@ Kathleen - Allow one coin flip purchase (non-piece powerups) per turn.
 
 ## Task Allocation
 
-Blert - product demonstration video, along with price changes.
+Blert - product demonstration video, Exit Button.
 
 Dylan - added pawn infiltration win condition.
 
