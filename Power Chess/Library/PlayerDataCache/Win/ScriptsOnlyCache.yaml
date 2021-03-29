@@ -1,5 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp.dll:
+    - Exit
     Scripts.dll:
     - Bishop
     - BishopButton
@@ -9,6 +11,7 @@ ScriptsOnlyBuild:
     - CoinFlip
     - EconomyWinButton
     - ExtraTurnButton
+    - Instructions
     - King
     - Knight
     - KnightButton
@@ -16,12 +19,12 @@ ScriptsOnlyBuild:
     - PawnButton
     - Queen
     - QueenButton
+    - RandomPieceButton
     - RestartButton
     - Rook
     - RookButton
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    - Packages.Rider.Editor.UnitTesting.SyncTestRunEventsHandler
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -30,19 +33,11 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
-    - UnityEditor.TestRunner.TestLaunchers.RemotePlayerLogController
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
-    - UnityEditor.TestTools.TestRunner.RerunCallbackData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
-    UnityEngine.TestRunner.dll:
-    - UnityEngine.TestRunner.Utils.TestRunCallbackListener
-    - UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
-    - UnityEngine.TestTools.TestRunner.Callbacks.PlayerQuitHandler
-    - UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
-    - UnityEngine.TestTools.TestRunner.PlaymodeTestsController
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -53,47 +48,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/InitTestScene637519567094726599.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1862}
-    - Class: 114
-      Script: {instanceID: 1974}
-    - Class: 114
-      Script: {instanceID: 2026}
-    - Class: 114
-      Script: {instanceID: 2218}
-    - Class: 114
-      Script: {instanceID: 2362}
-    - Class: 114
-      Script: {instanceID: 2442}
-    - Class: 114
-      Script: {instanceID: 2852}
-    - Class: 114
-      Script: {instanceID: 3204}
-    - Class: 114
-      Script: {instanceID: 3214}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
     Assets/Scenes/Chess.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -113,6 +67,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -130,61 +86,73 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1642}
     - Class: 114
-      Script: {instanceID: 1720}
+      Script: {instanceID: 1724}
     - Class: 114
-      Script: {instanceID: 1762}
+      Script: {instanceID: 1766}
     - Class: 114
-      Script: {instanceID: 1836}
+      Script: {instanceID: 1840}
     - Class: 114
-      Script: {instanceID: 1906}
+      Script: {instanceID: 1910}
     - Class: 114
-      Script: {instanceID: 1974}
+      Script: {instanceID: 1978}
     - Class: 114
-      Script: {instanceID: 2118}
+      Script: {instanceID: 2122}
     - Class: 114
-      Script: {instanceID: 2148}
+      Script: {instanceID: 2152}
     - Class: 114
-      Script: {instanceID: 2220}
+      Script: {instanceID: 2224}
     - Class: 114
-      Script: {instanceID: 2248}
+      Script: {instanceID: 2252}
     - Class: 114
-      Script: {instanceID: 2378}
+      Script: {instanceID: 2366}
     - Class: 114
-      Script: {instanceID: 2486}
+      Script: {instanceID: 2382}
     - Class: 114
-      Script: {instanceID: 2804}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2822}
+      Script: {instanceID: 2806}
     - Class: 114
-      Script: {instanceID: 2842}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2844}
     - Class: 114
-      Script: {instanceID: 2974}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 2996}
+      Script: {instanceID: 2898}
     - Class: 114
-      Script: {instanceID: 3050}
+      Script: {instanceID: 2904}
     - Class: 114
-      Script: {instanceID: 3166}
+      Script: {instanceID: 2978}
     - Class: 114
-      Script: {instanceID: 3224}
+      Script: {instanceID: 3000}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3054}
     - Class: 114
-      Script: {instanceID: 3256}
+      Script: {instanceID: 3170}
     - Class: 114
-      Script: {instanceID: 3264}
+      Script: {instanceID: 3208}
     - Class: 114
-      Script: {instanceID: 3548}
+      Script: {instanceID: 3228}
     - Class: 114
-      Script: {instanceID: 3598}
+      Script: {instanceID: 3246}
     - Class: 114
-      Script: {instanceID: 3686}
+      Script: {instanceID: 3260}
     - Class: 114
-      Script: {instanceID: 3732}
+      Script: {instanceID: 3268}
+    - Class: 114
+      Script: {instanceID: 3532}
+    - Class: 114
+      Script: {instanceID: 3554}
+    - Class: 114
+      Script: {instanceID: 3604}
+    - Class: 114
+      Script: {instanceID: 3634}
+    - Class: 114
+      Script: {instanceID: 3694}
+    - Class: 114
+      Script: {instanceID: 3740}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -228,7 +196,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: c05b26af943c425c3ff6686df29b373f
+      Hash: cd0ec8b75ca36687b63e40fb895628c5
     assemblyName: Scripts.dll
     namespaceName: 
     className: BoardManager
@@ -282,7 +250,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 97f4b0e4ff3b1dfc13c0abb9a96fd5e9
+      Hash: bba4b34ed49a6c4bc4ac07581ff89953
     assemblyName: Scripts.dll
     namespaceName: 
     className: Pawn
@@ -528,7 +496,13 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: 97f4b0e4ff3b1dfc13c0abb9a96fd5e9
+      Hash: e13b7abefcf97f15390bb182b7a311a0
+    assemblyName: Scripts.dll
+    namespaceName: 
+    className: Instructions
+  - hash:
+      serializedVersion: 2
+      Hash: bba4b34ed49a6c4bc4ac07581ff89953
     assemblyName: Scripts.dll
     namespaceName: 
     className: Queen
@@ -540,7 +514,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 97f4b0e4ff3b1dfc13c0abb9a96fd5e9
+      Hash: bba4b34ed49a6c4bc4ac07581ff89953
     assemblyName: Scripts.dll
     namespaceName: 
     className: Rook
@@ -606,7 +580,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 97f4b0e4ff3b1dfc13c0abb9a96fd5e9
+      Hash: bba4b34ed49a6c4bc4ac07581ff89953
     assemblyName: Scripts.dll
     namespaceName: 
     className: King
@@ -624,7 +598,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 97f4b0e4ff3b1dfc13c0abb9a96fd5e9
+      Hash: bba4b34ed49a6c4bc4ac07581ff89953
     assemblyName: Scripts.dll
     namespaceName: 
     className: Knight
@@ -654,6 +628,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Exit
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -678,7 +658,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 97f4b0e4ff3b1dfc13c0abb9a96fd5e9
+      Hash: bba4b34ed49a6c4bc4ac07581ff89953
     assemblyName: Scripts.dll
     namespaceName: 
     className: Bishop
@@ -688,6 +668,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 93c1ef6be81b2dae8117665ef6607345
+    assemblyName: Scripts.dll
+    namespaceName: 
+    className: RandomPieceButton
   - hash:
       serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
@@ -738,6 +724,5 @@ ScriptsOnlyBuild:
     className: TextContainer
   platform: 5
   scenePathNames:
-  - Assets/InitTestScene637519567094726599.unity
   - Assets/Scenes/Chess.unity
-  playerPath: C:/Users/Blert/ProjCOP/Power Chess/Temp/UnityTempFile-1e4676afd0ec7554b9c7afe76545ace5/PlayerWithTests/PlayerWithTests.exe
+  playerPath: C:/Users/Blert/ProjCOP/Power Chess/Power Chess.exe
