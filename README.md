@@ -14,6 +14,8 @@
 
 [Sprint 7](#sprint-7)
 
+[Sprint 8](#sprint-8)
+
 ## Vision Statement
 
 This product is for people who enjoyed normal as well as auto chess.
@@ -184,7 +186,7 @@ Kathleen - Allow one coin flip purchase (non-piece powerups) per turn.
 # Sprint 8
 
 - [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
-- [Burndown Chart]()
+- [Burndown Chart](https://github.com/aryt431/ProjCOP/blob/main/Burndown%20Charts/Burndown8.png)
 - [Velocity Chart]()
 - [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
 - [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
@@ -201,4 +203,4 @@ Tyra -
 
 Veronica - random piece powerup.
 
-Kathleen - added limitation to just purchased piece movement and added game rules to start menu
+Kathleen - added limitation to just purchased piece movement and added game rules to start menu.
