@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1208,7 +1208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -108, y: -15.3}
+  m_AnchoredPosition: {x: 3, y: -15.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365231689
@@ -2349,7 +2349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -124.1, y: 19.6}
+  m_AnchoredPosition: {x: -146, y: 19.6}
   m_SizeDelta: {x: 110, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896693303
@@ -3108,7 +3108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 214, y: 19.6}
+  m_AnchoredPosition: {x: 201, y: 19.6}
   m_SizeDelta: {x: 110, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1140341242
@@ -3256,7 +3256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 68.1, y: -15.3}
+  m_AnchoredPosition: {x: 208, y: -15.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1178143874
@@ -3699,7 +3699,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 103, y: 19.6}
+  m_AnchoredPosition: {x: 85, y: 19.6}
   m_SizeDelta: {x: 110, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337705633
@@ -4645,7 +4645,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 326.7, y: 19.6}
+  m_AnchoredPosition: {x: 317, y: 19.6}
   m_SizeDelta: {x: 110, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814538877
@@ -4793,7 +4793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -287, y: -15.3}
+  m_AnchoredPosition: {x: -195, y: -15.3}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1909010037
@@ -4983,10 +4983,10 @@ MonoBehaviour:
     (Heads = 1 extra turn, Tails = 0 extra turns)\n  \t\t\t - Knight: 3 \rcoins\t\t\t\t\t-
     CoinFlip (2): 10\r coins     (Heads = 2 extra turns, Tails = 1 extra turn)\n 
     \t\t\t - Bishop: 4\r coins\t\t\t\t    - EconomyWin: 30\r coins\n  \t\t\t - Rook:
-    5\r coins\n  \t\t\t - Queen: 9\r coins\n\t\t\tEach player can buy multiple piece
-    powerups in a turn, but only 1 of the other powerups\r.\n\t\t\tIf a player purchases
-    a piece powerup, they cannot then move it in the same turn.\n\r\n\t\t\tWays to
-    win:\n\t\t\t- If a player can get their pawn to the other side of the board\n\t\t\t-
+    5\r coins \t\t\t\t\t\t- Random Piece: 4 coins\n  \t\t\t - Queen: 98 coins\n\t\t\tEach
+    player can buy multiple piece powerups in a turn, but only 1 of the other powerups\r.\n\t\t\tIf
+    a player purchases a piece powerup, they cannot then move it in the same turn.\n\r\n\t\t\tWays
+    to win:\n\t\t\t- If a player can get their pawn to the other side of the board\n\t\t\t-
     If a player captures their opponent's king\n\t\t\t- If a player purchases the
     \"Economy Win\"\n\t\t\t"
 --- !u!222 &1929875826
@@ -5034,7 +5034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11, y: 19.6}
+  m_AnchoredPosition: {x: -32, y: 19.6}
   m_SizeDelta: {x: 110, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2001732053
