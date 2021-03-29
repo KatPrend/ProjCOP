@@ -5300,7 +5300,7 @@ MonoBehaviour:
     (Heads = 1 extra turn, Tails = 0 extra turns)\n  \t\t\t - Knight: 3 \rcoins\t\t\t\t\t-
     CoinFlip (2): 10\r coins     (Heads = 2 extra turns, Tails = 1 extra turn)\n 
     \t\t\t - Bishop: 4\r coins\t\t\t\t    - EconomyWin: 30\r coins\n  \t\t\t - Rook:
-    5\r coins \t\t\t\t\t\t- Random Piece: 4 coins\n  \t\t\t - Queen: 98 coins\n\t\t\tEach
+    5\r coins \t\t\t\t\t\t- Random Piece: 4 coins\n  \t\t\t - Queen: 8 coins\n\t\t\tEach
     player can buy multiple piece powerups in a turn, but only 1 of the other powerups\r.\n\t\t\tIf
     a player purchases a piece powerup, they cannot then move it in the same turn.\n\r\n\t\t\tWays
     to win:\n\t\t\t- If a player can get their pawn to the other side of the board\n\t\t\t-
