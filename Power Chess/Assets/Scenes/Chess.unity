@@ -2365,7 +2365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 896693304}
-  Cost: 9
+  Cost: 8
 --- !u!114 &896693304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3272,7 +3272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1178143875}
-  Cost: 5
+  Cost: 4
   randomWhite: 0
   randomBlack: 0
 --- !u!114 &1178143875
