@@ -180,3 +180,25 @@ Tyra - create list to store moves
 Veronica - Coin flip powerups.
 
 Kathleen - Allow one coin flip purchase (non-piece powerups) per turn.
+
+# Sprint 8
+
+- [Trello Board](https://trello.com/b/isWG1e2o/power-chesss)
+- [Burndown Chart]()
+- [Velocity Chart]()
+- [System Architecture](https://github.com/aryt431/ProjCOP/blob/main/Architecture/architecture.md)
+- [Source Code](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Scripts)
+- [Automated Tests](https://github.com/aryt431/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
+- [Product Demonstration]()
+
+## Task Allocation
+
+Blert - product demonstration video, along with price changes.
+
+Dylan - added pawn infiltration win condition.
+
+Tyra -
+
+Veronica - random piece powerup.
+
+Kathleen - added limitation to just purchased piece movement and added game rules to start menu
