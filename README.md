@@ -1,3 +1,9 @@
+This is a chess game variant called Power Chess. It was created in Unity as a group project for the class Processes of Object Oriented Software Design. The other members who contributed to this project are @dylanmodugno, @ViatorBC, @verthoqn, and @tyra134.
+
+The scripts and unit tests can be found here: </br>
+&ensp;&ensp;&ensp;[scripts](https://github.com/KatPrend/ProjCOP/tree/main/Power%20Chess/Assets/Scripts) </br>
+&ensp;&ensp;&ensp;[unit tests](https://github.com/KatPrend/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
+
 # ProjCOP
 
 [Sprint 1](#sprint-1)
