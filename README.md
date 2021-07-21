@@ -4,6 +4,10 @@ The scripts and unit tests can be found here: </br>
 &ensp;&ensp;&ensp;[scripts](https://github.com/KatPrend/ProjCOP/tree/main/Power%20Chess/Assets/Scripts) </br>
 &ensp;&ensp;&ensp;[unit tests](https://github.com/KatPrend/ProjCOP/tree/main/Power%20Chess/Assets/Tests)
 
+Videos of the progress of the project (project demonstrations) can be found under each sprint, with the final video being:</br>
+&ensp;&ensp;&ensp;[final demonstration](https://www.youtube.com/watch?v=R-yxWu8h91w)</br>
+(Final video done by @ViatorBC)
+
 # ProjCOP
 
 [Sprint 1](#sprint-1)
